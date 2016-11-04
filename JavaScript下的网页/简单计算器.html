@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function count(){
+				var num1 = parseInt(document.getElementById("txt1").value);
+				var num2 = parseInt(document.getElementById("txt2").value); 
+				var num3 = document.getElementById("select").value;		
+				switch(num3){
+					case "+":
+					var num4=num1+num2;
+					break;
+					
+					case "-":
+					var num4=num1-num2;
+					break;
+					
+					case "*":
+					var num4=num1*num2;
+					break;
+					
+					case "/":
+					var num4=num1/num2;
+					break;
+				}
+				document.getElementById("fruit").value=num4;
+			}
+		</script>
+	</head>
+	<body>
+		<h3>简单的计算器运用</h3>
+		<input type="text" id="txt1" />
+		<select id="select">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select>
+		<input type="text" id="txt2" />
+		<input type="button" value=" = "  onclick="count()"/>
+		<input type="text" id="fruit" />
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../img/JavaScript/计算器1.jpg" />
+			<img src="../img/JavaScript/计算器2.jpg" />
+		</div>			
+	</body>
+</html>

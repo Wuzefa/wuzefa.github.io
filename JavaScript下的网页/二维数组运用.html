@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h3>搜索二维数组里既是女生，又是大一的学生的信息</h3>
+		<script>
+			var infos = [['小A','女','21','大一'],['小B','男','22','大二'],['小C','女','22','大三']];
+			for(var i=0;i<infos.length;i++){
+				if(infos[i][3]=='大一')
+				{
+					if(infos[i][1]=='女'){
+						document.write("该生的信息是:"+infos[i]);
+					}
+				}
+			}
+		</script>
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../img/JavaScript/二维数组.jpg" />
+		</div>		
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h3>删除数组Array[2,2,3,5,1,6,5,7,9]里的重复项</h3>
+		<input type="button" value="点击执行" onclick="result()"></input>	
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../../img/JavaScript/算法/删除数组重复项.jpg" />
+		</div>		
+	</body>
+	<script type="text/javascript" charset=utf-8>
+		var arr =[2,2,3,5,1,6,5,7,9];	
+		//把数组转化为对象
+		function toObject(arr){
+			var obj = {};
+			var j;
+			for(var i=0,j=arr.length;i<j;i++){
+				obj[arr[i]]=true;
+			}
+			return obj;
+		}
+		//把对象转化为数组
+		function toArray(obj){
+			var arr=[];
+			for(var attr in obj){
+				if(obj.hasOwnProperty(attr)){
+					arr.push(attr);
+				}
+			}
+			return arr;
+		}
+		//去掉数组里的重复项
+		function last(newarry){
+			return toArray(toObject(newarry));
+		}
+		function result(){
+			alert(last(arr));
+		}
+	</script>	
+</html>

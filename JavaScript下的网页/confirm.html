@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" charset="UTF-8">
+		document.write("<h3>点击按钮，确定打开一个宽500px，高500px的百度界面:</h3>");
+		function openWindow(){
+			var mymessage = confirm("是否打开网页");
+			if(mymessage==true){
+				window.open("http://www.baidu.com","baidu","width=500,height=500");	
+			}	
+			else{
+				document.write("操作失败！");
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="点击打开" onclick="openWindow()" />
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../img/JavaScript/confirm.jpg" />
+		</div>
+	</body>
+</html>

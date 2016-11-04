@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h3>搭建一个数组,可求删查信息</h3>
+		<p>var m = new  Map();</p>
+		<p>m.put('01' , 'abc');</p>	
+		<p>m.put('02' , false) ;</p>	
+		<p>m.put('03' , true);</p>	
+		<p>m.put('04' , new Date());</p>			
+		<input type="button" value="执行遍历数组" onclick="result()"></input>
+		<input type="button" value="删除03信息" onclick="result1()"></input>
+		<input type="button" value="查看02信息" onclick="result2()"></input>
+		<input type="button" value="查看数组长度" onclick="result3()"></input>	
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../../img/JavaScript/算法/历遍数组.jpg" />
+			<img src="../../img/JavaScript/算法/历遍数组2.jpg" />
+		</div>	
+		
+				<script>
+					function Map(){
+					// private 
+					var obj = {} ;// 空的对象容器,承装键值对
+					// put 方法
+					this.put = function(key , value){
+							obj[key] = value ;		// 把键值对绑定到obj对象上
+					}
+					// size 方法 获得map容器的个数
+					this.size = function(){
+							var count = 0 ; 
+							for(var attr in obj){
+								count++;
+							}
+							return count ; 
+					}
+					// get 方法 根据key 取得value
+					this.get = function(key){
+						if(obj[key] || obj[key] === 0 || obj[key] === false){
+							return obj[key];
+						} else {
+							return null;
+						}
+					}
+					//remove 删除方法
+					this.remove = function(key){
+						if(obj[key] || obj[key] === 0 || obj[key] === false){
+							delete obj[key];						
+						}
+					}
+					// eachMap 变量map容器的方法
+					this.eachMap = function(fn){
+							for(var attr in obj){
+								fn(attr, obj[attr]);
+							}
+					}		
+					
+				}	
+				//模拟java里的Map
+				var m = new  Map();
+				m.put('01' , 'abc');
+				m.put('02' , false) ;
+				m.put('03' , true);
+				m.put('04' , new Date());			
+				//alert(m.size());
+				//alert(m.get('02'));
+				//m.remove('03');
+				//alert(m.get('03'));
+				function result(){
+					m.eachMap(function(key,value){
+					alert(key +" ："+ value);
+					});
+				}			//遍历数组
+				function result1(){
+					m.remove('03');//删除‘03’
+				}
+				function result2(){
+					alert(m.get('02'));//获取‘02’
+				}
+				function result3(){
+					alert(m.size());//获取数组长度
+				}
+
+			</script>
+	</body>
+</html>

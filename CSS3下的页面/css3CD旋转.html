@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<title>css3CD旋转</title>
+	<style>
+		.img{border-radius:100%; display: block; 
+			animation:3s linear infinite CDturn; 
+			-webkit-animation:3s linear infinite CDturn;
+		}
+		@keyframes CDturn{
+			from{transform:rotate(0deg)}
+			to{transform:rotate(360deg)}
+		}
+		@-webkit-keyframes CDturn{
+			from{transform:rotate(0deg);}
+			to{transform:rotate(360deg);}
+		}
+	</style>
+	</head>
+	<body>
+		<h3>利用animationC实现CD旋转</h3>
+		<img class="img" src="../img/CSS3/CSS3素材/cd.png" />
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../img/CSS3/CD旋转.jpg" />
+		</div>	 	
+	</body>
+</html>

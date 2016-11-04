@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>transition常见特效</title>
+		<style>
+			.piaoyi{
+				display: block;text-decoration: none;width: 105px;transition: 0.5s;font-family: "微软雅黑";color: #000000;	
+				background: url(../img/CSS3/CSS3素材/nav_arrow.png) no-repeat 92px 8px;
+			}
+			.piaoyi:hover{
+				background: url(../img/CSS3/CSS3素材/nav_arrow.png)no-repeat 92px -45px;
+			}
+			.rotate{
+				width: 50px;height: 50px;background: url(../img/CSS3/CSS3素材/stop.png);transition: 2s;
+				background-size: 50px;margin-left: 20px;
+			}
+			.rotate:hover{
+				transform: rotate(360deg);
+			}						
+		</style>
+	</head>
+	<body>
+		<a class="piaoyi" href="#">鼠标移到此处</a>
+		<div class="rotate"></div>
+		<h3>利用transition实现页面常见特效</h3>
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../img/CSS3/translate页面常见特效.jpg" />
+		</div>	   		
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.one{
+				font-size: 20px;
+			}
+			.two{
+				font-size: 40px;color: #31B0D5;text-shadow: 2px 3px 5px coral;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="one" id="con">I love JavaScipt</p>
+		<form>
+			<input type="button" value="请点击按钮改变样式" onclick="change();"  />
+			<input type="button" value="请点击按钮回原样式"  onclick="change1()"/>
+		</form>
+		<script type="text/javascript" charset="UTF-8">
+			var mystyle = document.getElementById("con");
+			document.write("原本的样式编号是："+mystyle.className);
+			function change(){
+				mystyle.className="two";
+			}
+			function change1(){
+				mystyle.className="one";
+			}			
+		</script>
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../img/JavaScript/ClassName运用.jpg" />
+		</div>
+	</body>
+</html>

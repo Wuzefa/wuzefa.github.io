@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#article{
+    font-family: "楷体";
+    margin: auto;
+    margin-top: 20px;
+    width: 750px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px 5px 10px 20px; /*上左下右*/
+    border-color: #e0e0e0;
+}
+
+#name{
+    text-align: center;
+}
+
+p{
+    padding-top: 10px;
+    font-size: 23px;
+    text-indent: 2em;
+    letter-spacing: 5px;/*间隔*/
+    line-height: 30px;
+}
