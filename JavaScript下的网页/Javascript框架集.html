@@ -5,16 +5,27 @@
     	<title>JavaScript</title>
     	<link href="../css/bootstrap.min.css" rel="stylesheet">
     	<style>
-		#list {
-    		border: 0px;
-		}
-		#content {
-  	 		background-color: #E8E8E8;border: 0px;width: 900px;padding: 0px 10px;border-radius: 10px;
-		}
-		iframe {
-    		height: 580px;
-    	}
-</style>
+			#list {
+    			border: 0px;
+			}
+			#content {
+  	 			background-color: #E8E8E8;border: 0px;width: 100%;padding: 0px 10px;border-radius: 10px;
+			}
+			.col-lg-12,.col-lg-9,.col-lg-3{
+				padding-left: 5px;padding-right: 5px;
+			}
+    		@media screen and (max-width: 850px){
+    			.myform .form-control{
+    				width: 170px;display: inline-block;
+    			}
+    		}
+    		@media screen and (max-width: 768px) {
+    		.myform .form-control{display: inline-block;width: 70%;}
+    		}  			
+			iframe {
+    			height: 580px;
+    		}
+		</style>
     </head>
     
     <body>
@@ -49,7 +60,7 @@
     					</ul>
     					<form class="navbar-form navbar-right myform" action="">
     						<input type="text" class="form-control button_01"  placeholder="Please input content"/>
-    						<button class="btn btn-primary" onclick="submit1()">seaech</button>
+    						<button class="btn btn-primary" onclick="submit1()">search</button>
     					</form>
     				</div>
     			</div>
@@ -57,11 +68,13 @@
   		</header>
   		<div class="container">
   			<div class="row">
-  				<div class="col-lg-3">
-  					<iframe id="list" src="Javascript标题样式.html"></iframe>
-  				</div>
-  				<div class=" col-lg-9">
-  					<iframe id="content" name="myiframe" src="ClassName.html"></iframe>
+  				<div class="col-lg-12">
+  	  				<div class="col-lg-3">
+  						<iframe id="list" src="Javascript标题样式.html"></iframe>
+  					</div>
+  					<div class=" col-lg-9">
+  						<iframe id="content" name="myiframe" src="ClassName.html"></iframe>
+  					</div>				
   				</div>
   			</div>
   		</div>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>百度登陆loading</title>
+		<style>
+     	   .box{ width:100px; position:relative; margin-left:100px;}
+      	   .d1,.d2,.d3{ position:absolute;height: 15px; width: 15px; border-radius: 100%;display: inline-block;}
+     	    @keyframes d1 {
+        	    from{ left:0px;}
+     	        to{ left:100px;}
+      		}
+       		@keyframes d2 {
+       			from{ right: 0px;}
+            	to{ right: 100px;}
+     	    }
+     	    .d1{background:red; animation: 1s d1 infinite;}
+     	    .d2{background:blue; animation: 1s d2 infinite;}
+      		.d3{background:yellow; left:42px;}	
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="d1"></div>
+			<div class="d2"></div>
+			<div class="d3"></div>
+		</div><br />
+		<h3>利用animation实现百度登陆界面等待效果</h3>
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../img/CSS3/百度登陆loading.jpg" />
+		</div>	  		
+	</body>
+</html>

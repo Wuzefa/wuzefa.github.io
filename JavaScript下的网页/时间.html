@@ -3,27 +3,45 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<script>
-			var today = new Date();
-			var weekend =["星期日","星期一","星期二","星期三","星期四","星期五","星期六",]
-			var my1 = today.getDate(); //日
-			var my2 = today.getFullYear(); //年
-			var my3 = today.getMonth();
-			var my4 = today.getHours();
-			var my5 = today.getMinutes();
-			var my6 = today.getSeconds();
-			document.write("现在是："+my2+"年"+my3+"月"+my1+"日"+my4+"："+my5+"："+my6);
-			document.write(weekend[today.getDay()]+"<br />");//星期
-			document.write("当前时间是:"+today+"<br />");
-			today.setTime(today.getTime()+1000*60*60);
-			document.write("一个小时候的时间是:"+today);
+		<script type="text/javascript" charset="utf-8">	
+		    //时钟
+			var int=setInterval(clock,1000)
+			function clock(){
+				var today = new Date();	
+				var weekend =["星期日","星期一","星期二","星期三","星期四","星期五","星期六",]
+				var my1 = today.getDate(); //日
+				var my2 = today.getFullYear(); //年
+				var my3 = today.getMonth();
+				var my4 = today.getHours();
+				var my5 = today.getMinutes();
+				var my6 = today.getSeconds();
+				var show = my2+"年"+my3+"月"+my1+"日"+my4+":"+my5+":"+my6;
+				document.getElementById("clock").value=show;
+			}		
+			//定时器
+			var num =0,i;
+			function numCount(){
+				document.getElementById("txt").value=num;
+				num++;
+				i= setTimeout("numCount()",1000);
+			}
 		</script>
 	</head>
 	<body>
-		<h3>关于输出时间的案例</h3>
+		<form>
+			<input type="text" id="clock" size="17" style="color: tan; border: none;outline: none;" />
+			<input type="button" value="Stop" onclick="clearInterval(int)" />
+		</form>
+		<form>
+			<input type="text" id="txt" size="17" style="color: tan; border: none;outline: none; text-align: center;"/>
+			<input type="button" value="Start" onclick="numCount()" />	
+			<input type="button" value="Stop" onclick="clearTimeout(i)"  />
+		</form>	
+		<h3>关于输出时间与计时器的案例</h3>
 		<div>
 			<h2>实现代码如下:</h2>
-			<img src="../img/JavaScript/输出时间.jpg" />
+			<img src="../img/JavaScript/输出时间和计时器.jpg" />
+			
 		</div>			
 	</body>
 </html>

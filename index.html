@@ -10,6 +10,9 @@
     		.container{
     			margin-top: 2px;
     		}
+    		.title-time{
+    			border: none;outline: none;background:#222222;font-size: 12px;
+    		}
     		.span_01{
     			color: white;text-decoration: none;
     		}
@@ -34,7 +37,7 @@
     				<div class="navbar-header">
     					<a href="#" class="navbar-brand">
     						<img src="img/sy.png" width="20px" />
-    					</a>
+    					</a> 					
     					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
     						<span class="icon-bar"></span>
     						<span class="icon-bar"></span>
@@ -56,10 +59,10 @@
     						</li>	
     						<li><a href="#">Alex</a></li>
     						<li><a href="#">About me</a></li>
-    					</ul>
+    					</ul>     					
     					<form class="navbar-form navbar-right myform" action="">
     						<input type="text" class="form-control button_01"  placeholder="Please input content"/>
-    						<button class="btn btn-primary" onclick="submit1()">seaech</button>
+    						<button class="btn btn-primary" onclick="submit1()">search</button>
     					</form>
     				</div>
     			</div>
@@ -71,9 +74,9 @@
     		<div class="col-lg-12 ">
     			<div class="col-lg-6">
     				<ul class="nav nav-tabs">
-    					<li class="active"><a href="#one" data-toggle="tab">My Sport</a></li>
-    					<li><a href="#two" data-toggle="tab">Extract Excerpt</a></li>
-    					<li><a href="#three" data-toggle="tab">Informal Essay</a></li>
+    					<li class="active"><a href="#one" data-toggle="tab">Sport</a></li>
+    					<li><a href="#two" data-toggle="tab">Excerpt</a></li>
+    					<li><a href="#three" data-toggle="tab">Essay</a></li>
     				</ul>
     				<div class="tab-content">
     					<div class="tab-pane active fade in" id="one">
@@ -202,6 +205,8 @@
     					</div>
     				</div>		
     			</div>
+    		</div>   		
+    		<div class="col-lg-12">
     			<div class="text-center">
     				<ul class="pagination">
     					<li><a href="#">&laquo;</a></li>
@@ -212,8 +217,9 @@
     					<li><a href="#">5</a></li>
     					<li><a href="#">&raquo;</a></li>
     				</ul>
-    			</div>
+    			</div>    			
     		</div>
+    		
     	</div>
     </div>    			
  	</body>
@@ -224,5 +230,6 @@
     		function submit1(){
     			alert("暂时不支持此功能~");
     		}
+			var int=setInterval(clock,1000)		
     	</script>
 </html>
