@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>My First</title>
+		<style>
+			#clickme{
+				font-family: "微软雅黑";font-size: 30px;margin-left: 200px;width: 150px;
+			}
+			#wade{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="clickme">移到此处</div>
+		<div id="wade">
+			<img src="../img/文字配图/韦德1.jpg" />
+		</div>
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../img/JQuery/图片淡出.jpg" />
+		</div>				
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#clickme").hover(function(){
+					$("img").fadeIn(1000);
+					$("#wade").slideToggle("slow");
+				});
+			});
+		</script>
+	</body>
+</html>

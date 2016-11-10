@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CSS滑动门选项卡</title>
+    <style>
+    	body a{
+    		text-decoration: none;
+    	}
+        ul li{ list-style:none;}
+        .slide{position:relative;}
+        .slide > li{ float: left; }
+        .slide >li >a{ display: inline-block; width:60px; height:20px; background:darkorange;
+         text-align: center; }
+        .cont{ width:300px; padding-top:10px; height:200px; background-color:#f7f7f7; position:absolute; 
+        left:20px;top:20px; display: none;}
+        .slide >li:hover .cont{ display: block; overflow: hidden;}
+        .clear{
+        	clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    	<h3 style="margin-left: 50px;">简单的滑动门</h3>
+        <ul class="slide">
+            <li>
+                <a href="#">第一页</a>
+                <ul class="cont" style="display:block;">
+                    <li><a href="#">第一部分 hello</a></li>
+                    <li><a href="#">第一部分 hello</a></li>
+                    <li><a href="#">第一部分 hello</a></li>
+                    <li><a href="#">第一部分 hello</a></li>
+                    <li><a href="#">第一部分 hello</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">第二页</a>
+                <ul class="cont">
+                    <li><a href="#">第二部分 world</a></li>
+                    <li><a href="#">第二部分 world</a></li>
+                    <li><a href="#">第二部分 world</a></li>
+                    <li><a href="#">第二部分 world</a></li>
+                    <li><a href="#">第二部分 world</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">第三页</a>
+                <ul class="cont">
+                    <li><a href="#">第三部分 !!!</a></li>                	            	
+                    <li><a href="#">第三部分 !!!</a></li>                	            	
+                    <li><a href="#">第三部分 !!!</a></li>                	            	
+                    <li><a href="#">第三部分 !!!</a></li>                	            	
+                    <li><a href="#">第三部分 !!!</a></li>                	            	
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+	<div style="margin-top: 230px;">
+		<h2>实现代码如下:</h2>
+		<img src="../img/CSS3/CSS滑动门选卡.jpg" />
+	</div>	    
+</body>
+</html>

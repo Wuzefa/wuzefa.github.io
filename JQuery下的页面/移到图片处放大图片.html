@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>移到图片处，放大图片</title>
+		<style>
+			#clickme{
+				font-family: "微软雅黑";font-size: 30px;margin-left: 130px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="clickme">移到图片处，放大图片</div>
+		<div id="wade">
+			<img class="a_img" src="../img/个人简历/韦德2.jpg" />
+		</div>
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../img/JQuery/移到图片处，放大图片.jpg"/>
+		</div>			
+		
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			 	var w = $(".a_img").width();
+			 	var h = $(".a_img").height();
+			 	var w2 = w +30;
+			 	var h2 = h +30;
+			 	
+			 	$(".a_img").hover(function(){
+			 		$(this).stop().animate({
+			 			height:h2,width:w2
+			 		},500);
+			 	},function(){
+			 		$(this).stop().animate({
+			 			height:h,width:w
+			 		},500);
+			 	});
+			});
+		</script>
+	</body>
+</html>

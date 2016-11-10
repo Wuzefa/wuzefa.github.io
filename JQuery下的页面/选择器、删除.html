@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JQuery选择器用法</title>
+		<style>
+			.box{
+				width: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<h2>点击下列图片，生成问候，并移除图片</h2>
+		</div>
+		<div id="main">
+			<img class="box" src="../img/哈尔滨/1-8.jpg" />
+		</div>
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../img/JQuery/选择器、添加删除.jpg"/>
+		</div>			
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js" ></script>
+		<script>
+			$(document).ready(function(){
+				$(".box").click(function(){
+					$(".box").remove();
+					var hello ="你好，哈尔滨！";
+					alert(hello);
+					$(this).append(num_01);
+				});
+			});
+		</script>
+	</body>
+</html>
