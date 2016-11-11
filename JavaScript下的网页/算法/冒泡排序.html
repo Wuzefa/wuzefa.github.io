@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h3>有一组数组a[10,15,11,5,4,8,2,7,1],将其从小到大排序</h3>
+		<h4>原理：冒泡排序比较任何两个相邻的项，如果第一个比第二个大，则交换它们。</h4>
+		<button type="button" onclick="bubbleSort()">利用冒泡排序</button>
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../../img/JavaScript/算法/冒泡排序.jpg" />
+		</div>		
+	</body>
+	<script>
+        var a = [10, 15, 11, 5, 4, 8, 2, 7, 1];
+        /*冒泡排序*/
+        function bubbleSort() {
+            for (var i=0;i<a.length;i++) {		//进行length轮比较
+                for (var j=0;j<a.length-1-i;j++) { //每一轮进行length-i-i次不重复比较
+                    if (a[j]>a[j+1]) { //交换
+                        var temp = a[j];
+                        a[j] = a[j+1];
+                        a[j+1] = temp;
+                    }
+                }
+            }
+            alert("冒泡法排序后的数组从小到大顺序是:"+a);
+        };		
+	</script>
+</html>

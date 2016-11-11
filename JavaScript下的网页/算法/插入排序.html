@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h3>有一组数组a[10,15,11,5,4,8,2,7,1],将其从小到大排序</h3>
+		<h4>原理：假定第一项已经排序了，接着，它和第二项进行比较，第二项应该待在原位还是插到第一项之前呢？</h4>
+		<h4>这样，头两项就已正确排序，接着和第三项比较，以此类推。</h4>
+		<button type="button" onclick="insertionSort()">利用插入排序</button>
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../../img/JavaScript/算法/插入排序.jpg" />
+		</div>		
+	</body>
+	<script>
+        var a = [10, 15, 11, 5, 4, 8, 2, 7, 1];
+        /*插入排序*/
+        function insertionSort() {
+			var j,temp;
+			for(var i=1;i<a.length;i++){ //从第二个位置开始索引，i作为辅助变量，为了
+				j = i;
+				temp =a[i]; //辅助变量存储于临时变量中
+				while(j>0&&a[j-1]>temp){ //j>0（因为第一个索引是0，没有负值索引）
+					a[j]=a[j-1]; //若数组前面的值比较大，就把要插入的值移到当前位置
+					j--; //减小j值直至插到正确位置
+				}
+				a[j]=temp;
+			}
+            alert("插入排序后的数组从小到大顺序是:"+a);
+        };
+	</script>
+</html>

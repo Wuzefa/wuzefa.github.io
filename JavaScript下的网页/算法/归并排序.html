@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h3>有一组数组a[10,15,11,5,4,8,2,7,1],将其从小到大排序</h3>
+		<h4>归并排序是一种分治算法。其思想是将原始数组切分成较小的数组，直到每个小数组只有一个位置</h4>
+		<h4>接着将小数组归并成较大的数组，直到最后只有一个排序完毕的大数组</h4>
+		<button type="button" onclick="mergeSort()">利用归并进行排序</button>
+		<div>
+			<h2>实现代码如下:</h2>
+			<img src="../../img/JavaScript/算法/归并排序.jpg" />
+		</div>		
+	</body>
+	<script>
+        var a = [10, 15, 11, 5, 4, 8, 2, 7, 1];				
+		function mergeSort(){
+			a = mergeSortRec(a);
+			alert("归并排序后的数组从小到大顺序是:"+a);					
+		}	
+		var mergeSortRec =function(a) {
+			var length = a.length;
+			if(length===1){	//直到只有一个项
+				return a; 
+			}
+			var mid = Math.floor(length/2),
+				left =a.slice(0,mid), //由索引0至中间索引的元素组成
+				right =a.slice(mid,length); //由中间索引至原始数组的最后一个位置的元素组成
+				return merge(mergeSortRec(left),mergeSortRec(right));//合并小数组产生大数组，并不断将原始数组分成小数组
+        };
+		
+		var merge = function(left,right){
+			var result =[]; //新数组
+			var il=0,ir=0;  //迭代两个数组所需的两个变量(left,right数组)
+			
+			while(il< left.length && ir < right.length){ 
+				if(left[il] < right[ir]){   //左是否比右小
+					result.push(left[il++]);   //是，将该项从left数组添加至归并结果数组，并递增迭代数组的控制变量
+				}else{
+					result.push(right[ir++]); //否，从right数组添加项并递增相应的迭代数组的控制变量
+				}
+			}
+			while(il < left.length){  //将left或right数组所有剩余项添加到归并数组中。
+				result.push(left[il++]);
+			}
+			while(ir < right.length){
+				result.push(right[ir++]);
+			}
+			return result;			//归并数组作为结果返回
+			};		
+	</script>	
+</html>
