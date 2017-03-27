@@ -161,7 +161,7 @@ $(function(){
 //顶部标题文字切换
 	$("#header_p").mouseover(function(){
 		$("#header_p1").html("LOVE");
-		$("#header_p2").html("前端工程师");
+		$("#header_p2").html("WEB");
 	}).mouseout(function(){
 		$("#header_p1").html("关于我");
 		$("#header_p2").html("个人简历");	
