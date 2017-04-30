@@ -178,7 +178,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">拷贝、移动或更名、删除</h1>
+                    <h1 class="page-header">打包与压缩、解压缩</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>		
@@ -187,20 +187,20 @@
             		<div class="thumbnail media-lib-item">
             			<img src="../../img/Linux/Linux.jpg" />
             		</div>
-            		<h3>格式：cp [选项] 源文件或目录目标文件或目录</h3>
+            		<h3>格式：tar [选项] 目录或文件</h3>
             		<p> 范例： </p>
-            		<p>1. cp /home/test /tmp/ 将 /home目录下的test文件copy到/tmp目录下/p>
-            		<p>2. cp <font style="color: red;">-r</font> /home/dir1 /tmp/ 将 /home目录下的dir1目录copy到/tmp目录下</p>   
+            		<p>1.tar cvf tmp.tar /home/tmp</p>
+            		<p>将/home/tmp目录下的所有文件和目录<font style="color: red;">打包</font>成一个 tmp.tar文件</p> 
+            		<p>2.tar xvf tmp.tar</p>
+            		<p>将打包文件tmp.tar在当前目录下解开</p> 
+            		<p>3.tar cvzf tmp.tar.gz /home/tmp</p>
+            		<p>将/home/tmp目录下的所有文件和目录<font style="color: red;">打包并压缩</font>成一个tmp.tar.gz文件</p> 
+            		<p>4.tar xvzf tmp.tar.gz</p>
+            		<p>将打包压缩文件tmp.tar.gz在当前目录下解开</p>   
             		
-            		<h3>格式：mv [选项] 源文件或目录目标文件或目录</h3>
+            		<h3>格式：unzip [选项] 压缩文件名.zip</h3>
             		<p> 范例： </p>
-            		<p> 1. mv /home/test /home/test1 将 /home目录下的test文件更名为test1  </p>
-            		<p> 2.mv /home/dir1 /tmp/ 将 /home目录下dir1目录移动（剪切）到/tmp目录下</p>   
-            		
-            		<h3>格式：rm [选项] 文件或目录 </h3>
-            		<p> 范例： </p>
-            		<p>1. rm /home/test 删除/home目录下的test文件 </p>
-            		<p>2.rm –r /home/dir 删除/home目录下的dir目录</p>              		
+            		<p>1.unzip tmp.zip 解压tmp.zip文件</p>         		
             	</div>
             	<div class="col-lg-6">
 				

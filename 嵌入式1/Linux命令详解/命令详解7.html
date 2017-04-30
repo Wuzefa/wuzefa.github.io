@@ -178,7 +178,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">拷贝、移动或更名、删除</h1>
+                    <h1 class="page-header">添加、修改、切换用户</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>		
@@ -187,20 +187,28 @@
             		<div class="thumbnail media-lib-item">
             			<img src="../../img/Linux/Linux.jpg" />
             		</div>
-            		<h3>格式：cp [选项] 源文件或目录目标文件或目录</h3>
+            		<h3>格式：ifconfig  [选项] [网络接口] </h3>
             		<p> 范例： </p>
-            		<p>1. cp /home/test /tmp/ 将 /home目录下的test文件copy到/tmp目录下/p>
-            		<p>2. cp <font style="color: red;">-r</font> /home/dir1 /tmp/ 将 /home目录下的dir1目录copy到/tmp目录下</p>   
+            		<p> 1. ifconfig eth0 192.168.0.1 </p>
+            		<p> 配置eth0这一网卡的ip地址为192.168.0.1 </p>  
+            		<p> 2. ifconfig eth0 down  </p>
+            		<p> 暂停eth0这一网卡的工作 </p>  
+            		<p> 3. ifconfig eth0 up  </p>
+            		<p> 恢复eth0这一网卡的工作 </p>  
             		
-            		<h3>格式：mv [选项] 源文件或目录目标文件或目录</h3>
+            		<h3>格式：netstat  [选项]</h3>
             		<p> 范例： </p>
-            		<p> 1. mv /home/test /home/test1 将 /home目录下的test文件更名为test1  </p>
-            		<p> 2.mv /home/dir1 /tmp/ 将 /home目录下dir1目录移动（剪切）到/tmp目录下</p>   
+            		<p> 1. netstat -a   </p>
+            		<p> 查看系统中所有的网络监听端口。</p>   
             		
-            		<h3>格式：rm [选项] 文件或目录 </h3>
+            		<h3>格式：rpm  [选项] [安装文件] </h3>
             		<p> 范例： </p>
-            		<p>1. rm /home/test 删除/home目录下的test文件 </p>
-            		<p>2.rm –r /home/dir 删除/home目录下的dir目录</p>              		
+            		<p> 1. rpm -ivh tftp.rpm</p>
+            		<p> 安装名字为tftp的文件 </p>  
+            		<p> 2. rpm –qa  </p>
+            		<p> 列出所有已安装rpm包   </p>
+            		<p> 3. rpm –e name </p>  
+            		<p> 卸载名字为name的rpm包 </p>           		
             	</div>
             	<div class="col-lg-6">
 				

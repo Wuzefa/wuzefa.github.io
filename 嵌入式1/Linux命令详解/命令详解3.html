@@ -178,7 +178,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">拷贝、移动或更名、删除</h1>
+                    <h1 class="page-header">创建目录、改变工作目录、查看当前路径</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>		
@@ -187,20 +187,25 @@
             		<div class="thumbnail media-lib-item">
             			<img src="../../img/Linux/Linux.jpg" />
             		</div>
-            		<h3>格式：cp [选项] 源文件或目录目标文件或目录</h3>
+            		<h3>格式：mkdir [选项] 目录名</h3>
             		<p> 范例： </p>
-            		<p>1. cp /home/test /tmp/ 将 /home目录下的test文件copy到/tmp目录下/p>
-            		<p>2. cp <font style="color: red;">-r</font> /home/dir1 /tmp/ 将 /home目录下的dir1目录copy到/tmp目录下</p>   
+            		<p>1.	mkdir /home/workdir 在/home目录下创建workdir目录</p>
+            		<p>2.	mkdir <font style="color: red;">-p</font> /home/dir1/dir2 创建/home/dir1/dir2目录，如果dir1不存在，先创建dir1</p>   
             		
-            		<h3>格式：mv [选项] 源文件或目录目标文件或目录</h3>
+            		<h3>格式：cd 目录名 </h3>
             		<p> 范例： </p>
-            		<p> 1. mv /home/test /home/test1 将 /home目录下的test文件更名为test1  </p>
-            		<p> 2.mv /home/dir1 /tmp/ 将 /home目录下dir1目录移动（剪切）到/tmp目录下</p>   
+            		<p>1. cd /home/ 进入/home目录</p>
             		
-            		<h3>格式：rm [选项] 文件或目录 </h3>
+            		<h3>格式：ls [选项] [目录或文件]</h3>
             		<p> 范例： </p>
-            		<p>1. rm /home/test 删除/home目录下的test文件 </p>
-            		<p>2.rm –r /home/dir 删除/home目录下的dir目录</p>              		
+            		<p>1. ls /home 显示/home目录下的文件与目录（不包含隐藏文件）</p>
+            		<p>2. ls –a /home 显示/home目录下的<font style="color: red;">所有</font>文件与目录（包含隐藏文件）</p>
+            		<p>3. ls –l /home 显示/home目录下的文件与目录的<font style="color: red;">详细信息</font></p>
+            		<p>4. ls –c /home 显示/home目录下的文件与目录,按修改时间排</p>
+            		
+            		<h3>格式：pwd  </h3>
+            		<p> 范例： </p>
+            		<p>1.pwd 显示当前工作目录的绝对路径</p>            		
             	</div>
             	<div class="col-lg-6">
 				

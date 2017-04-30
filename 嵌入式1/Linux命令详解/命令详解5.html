@@ -178,7 +178,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">拷贝、移动或更名、删除</h1>
+                    <h1 class="page-header">访问权限、改变访问权限</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>		
@@ -187,20 +187,31 @@
             		<div class="thumbnail media-lib-item">
             			<img src="../../img/Linux/Linux.jpg" />
             		</div>
-            		<h3>格式：cp [选项] 源文件或目录目标文件或目录</h3>
-            		<p> 范例： </p>
-            		<p>1. cp /home/test /tmp/ 将 /home目录下的test文件copy到/tmp目录下/p>
-            		<p>2. cp <font style="color: red;">-r</font> /home/dir1 /tmp/ 将 /home目录下的dir1目录copy到/tmp目录下</p>   
+            		<h3>访问权限</h3>
+            		<p>系统中的<font style="color: red;">每个文件和目录都有访问许可权 限</font>，用它来确定<font style="color: red;">谁</font>可以通过<font style="color: red;">任何方式</font>
+            			对文 件和目录进行访问文件。或目录的访问权 限分为只读，只写和可执行三种。有三种
+限分为<font style="color: red;">只读，只写和可执行</font>三种。有三种 不同类型的用户可对文件或目录进行访问： <font style="color: red;">文件所有者，与所有者同组的用户、其他用户</font>。所有者一般是文件的创建者。 </p>
+            		<p>每一文件或目录的访问权限都有三组，每组用三位表示， 分别为文件所有者的读、写和执行权限；与所有者同组的 用户的读、写和执行权限；系统中其他用户的读、写和执 行权限。当用ls -l命令显示文件或目录的详细信息时，最左 边的一列为文件的访问权限。例如： $ ls -l sobsrc. tgz </p>
+            		<p>-rw-r--r-- 1 root root 483997 Ju1 l5 17:3l sobsrc. Tgz </p> 
+            		<p>注意这里共有10个位置。第一个字符指定了文件类型,如果第 一个字符是横线，表示是一个非目录的普通文件。如果是d， 表示是一个目录。r代表只读，w代表写，x代表可执行,横 线代表无该项权限。</p>
             		
-            		<h3>格式：mv [选项] 源文件或目录目标文件或目录</h3>
-            		<p> 范例： </p>
-            		<p> 1. mv /home/test /home/test1 将 /home目录下的test文件更名为test1  </p>
-            		<p> 2.mv /home/dir1 /tmp/ 将 /home目录下dir1目录移动（剪切）到/tmp目录下</p>   
-            		
-            		<h3>格式：rm [选项] 文件或目录 </h3>
-            		<p> 范例： </p>
-            		<p>1. rm /home/test 删除/home目录下的test文件 </p>
-            		<p>2.rm –r /home/dir 删除/home目录下的dir目录</p>              		
+            		<h3>格式：chmod [who] [+ | -| =] [mode] 文件名</h3>
+            		<p>参数： </p>
+            		<p>who: </p>      
+            		<p><font style="color: red;">u</font> 表示文件的所有者。 </p>
+            		<p><font style="color: red;">g</font> 表示与文件所有者同组的用户。</p>      
+            		<p><font style="color: red;">o</font> 表示“其他用户”。 </p>
+            		<p><font style="color: red;">a</font> 表示“所有用户”。它是系统默认值。 </p>      
+            		<p>mode: </p>
+            		<p>+ 添加某个权限 </p>  
+            		<p>- 取消某个权限 </p>
+            		<p>= 赋予给定权限</p>  
+            		<p>例：chmod g+w hello.c</p>
+            		<p><font style="color: red;">mode</font>所表示的权限可使用下述字母 (数字)的任意组合： </p>   
+            		<p>r 可读 (4)</p>
+            		<p>w 可写 (2)</p>         		
+            		<p>x 可执行 (1)</p>         		
+            		<p>例：chmod 761 hello.c</p>         		
             	</div>
             	<div class="col-lg-6">
 				
