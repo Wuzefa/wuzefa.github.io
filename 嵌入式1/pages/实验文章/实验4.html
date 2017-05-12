@@ -134,13 +134,22 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i>Linux应用实验<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="../实验文章/实验1.html">常用命令及vi, gdb的使用</a>
+                                    <a href="../实验文章/实验1.html">1.常用命令及vi, gdb的使用</a>
                                 </li>
                                 <li>
-                                    <a href="../实验文章/实验2.html">系统shell程序设计</a>
+                                    <a href="../实验文章/实验2.html">2.Linux系统shell程序设计</a>
                                 </li>
                                 <li>
-                                    <a href="../实验文章/实验3.html">系统GCC编译器的使用</a>
+                                    <a href="../实验文章/实验3.html">3.Linux系统GCC编译器的使用</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验4.html">4.GDB 调试工具的使用</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验5.html">5.Makefile 工程管理器 </a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验6.html">6.Linux系统标准I/O</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -187,16 +196,16 @@
 		<div id="page-wrapper">
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-12">
-                    <h2>实验二</h2>
+                    <h2>实验四</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="../主页/index.html">主页</a>
                         </li>
                         <li>
-                            <a href="实验1.html">上一页</a>
+                            <a href="实验3.html">上一页</a>
                         </li>
                         <li>
-                            <a href="实验3.html">下一页</a>
+                            <a href="实验5.html">下一页</a>
                         </li>
                     </ol>
                 </div>
@@ -209,102 +218,58 @@
                         <div class="ibox-content">
                             <div class="text-center article-title">
                                 <h1>
-                                    SHELL 编程  
+                                    GDB 调试工具的使用
                                 </h1>
                             <span class="text-muted"><i class="fa fa-clock-o"></i>2017.5.12</span>                                
                             </div>
-                            <h3>2.1 shell 程序设计 1 </h3>
                             <h3><strong>【实验内容】 </strong></h3>
                             <p>
-                             	使用 test 测试编写的 unload 程序，达到文件卸载的功能。 
+                             	将原来有错的程序经过 gdb 调试，找出问题所在，并修改源代码，输出正确的倒序显示字符串的结果。  
                             </p>
                             <h3><strong>【实验目的】 </strong></h3>
                             <p>
-                             	熟练掌握 shell 脚本的编写方法和技巧 
+                             	通过调试一个有问题的程序，使读者进一步熟练使用 vi 操作，熟练使用 gcc 编译命令及 gdb 的调是命 令，通过对有问题程序的跟踪调试，进一步提高发现问题和解决问题的能力。这是一个很小的程序，只有 35 行，希望读者认真调试。用 Gdb 调试有问题的程序  
                             </p>
+                            <h3><strong>【实验平台】 </strong></h3>
                             <p>
-                             	熟练掌握判断语句的使用 
+                             	带有 Linux 操作系统的 PC 机。  
                             </p>
-                            <h3><strong>【实验平台】  </strong></h3>
-                            <p>PC 机，Ubuntu 操作系统，gcc 等工具  </p>
-                            <h3><strong>【实验步骤】</strong></h3>
-                            <p>1、 编写 shell 脚本完成相应功能 </p>
-                            <p>2、 参考代码如下： </p>						
-                            <p><img src="../../img/实验源码/实验2/shell源码1.jpg" /></p>
-                            <p><img src="../../img/实验源码/实验2/shell源码2.jpg" /></p>
-                            <p>---------------------------------------------------------------------- </p>
-                            <p>3、 修改文件属性为其添加可执行权限 </p>
-                            <p>chmod 777 unload.sh</p>
-                            <p>----------------------------------------------------------------------  </p>
-                            <p>4、 查看 test  </p>
-                            <p>ls test</p>
-                            <p>a.out  auto  make  Makefile  malloc.c  test  test.bak  test.c  unload.sh </p>
-                            <p>5、 执行脚本文件 </p>
-                            <p>./unload.sh test </p>
-                            <p>6、 结果： </p>
-                            <p>ls </p>
-                            <p>结果目录中没有文件</p>
-                            
-                            <h3>2.2 shell 程序设计 2</h3>
-                            <h3><strong>【实验内容】 </strong></h3>
-                            <p>
-                             	编写脚本查看当前目录下文件属性（是普通文件还是目录）。  
-                            </p>
-                            <h3><strong>【实验目的】 </strong></h3>
-                            <p>
-                             	熟练掌握 shell 脚本的编写方法和技巧 
-                            </p>
-                            <p>
-                             	熟悉 for 语句和判断语句 if…else…  
-                            </p>
-                            <h3><strong>【实验平台】  </strong></h3>
-                            <p>PC 机，Ubuntu 操作系统，gcc 等工具  </p>
-                            <h3><strong>【实验步骤】</strong></h3>
-                            <p>1、 编写 shell 脚本完成相应功能 </p>
-                            <p>2、 参考代码如下： </p>
-                            <p><img src="../../img/实验源码/实验2/shell源码3.jpg" /></p>
-                            <p>----------------------------------------------------------------------</p>                            
-                            <p>3、 修改文件属性为其添加可执行权限 </p>
-                            <p>chmod 777 file_or_dir.sh</p>
-                            <p>4、 执行脚本文件 </p>
-                            <p>./file_or_dir.sh test </p>
-                            <p>5、 结果：</p>
-                            <p><img src="../../img/实验源码/实验2/shell源码补.jpg" /> </p>
-                            
-                            <h3>2.3 shell 程序设计 3</h3>
-                            <h3><strong>【实验内容】 </strong></h3>
-                            <p>
-                             	条件语句实例，实现文件的备份、恢复和卸载功能。 
-                            </p>
-                            <h3><strong>【实验目的】 </strong></h3>
-                            <p>
-                             	熟练掌握 shell 脚本的编写方法和技巧 
-                            </p>
-                            <h3><strong>【实验平台】  </strong></h3>
-                            <p>PC 机，Ubuntu 操作系统，gcc 等工具  </p>
-                            <h3><strong>【实验步骤】</strong></h3>
-                            <p>1、 编写 shell 脚本完成相应功能 </p>
-                            <p>2、 参考代码如下： </p>						
-                            <p><img src="../../img/实验源码/实验2/shell源码4.jpg" /></p>
-                            <p><img src="../../img/实验源码/实验2/shell源码5.jpg" /></p>
-                            <p><img src="../../img/实验源码/实验2/shell源码6.jpg" /></p>
-                            <p>---------------------------------------------------------------------- </p>
-                            <p>3、 执行脚本文件 </p>
-                            <p>./case_and_if.sh </p>                
-                            <p>4、 结果： </p>
-                            <p><img src="../../img/实验源码/实验2/shell源码7.jpg" /></p> 
-      						
+                            <h3><strong>【实验步骤】 </strong></h3>
+                            <p>1、 使用 vi 编辑器，将以下代码输入到名为 greet.c 的文件中。此代码的原意为输出倒序输出 main 函数中定义的字符串，但结果显示没有输出。</p>					
+                            <p><img src="../../img/实验源码/实验4/gdb源码1.jpg" /></p>  
+                            <p><img src="../../img/实验源码/实验4/gdb源码2.jpg" /></p>  
+                            <p>2、使用 gcc 编译这段代码，gcc –g greet.c –o greet，注意要加上‘-g’选项以方便之后的调试。 </p>
+                            <p>3、运行生成的可执行文件./greet，观察运行结果。 </p>                
+                            <p>4、使用 gdb 调试程序，通过设置断点、单步跟踪，一步步找出错误所在。</p>    
+                            <p>5、纠正错误，更改源程序并得到正确的结果。 </p>  
+                            <p><img src="../../img/实验源码/实验4/gdb源码3.jpg" /></p>                              
+                            <p>6、启动 gdb 调试：gdb greet</p>    
+                            <p>7、查看源代码，使用命令‘l’</p>
+                            <p>8、在 30 行（for 循环处）设置断点，使用命令‘b 30’</p>                
+                            <p>9、在 33 行（printf 函数处）设置断点，使用命令‘b 33’</p>    
+                            <p>10、查看断点设置情况，使用命令‘info b’</p>                
+                            <p>11、运行代码，使用命令‘r’</p>                            
+                            <p>12、单步运行代码，使用命令‘n’</p>   
+                            <p>13、查看暂停点变量值，使用命令‘p string2[size - i]’</p>    
+                            <p>14、继续单步运行代码数次，并使用命令查看，发现 string2[size-1]的值正确。</p>
+                            <p>15、继续程序的运行，使用命令‘c’</p>                
+                            <p>16、程序在 printf 前停止运行，此时依次查看 string2[0]、string2[1]…,发现 string[0]没有被正确赋值，而后面的复制都是正确的，这时，定位程序第 31 行，发现程序运行结果错误的原因在于‘size-i’。由于 i只能增到‘size-i’，这样 string2[0]就永远不能被赋值而保持 NULL，故输不出任何结果。 </p>    
+                            <p>17、退出 gdb，使用命令 q</p>                
+                            <p>18、重新编辑 greet.c，把其中的“string2[size - i] = string1[i]”改为“string2[size – i - 1] = string1[i];”即可 </p>                            
+                            <p>19、使用 gcc 重新编译：gcc –g greet.c –o greet </p>                            
+                            <p>20、查看运行结果：./greet，得到结果正确 </p>        
+                            <p><img src="../../img/实验源码/实验4/gdb源码4.jpg" /></p>                                
                             <hr>
                             <div class="row">
                                 <div class="col-md-6">
                                         <h5>Tags:</h5>
-                                        <button class="btn btn-primary btn-xs" type="button">shell</button>
+                                        <button class="btn btn-white btn-xs" type="button">GDB</button>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="small text-right">
                                         <h5>Stats:</h5>
-                                        <div> <i class="fa fa-comments-o"> </i> 5 comments </div>
-                                        <i class="fa fa-eye"> </i> 65 views
+                                        <div> <i class="fa fa-comments-o"> </i> 36 comments </div>
+                                        <i class="fa fa-eye"> </i> 16 views
                                     </div>
                                 </div>
                             </div>
