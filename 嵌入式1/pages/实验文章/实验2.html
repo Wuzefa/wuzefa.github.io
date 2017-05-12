@@ -207,43 +207,147 @@
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="ibox">
                         <div class="ibox-content">
-                            <div class="pull-right">
-                                <button class="btn btn-white btn-xs" type="button">Model</button>
-                                <button class="btn btn-white btn-xs" type="button">Publishing</button>
-                                <button class="btn btn-white btn-xs" type="button">Modern</button>
-                            </div>
                             <div class="text-center article-title">
-                            <span class="text-muted"><i class="fa fa-clock-o"></i> 28th Oct 2015</span>
                                 <h1>
-                                    Behind the word mountains
+                                    Linux 常用命令和 vi, GDB 的使用 
                                 </h1>
+                            <span class="text-muted"><i class="fa fa-clock-o"></i>2017.5.12</span>                                
                             </div>
+                            <h3><strong>【实验内容】 </strong></h3>
                             <p>
-                                Many desktop publishing packages and web page editors now use <strong>Lorem Ipsum as their default model text</strong>, and a search for 'lorem ipsum' will uncover many web
+                             	本课程要求学员对 Linux 基本操作命令有一定了解和掌握。下面列出的一些常用命令作为参考。最好针对每一个都能亲自练习、掌握。 
                             </p>
+                            <h3><strong>【实验平台】 </strong></h3>
                             <p>
-                                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops
+                             	PC 机，Ubuntu 操作系统 
                             </p>
-                            <p>
-                                <i>
-                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                                </i>
-                            </p>
-                            <p>
-                                The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek,
-                            </p>
-                            <p>
-                                Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just
-                            </p>
-                            <p>
-                                Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex.
-                            </p>
+                            <h3><strong>【实验步骤】 </strong></h3>
+                            <p>1．ls 命令 </p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>ls    以默认方式显示当前目录文件列表 </p>
+                            <p>ls  –a   显示所有文件包括隐藏文件 </p>
+                            <p>ls  –l   显示文件属性，包括大小，日期，符号连接，是否可读写及是否可执行 </p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>2.cd 命令  </p>
+                            <p>ls  –a   显示所有文件包括隐藏文件 </p>
+                            <p>ls  –l   显示文件属性，包括大小，日期，符号连接，是否可读写及是否可执行 </p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>3．rm 命令 </p>
+                            <p>rm  file   删除某一个文件 </p>
+                            <p>rm  -rf  dir  删除当前目录下叫 dir 的整个目录 </p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>4.cp 命令 </p>
+                            <p>cp  source  target     将文件 source 复制为 target</p>
+                            <p>cp  –av  soure_dir  target_dir   将整个目录复制，两目录完全一样 </p>
+                            <p>cp  –fr  source_dir  target_dir   将整个目录复制，并且是以非链接方式复制，当 source 目录带有 符号链接时，两个目录不相同 </p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>5.mv 命令 </p>
+                            <p>mv  source  target     将文件或者目录 source 更名为 target </p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>6.diff 命令</p>
+                            <p>diff  -ruN  dir1  dir2  >  <patch_file>      比较目录 1 与目录 2 中的文件 </p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>7.echo 命令 </p>
+                            <p>echo  message     显示一串字符 </p>
+                            <p>---------------------------------------------------------------------- </p>
+                            <p>8.cat 命令 </p>
+                            <p>cat  file      显示文件的内容，和 DOS 的 type 相同 </p>
+                            <p>cat  file | more     显示文件的内容并传输到 more 程序实现分页显示，使用命令 less file可实现相同的功能  </p>
+                            <p>more   分页命令，一般通过管道将内容传给它，如 ls | more </p>
+                            <p>---------------------------------------------------------------------- </p>
+                            <p>9.du 命令 </p>
+                            <p>du           计算当前目录的容量 </p>
+                            <p>du  -sm  /root    计算/root 目录的容量并以 M 为单位 </p>
+                            <p>---------------------------------------------------------------------- </p>
+                            <p>10.find 命令 </p>
+                            <p>find  -name  <path>  file  在/path 目录下查找看是否有文件 file </p>
+                            <p>---------------------------------------------------------------------- </p>
+                            <p>11.grep 命令  </p>
+                            <p>grep  -r  “chars”  ./  在当前目录的所有文件查找字串 chars  -r 表示递归查找子目录 </p>
+                            <p>----------------------------------------------------------------------  </p>
+                            <p>12.vi 的使用 </p>
+                            <p>vi  file     编辑文件 file</p>
+                            <p>vi 原基本使用及命令：   vi 分为编辑状态和命令状态。输入命令要先按 ESC，退出编辑状态， 然后输入命令。 </p>
+                            <p>常用命令有：</p>
+                            <p> :x(退出)</p>
+                            <p> :x!(退出不保存)</p>
+                            <p> :w(保存文件)</p>
+                            <p> :w!(不询问方式写入文件)</p>
+                            <p> :r file(读文件 file)</p>
+                            <p> :%s/oldchars/newchars/g(将所有字串 oldchars 换成 newchars)</p>
+                            <p> i 进入编辑插入状态 </p>
+                            <p> ESC 退出编辑状态 </p>
+                            <p>---------------------------------------------------------------------- </p>
+                            <p>13.man 命令 </p>
+                            <p>man  ls   读取关于 ls 命令的帮助</p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>14.启动关闭计算机命令</p>
+                            <p>reboot   重新启动计算机</p>
+                            <p>halt   关闭计算机</p>
+                            <p>init 0   关闭所有应用程序和服务，进入纯净的操作环境 </p>
+                            <p>init 1   重新启动应用及服务</p>
+                            <p>init 6   重新启动计算机</p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>15.tar 命令</p>
+                            <p>tar  -xfzv  file.tgz  将文件 file.tgz 解压 </p>
+                            <p>tar  -zcvf  file.tgz  <source>  将文件或目录<source>压缩为 file.tgz</p>
+                            <p>gzip  directory.tar 将覆盖原文件生成压缩的 directory.tar.gz </p>
+                            <p>gunzip  directory.tar.gz  覆盖原文件解压生成不压缩的 directory.tar</p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>16．dmesg,uname 命令</p>
+                            <p>dmesg   显示 kernle 启动及驱动装载信息</p>
+                            <p>uname  -a  显示操作系统的类型</p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>17.string 命令</p>
+                            <p>string  file  显示 file 文件中的 ASCII 字符内容 </p>
+                            <p>---------------------------------------------------------------------</p>
+                            <p>18．rpm 命令</p>
+                            <p>rpm  -ihv  program.rpm  安装程序 program 并显示安装进程</p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>19.文件目录管理命令</p>
+                            <p>su  root     切换到超级用户</p>
+                            <p>chmod  a+x  file   将 file 文件设置为可执行，脚本类文件一定要这样设置一个，否则得用 bash file 才能执行</p>
+                            <p>chmod  666  file   将文件 file 设置为可读写</p>
+                            <p>chown  user  /dir   将/dir 目录设置为 user 所有</p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>20．mknod  命令</p>
+                            <p>mknod  /dev/hda1  b  3  1  创建块设备 hda1，主设备号为 3，从设备号为 1，即 master 硬盘的的         第一个分区 </p>
+                            <p>mknod  /dev/tty1  c  4  1  创建字符设备 tty1,主设备号为 4，众设备号为 1，即第一个 tty 终端</p>
+                            <p>----------------------------------------------------------------------</p>                            
+                            <p>touch  /tmp/running  在/tmp 下创建一个临时文件 running，重新启动后消失 </p>
+                            <p>---------------------------------------------------------------------- </p>
+                            <p>21.磁盘管理的命令</p>
+                            <p>fdisk  /dev/hda     就像执行了 dos 的 fdisk 一样</p>
+                            <p>mount  -t  ext2  /dev/hda1  /mnt  把/dev/hda1 装载到 /mnt 目录</p>
+                            <p>df        显示文件系统装载的相关信息</p>
+                            <p>mount  -t  nfs  192.168.1.1:/sharedir  /mnt 将 nfs 服务的共享目录 sharedir 加载到/mnt/nfs 目录</p>
+                            <p>umount  /mnt   将/mnt 目录卸载，/mnt 目录必须处于空闲状态</p>
+                            <p>sync     刷新缓冲区，使内容与磁盘同步</p>
+                            <p>mkfs.ext2  /dev/hda1  格式化/dev/hda1 为 ext2 格式 </p>
+                            <p>dd  if=/dev/zero  of=root.ram  bs=1024,count=1024  生成一个大小为 1M 的块设备，可以把它当作硬盘的一个分区来用</p>
+                            <p>---------------------------------------------------------------------- </p>
+                            <p>22．程序开发有关命令 </p>
+                            <p>gcc  hello.c  -o  hello    将 hello.c 编译成名为 hello 的二进制执行文件</p>
+                            <p>ldd  program      显示程序所使用了哪些库</p>
+                            <p>----------------------------------------------------------------------</p>
+                            <p>23．系统有关命令</p>
+                            <p>ps     显示当前系统进程信息</p>
+                            <p>ps –ef    显示系统所有进程信息</p>
+                            <p>kill -9 500   将进程编号为 500 的程序杀死</p>
+                            <p>top    显示系统进程的活动情况，按占 CPU 资源百分比来分</p>
+                            <p>free   显示系统内存及 swap 使用情况</p>
+                            <p>time  program  在 program 程序结束后，将计算出 program 运行所使用的时间 网络命令</p>
+                            <p>ifconfig  eth0  192.168.1.2  捆绑网卡 1 的 IP 地址为 192.168.1.2</p>
+                            <p> ----------------------------------------------------------------------</p>
+                            <p> 24、登录网络服务器</p>
+                            <p>telnet  192.168.1.1   登陆 IP 为 192.168.1.1 的 telnet 服务器</p>
+                            <p> ftp  192.168.1.1   登陆到 ftp 服务器</p>            						
                             <hr>
                             <div class="row">
                                 <div class="col-md-6">
                                         <h5>Tags:</h5>
-                                        <button class="btn btn-primary btn-xs" type="button">Model</button>
-                                        <button class="btn btn-white btn-xs" type="button">Publishing</button>
+                                        <button class="btn btn-primary btn-xs" type="button">vi</button>
+                                        <button class="btn btn-white btn-xs" type="button">DGB</button>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="small text-right">
