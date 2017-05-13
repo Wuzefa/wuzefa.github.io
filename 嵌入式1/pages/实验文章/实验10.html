@@ -208,16 +208,16 @@
 		<div id="page-wrapper">
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-12">
-                    <h2>实验六</h2>
+                    <h2>实验九</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="../主页/index.html">主页</a>
                         </li>
                         <li>
-                            <a href="实验5.html">上一页</a>
+                            <a href="实验8.html">上一页</a>
                         </li>
                         <li>
-                            <a href="实验7.html">下一页</a>
+                            <a href="实验10.html">下一页</a>
                         </li>
                     </ol>
                 </div>
@@ -228,116 +228,50 @@
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="ibox">
                         <div class="ibox-content">
+                        <div class="ibox-content">
                             <div class="text-center article-title">
                                 <h1>
-                                     Linux 系统标准 I/O
+                                    fork 等函数编写执行命令实验  
                                 </h1>
-                            <span class="text-muted"><i class="fa fa-clock-o"></i>2017.5.12</span>                                
+                            <span class="text-muted"><i class="fa fa-clock-o"></i>2017.5.13</span>                                
                             </div>
-                            <h3>6.1 标准 IO 实验（一）</h3>                            
+                            <h3><strong>【实验目的】 </strong></h3>
+                            <p>
+                             	本实验将通过编写 fork 和 exec 等系统调用的程序，加深对系统进程及其控制的了解。    
+                            </p>
+                            <h3><strong>【实验原理】</strong></h3>
+                            <p>
+                             	fork 后调用 exec 族函数来调用系统命令或者程序来实现系统 shell功能。   
+                            </p>
                             <h3><strong>【实验内容】 </strong></h3>
-                            <p>
-                             	本实验通过一个简单的程序计算默认缓冲区的大小，理解标准 I/O 提供的三种类型的缓存。 
-                            </p>
-                            <h3><strong>【实验目的】 </strong></h3>
-                            <p>
-                             	深入了解标准 IO 的三种类型，即全缓存，行缓存，不带缓存。   
-                            </p>
-                            <h3><strong>【实验平台】 </strong></h3>
-                            <p>
-                             	带有 Linux 操作系统的 PC 机。  
-                            </p>
-                            <h3><strong>【实验提示】 </strong></h3>
-                            <p>全缓冲：当填满 I/O 缓存后才进行实际的 I/O 操作；</p>    
-                            <p>行缓冲：当在输入和输出中遇到新换行符(‘\n’)时，进行 I/O 操作；</p>                            
-                            <p>不带缓冲：标准 I/O 库不对字符进行缓冲，例如 stderr；</p>                            
-                            <h3><strong>【实验步骤】 </strong></h3>
-                            <p>1、向缓冲区中输入字符 </p>					
-                            <p>2、当往缓冲区中写的字符数目超过缓冲区大小的时候，才执行输出。</p>					
-                            <p>3、可以手工计算出缓冲区大小（341*3+1=1024）</p>					
-                            <p>参考代码： </p>					
-                            <p><img src="../../img/实验源码/实验6/IO源码1.jpg" /></p>  
-                            <p><img src="../../img/实验源码/实验6/IO源码2.jpg" /></p>  
+                            <p>10.1 execv 函数族的使用</p>    
+                            <p>注意：调用 execv 后,程序不再返回！在上述代码基础上，在子进程的退出代码前加入如下代码：</p>                            				
+                            <p><img src="../../img/实验源码/实验10/fork源码1.jpg" /></p>  
+                            <p>编译运行后结果为：</p>
+                            <p><img src="../../img/实验源码/实验10/fork源码2.jpg" /></p>  
+                            <p>10.2 Waitpid</p>    
+                            <p>waitpid 的作用是等待子进程退出并回收其资源，同时可以通过 WIFEXITED 等宏调用可以检测子 进程退出的状态。在第一个示例 fork 使用的代码基础上进行修改，添加检测进程退出状态的子函数， 参考代码如下： </p>                            				
+                            <p><img src="../../img/实验源码/实验10/fork源码3.jpg" /></p>  
+                            <p>编译运行后结果为：</p>
+                            <p><img src="../../img/实验源码/实验10/fork源码4.jpg" /></p> 
+                            <p>在父进程处理 global 和 test 变量前加入如下代码： </p>
+                            <p><img src="../../img/实验源码/实验10/fork源码5.jpg" /></p>                             
+                            <p>编译运行后结果为：</p>
+                            <p><img src="../../img/实验源码/实验10/fork源码6.jpg" /></p>   
+                            <p>可以看出父进程回收了退出的子进程的资源，检测到了它的退出状态。</p>
                             
-                            <h3>6.2 标准 IO 实验（二）</h3>                            
-                            <h3><strong>【实验内容】 </strong></h3>
-                            <p>
-                             	本实验通过一个简单的 copy 程序，完成文件的复制程序，了解基本的标准 I/O 文件读写的基本步骤。 
-                            </p>
-                            <h3><strong>【实验目的】 </strong></h3>
-                            <p>
-                             	深入了解标准 IO 文件读写的基本原理。    
-                            </p>
-                            <p>1.学习如何判断文件是否结束 </p>    
-                            <p>2.熟练掌握标准 I/O 函数 </p>                             
-                            <h3><strong>【实验平台】 </strong></h3>
-                            <p>
-                             	带有 Linux 操作系统的 PC 机。  
-                            </p>
-                            <h3><strong>【实验提示】 </strong></h3>
-                            <p><img src="../../img/实验源码/实验6/IO源码3.jpg" /></p>                              
-                            <p>2、要拷贝一个文件，即要有源文件和目标文件，使用 fopen 分别打开两个文件，一个文件被读，一个 文件被写。完成文件的复制后须将这两个文件都关闭。 </p>    
-                            <p>参考代码：</p>
-                            <p><img src="../../img/实验源码/实验6/IO源码4.jpg" /></p>                                                       
-                            <h3><strong>【实验思考】 </strong></h3>
-                            <p>如果要将一个文件拷贝到两个文件中，怎么办？</p>					
-                            <p>提示： </p>					
-                            <p>用 fseek()或 rewind（）定位；</p>	
-                            
-                            <h3>6.3 标准 IO 实验（三） </h3>                            
-                            <h3><strong>【实验目的】 </strong></h3>
-                            <p>
-                             	通过本实验掌握标准 I/O 的使用    
-                            </p>
-                            <h3><strong>【实验内容】</strong></h3>
-                            <p>编程读写一个文件 test.txt，每隔 1 秒向文件中写入一行数据，类似这样 </p>                              				
-                            <p>1,  2007-7-30 15:16:42 </p>					
-                            <p>2,  2007-7-30 15:16:43 </p>	
-                            <p>该程序应该无限循环，直到按 Ctrl-C 中断程序。下次再启动程序写文件时可以追加到原文件之后，并 且序号能够接续上次的序号，比如： </p>					
-                            <p>1,  2007-7-30 15:16:42 </p>	
-                            <p>2,  2007-7-30 15:16:43 </p>					
-                            <p>3,  2007-7-30 15:19:02 </p>	
-                            <p>4,  2007-7-30 15:19:03 </p>					
-                            <p>5,  2007-7-30 15:19:04 </p>                           
-                            <h3><strong>【实验平台】 </strong></h3>
-                            <p>
-                             	带有 Linux 操作系统的 PC 机。  
-                            </p>
-                            <h3><strong>【实验提示】 </strong></h3>                            
-                            <p>要追加写入文件，同时要读取该文件的内容以决定下一个序号是几，应该用什么模式打开文件？</p>					
-                            <p>首先判断一下打开的文件是否为新文件，如果是新文件，就从序号 1 开始写入；如果不是新文件，则 统计原来有多少行，比如有 n 行，然后从序号 n+1 开始写入。以后每写一行就把行号加 1。 </p>	
-                            <p>获取当前的系统时间需要调用函数 time()，得到的结果是一个 time_t 类型，其实就是一个大整数， 其值表示从 UTC 时间 1970 年 1 月 1 日 00:00:00（称为 UNIX 的 Epoch 时间）到当前时刻的秒钟数。然 后调用 localtime()将 time_t 所表示的 UTC 时间转换为本地时间（我们是+8 区，比 UTC 多 8 个小时） 并转成 struct tm 类型，该类型的各数据成员分别表示年月日时分秒，请自己写出转换格式的代码， 不要使用 ctime()或 asctime()函数。具体用法请查阅 man page。time 和 localtime 函数需要头文件 time.h。 </p>					
-                            <p>调用 sleep(n)可使程序睡眠 n 秒，该函数需要头文件 unistd.h。</p>	
-                            
-                            <h3>6.4 标准 IO 实验（四） </h3>                            
-                            <h3><strong>【实验目的】 </strong></h3>
-                            <p>
-                             	通过本实验掌握标准 I/O 的使用    
-                            </p>
-                            <h3><strong>【实验内容】</strong></h3>
-                            <p>一个文件 test.txt，文件内容为： </p>                              				
-                            <p>1</p>					
-                            <p>2</p>	
-                            <p>3</p>					
-                            <p>4</p>	
-                            <p>5</p>					                    
-                            <h3><strong>【实验平台】 </strong></h3>
-                            <p>
-                             	PC 机、ubuntu 操作系统，gcc 等工具   
-                            </p>
-                            <h3><strong>【实验提示】 </strong></h3>  
-                            <p>把正确的内容写入一个临时文件，把临时文件重命名即可； </p>
                             
                             <hr>
                             <div class="row">
                                 <div class="col-md-6">
                                         <h5>Tags:</h5>
-                                        <button class="btn btn-white btn-xs" type="button">I/O</button>
+                                        <button class="btn btn-white btn-xs" type="button">fork</button>
+                                        <button class="btn btn-white btn-xs" type="button">exec</button>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="small text-right">
                                         <h5>Stats:</h5>
-                                        <div> <i class="fa fa-comments-o"> </i> 16 comments </div>
+                                        <div> <i class="fa fa-comments-o"> </i> 26 comments </div>
                                         <i class="fa fa-eye"> </i> 136 views
                                     </div>
                                 </div>

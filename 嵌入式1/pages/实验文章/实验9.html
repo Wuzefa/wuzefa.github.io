@@ -208,16 +208,16 @@
 		<div id="page-wrapper">
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-12">
-                    <h2>实验六</h2>
+                    <h2>实验九</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="../主页/index.html">主页</a>
                         </li>
                         <li>
-                            <a href="实验5.html">上一页</a>
+                            <a href="实验8.html">上一页</a>
                         </li>
                         <li>
-                            <a href="实验7.html">下一页</a>
+                            <a href="实验10.html">下一页</a>
                         </li>
                     </ol>
                 </div>
@@ -230,115 +230,95 @@
                         <div class="ibox-content">
                             <div class="text-center article-title">
                                 <h1>
-                                     Linux 系统标准 I/O
+                                    Linux 系统 fork 等系统调用实验 
                                 </h1>
-                            <span class="text-muted"><i class="fa fa-clock-o"></i>2017.5.12</span>                                
+                            <span class="text-muted"><i class="fa fa-clock-o"></i>2017.5.13</span>                                
                             </div>
-                            <h3>6.1 标准 IO 实验（一）</h3>                            
+                            <h3>9.1 使用 ps 命令查看进程信息 </h3>                            
                             <h3><strong>【实验内容】 </strong></h3>
                             <p>
-                             	本实验通过一个简单的程序计算默认缓冲区的大小，理解标准 I/O 提供的三种类型的缓存。 
+                             	ps是基本的 Linux命令，通过本实验，不仅要熟悉 ps 命令方法，更重要的是可以了解 Linux进程的组成。 
                             </p>
-                            <h3><strong>【实验目的】 </strong></h3>
+                            <h3><strong>【实验原理】</strong></h3>
                             <p>
-                             	深入了解标准 IO 的三种类型，即全缓存，行缓存，不带缓存。   
+                             	ps：查看系统中的进程，Linux 中可以使用 ps -aux 查看所有进程。其中 PID 代表进程 ID，TTY 是该 进程是由哪个控制台启动的，CMD 则是命令。    
                             </p>
-                            <h3><strong>【实验平台】 </strong></h3>
-                            <p>
-                             	带有 Linux 操作系统的 PC 机。  
-                            </p>
-                            <h3><strong>【实验提示】 </strong></h3>
-                            <p>全缓冲：当填满 I/O 缓存后才进行实际的 I/O 操作；</p>    
-                            <p>行缓冲：当在输入和输出中遇到新换行符(‘\n’)时，进行 I/O 操作；</p>                            
-                            <p>不带缓冲：标准 I/O 库不对字符进行缓冲，例如 stderr；</p>                            
-                            <h3><strong>【实验步骤】 </strong></h3>
-                            <p>1、向缓冲区中输入字符 </p>					
-                            <p>2、当往缓冲区中写的字符数目超过缓冲区大小的时候，才执行输出。</p>					
-                            <p>3、可以手工计算出缓冲区大小（341*3+1=1024）</p>					
-                            <p>参考代码： </p>					
-                            <p><img src="../../img/实验源码/实验6/IO源码1.jpg" /></p>  
-                            <p><img src="../../img/实验源码/实验6/IO源码2.jpg" /></p>  
-                            
-                            <h3>6.2 标准 IO 实验（二）</h3>                            
-                            <h3><strong>【实验内容】 </strong></h3>
-                            <p>
-                             	本实验通过一个简单的 copy 程序，完成文件的复制程序，了解基本的标准 I/O 文件读写的基本步骤。 
-                            </p>
-                            <h3><strong>【实验目的】 </strong></h3>
-                            <p>
-                             	深入了解标准 IO 文件读写的基本原理。    
-                            </p>
-                            <p>1.学习如何判断文件是否结束 </p>    
-                            <p>2.熟练掌握标准 I/O 函数 </p>                             
-                            <h3><strong>【实验平台】 </strong></h3>
-                            <p>
-                             	带有 Linux 操作系统的 PC 机。  
-                            </p>
-                            <h3><strong>【实验提示】 </strong></h3>
-                            <p><img src="../../img/实验源码/实验6/IO源码3.jpg" /></p>                              
-                            <p>2、要拷贝一个文件，即要有源文件和目标文件，使用 fopen 分别打开两个文件，一个文件被读，一个 文件被写。完成文件的复制后须将这两个文件都关闭。 </p>    
-                            <p>参考代码：</p>
-                            <p><img src="../../img/实验源码/实验6/IO源码4.jpg" /></p>                                                       
-                            <h3><strong>【实验思考】 </strong></h3>
-                            <p>如果要将一个文件拷贝到两个文件中，怎么办？</p>					
-                            <p>提示： </p>					
-                            <p>用 fseek()或 rewind（）定位；</p>	
-                            
-                            <h3>6.3 标准 IO 实验（三） </h3>                            
-                            <h3><strong>【实验目的】 </strong></h3>
-                            <p>
-                             	通过本实验掌握标准 I/O 的使用    
-                            </p>
+                            <p>如果想列出更详细的信息，则可使用命令：“ps -auxw”。参数 w 表示加宽显示的命令行，参数 w 可以 写多次，通常最多写 3 次，表示加宽 3 次，这足以显示很长的命令行了。 </p>                                
                             <h3><strong>【实验内容】</strong></h3>
-                            <p>编程读写一个文件 test.txt，每隔 1 秒向文件中写入一行数据，类似这样 </p>                              				
-                            <p>1,  2007-7-30 15:16:42 </p>					
-                            <p>2,  2007-7-30 15:16:43 </p>	
-                            <p>该程序应该无限循环，直到按 Ctrl-C 中断程序。下次再启动程序写文件时可以追加到原文件之后，并 且序号能够接续上次的序号，比如： </p>					
-                            <p>1,  2007-7-30 15:16:42 </p>	
-                            <p>2,  2007-7-30 15:16:43 </p>					
-                            <p>3,  2007-7-30 15:19:02 </p>	
-                            <p>4,  2007-7-30 15:19:03 </p>					
-                            <p>5,  2007-7-30 15:19:04 </p>                           
-                            <h3><strong>【实验平台】 </strong></h3>
-                            <p>
-                             	带有 Linux 操作系统的 PC 机。  
-                            </p>
-                            <h3><strong>【实验提示】 </strong></h3>                            
-                            <p>要追加写入文件，同时要读取该文件的内容以决定下一个序号是几，应该用什么模式打开文件？</p>					
-                            <p>首先判断一下打开的文件是否为新文件，如果是新文件，就从序号 1 开始写入；如果不是新文件，则 统计原来有多少行，比如有 n 行，然后从序号 n+1 开始写入。以后每写一行就把行号加 1。 </p>	
-                            <p>获取当前的系统时间需要调用函数 time()，得到的结果是一个 time_t 类型，其实就是一个大整数， 其值表示从 UTC 时间 1970 年 1 月 1 日 00:00:00（称为 UNIX 的 Epoch 时间）到当前时刻的秒钟数。然 后调用 localtime()将 time_t 所表示的 UTC 时间转换为本地时间（我们是+8 区，比 UTC 多 8 个小时） 并转成 struct tm 类型，该类型的各数据成员分别表示年月日时分秒，请自己写出转换格式的代码， 不要使用 ctime()或 asctime()函数。具体用法请查阅 man page。time 和 localtime 函数需要头文件 time.h。 </p>					
-                            <p>调用 sleep(n)可使程序睡眠 n 秒，该函数需要头文件 unistd.h。</p>	
+                            <p>在 shell 提示符下输入如下命令，并解释输出的结果：</p>    
+                            <p>[root@vm root]#ps </p>                            
+                            <p> PID TTY TIME CMD</p>                            
+                            <p> 16767 pts/1 0:00 ps</p>					
+                            <p> 18029 pts/1 0:00 bash </p>					
+                            <p>[root@vm root]#ps aux </p>					
+                            <p>PID TTY TIME CMD</p>	
                             
-                            <h3>6.4 标准 IO 实验（四） </h3>                            
-                            <h3><strong>【实验目的】 </strong></h3>
+                            <h3>9.2 使用 proc 文件系统查看进程信息 </h3>                            
+                            <h3><strong>【实验目的】</strong></h3>
                             <p>
-                             	通过本实验掌握标准 I/O 的使用    
+                             	本实验将指导学员了解 proc 文件系统，通过 proc 文件系统查询进程信息，可以扩展到修改系统参数。  
                             </p>
+                            <h3><strong>【实验原理】</strong></h3>
+                            <p>
+                             	/proc 文件系统是一个虚拟文件系统，通过文件系统接口实现对内核的访问，输出系统运行状态。它以 文件系统的形式，为操作系统本身和应用进程之间的通信提供了一个界面，使应用程序能够安全，方便的 获得系统当前的运行状况和内核的内部数据信息，并且可以修改某些系统的配置信息。     
+                            </p>                          
                             <h3><strong>【实验内容】</strong></h3>
-                            <p>一个文件 test.txt，文件内容为： </p>                              				
-                            <p>1</p>					
-                            <p>2</p>	
-                            <p>3</p>					
-                            <p>4</p>	
-                            <p>5</p>					                    
-                            <h3><strong>【实验平台】 </strong></h3>
-                            <p>
-                             	PC 机、ubuntu 操作系统，gcc 等工具   
-                            </p>
-                            <h3><strong>【实验提示】 </strong></h3>  
-                            <p>把正确的内容写入一个临时文件，把临时文件重命名即可； </p>
+                            <p>1)认识 proc 文件系统的文件和目录 </p>    
+                            <p>root@vm root]#cd /proc</p>                            
+                            <p>[root@vm root]#ls </p> 
+                            <p>2)通过 proc 文件系统查看系统当前进行状态</p>					
+                            <p>[root@vm root]#cat /proc/self/status</p>					
+                            <p>3)查询文件句柄的当前使用情况</p>					
+                            <p>426     15252458</p>		
+                            <p>file-nr 文件显示了三个参数：分配的文件句柄总数、当前使用的文件句柄数以及可以分配的最大文件 句柄数。如果需要增大 /proc/sys/fs/file-max 中的值，请确保正确设置 ulimit。对于 2.4.20，通常将其设置 为 unlimited。使用 ulimit 命令来验证 ulimit 设置：</p>					
+                            <p>[root@vm root]# ulimit</p>					
+                            <p>unlimited</p>					
+                            <p>4)通过 proc 文件系统修改内核中预定的一些变量</p>		
+                            <p>1）修改整个系统中文件句柄的最大数量</p>					
+                            <p>52458</p>					
+                            <p>[root@vm root]#echo 65536 >/proc/sys/fs/file-max</p>					
+                            <p>[root@vm root]#ls /proc/sys/fs/file-max 65536</p>	
+                            <p>2）修改网络 TTL</p>					
+                            <p>[root@vm root]#ls /proc/sys/net/ ipv4/ip_default_ttl</p>		                             
+                            <p>64</p>					
+                            <p>[root@vm root]#echo 128 >/proc/sys/net/ipv4/ip_default_ttl</p>		
+                            <p>[root@vm root]#ls /proc/sys/net/ ipv4/ip_default_ttl</p>					
+                            <p>128</p>					
+                            <p>3）修改系统中最大进程数量</p>					
+                            <p>[root@vm root]#ls /proc/sys/kernel/pid_max</p>		
+                            <p>1）修改整个系统中文件句柄的最大数量</p>					
+                            <p>32768</p>					
+                            <p>[root@vm root]#echo 65536 >/proc/sys/kernel/pid_max</p>					
+                            <p>[root@vm root]#ls /proc/sys/kernel/pid_max</p>	
+                            <p> 65536</p>
+                            <p>4）修改普通用户的最大 RTC 频率</p>
+                            <p>[root@vm root]#ls /proc/sys/dev/rtc/max-user-freq</p>
+                            <p>64</p>
+                            <p>[root@vm root]#echo 128 >/proc/sys/dev/rtc/max-user-freq</p>
+                            <p>[root@vm root]#ls /proc/sys/dev/rtc/max-user-freq</p>
+                            <p>128</p>
+                            <p>5）其他一些信息</p>
+                            <p>[root@vm root]#cat /proc/cpuinfo - CPU</p>
+                            <p>[root@vm root]#cat /proc/interrupts - 中断 </p>
+                            <p>[root@vm root]#cat /proc/ioports - 设备 IO 端口</p>
+                            <p>[root@vm root]#cat /proc/meminfo - 内存信息(i.e. mem used, free, swap size)</p>
+                            <p>[root@vm root]#cat /proc/partitions - 所有设备的所有分区 </p>
+                            <p>[root@vm root]#cat /proc/pci - PCI 设备的信息</p>
+                            <p>[root@vm root]#cat /proc/swaps - 所有 Swap分区的信息</p>
+                            <p>[root@vm root]#cat /proc/version - Linux 的版本号 </p>
+
                             
                             <hr>
                             <div class="row">
                                 <div class="col-md-6">
                                         <h5>Tags:</h5>
-                                        <button class="btn btn-white btn-xs" type="button">I/O</button>
+                                        <button class="btn btn-white btn-xs" type="button">fork</button>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="small text-right">
                                         <h5>Stats:</h5>
-                                        <div> <i class="fa fa-comments-o"> </i> 16 comments </div>
-                                        <i class="fa fa-eye"> </i> 136 views
+                                        <div> <i class="fa fa-comments-o"> </i> 13 comments </div>
+                                        <i class="fa fa-eye"> </i> 266 views
                                     </div>
                                 </div>
                             </div>

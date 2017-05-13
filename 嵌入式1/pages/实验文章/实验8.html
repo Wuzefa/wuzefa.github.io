@@ -208,16 +208,16 @@
 		<div id="page-wrapper">
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-12">
-                    <h2>实验六</h2>
+                    <h2>实验八</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="../主页/index.html">主页</a>
                         </li>
                         <li>
-                            <a href="实验5.html">上一页</a>
+                            <a href="实验7.html">上一页</a>
                         </li>
                         <li>
-                            <a href="实验7.html">下一页</a>
+                            <a href="实验9.html">下一页</a>
                         </li>
                     </ol>
                 </div>
@@ -230,103 +230,35 @@
                         <div class="ibox-content">
                             <div class="text-center article-title">
                                 <h1>
-                                     Linux 系统标准 I/O
+                                     Linux 系统文件信息的遍历实验 
                                 </h1>
-                            <span class="text-muted"><i class="fa fa-clock-o"></i>2017.5.12</span>                                
-                            </div>
-                            <h3>6.1 标准 IO 实验（一）</h3>                            
+                            <span class="text-muted"><i class="fa fa-clock-o"></i>2017.5.13</span>                                
+                            </div>                        
                             <h3><strong>【实验内容】 </strong></h3>
                             <p>
-                             	本实验通过一个简单的程序计算默认缓冲区的大小，理解标准 I/O 提供的三种类型的缓存。 
-                            </p>
-                            <h3><strong>【实验目的】 </strong></h3>
-                            <p>
-                             	深入了解标准 IO 的三种类型，即全缓存，行缓存，不带缓存。   
+                             	编写一个程序实现“ls –l FILEIO”的功能，使其显示 drwxr-xr-x  2  linux linux 4096 2009-08-12 09:50 FILEIO 通过此次实验掌握如何获取文件信息的系统调用及 stat（）的使用方法  
                             </p>
                             <h3><strong>【实验平台】 </strong></h3>
                             <p>
-                             	带有 Linux 操作系统的 PC 机。  
-                            </p>
-                            <h3><strong>【实验提示】 </strong></h3>
-                            <p>全缓冲：当填满 I/O 缓存后才进行实际的 I/O 操作；</p>    
-                            <p>行缓冲：当在输入和输出中遇到新换行符(‘\n’)时，进行 I/O 操作；</p>                            
-                            <p>不带缓冲：标准 I/O 库不对字符进行缓冲，例如 stderr；</p>                            
+                             	PC 机、Ubuntu 操作系统，gcc 等工具   
+                            </p>                         
                             <h3><strong>【实验步骤】 </strong></h3>
-                            <p>1、向缓冲区中输入字符 </p>					
-                            <p>2、当往缓冲区中写的字符数目超过缓冲区大小的时候，才执行输出。</p>					
-                            <p>3、可以手工计算出缓冲区大小（341*3+1=1024）</p>					
-                            <p>参考代码： </p>					
-                            <p><img src="../../img/实验源码/实验6/IO源码1.jpg" /></p>  
-                            <p><img src="../../img/实验源码/实验6/IO源码2.jpg" /></p>  
-                            
-                            <h3>6.2 标准 IO 实验（二）</h3>                            
-                            <h3><strong>【实验内容】 </strong></h3>
-                            <p>
-                             	本实验通过一个简单的 copy 程序，完成文件的复制程序，了解基本的标准 I/O 文件读写的基本步骤。 
-                            </p>
-                            <h3><strong>【实验目的】 </strong></h3>
-                            <p>
-                             	深入了解标准 IO 文件读写的基本原理。    
-                            </p>
-                            <p>1.学习如何判断文件是否结束 </p>    
-                            <p>2.熟练掌握标准 I/O 函数 </p>                             
-                            <h3><strong>【实验平台】 </strong></h3>
-                            <p>
-                             	带有 Linux 操作系统的 PC 机。  
-                            </p>
-                            <h3><strong>【实验提示】 </strong></h3>
-                            <p><img src="../../img/实验源码/实验6/IO源码3.jpg" /></p>                              
-                            <p>2、要拷贝一个文件，即要有源文件和目标文件，使用 fopen 分别打开两个文件，一个文件被读，一个 文件被写。完成文件的复制后须将这两个文件都关闭。 </p>    
-                            <p>参考代码：</p>
-                            <p><img src="../../img/实验源码/实验6/IO源码4.jpg" /></p>                                                       
-                            <h3><strong>【实验思考】 </strong></h3>
-                            <p>如果要将一个文件拷贝到两个文件中，怎么办？</p>					
-                            <p>提示： </p>					
-                            <p>用 fseek()或 rewind（）定位；</p>	
-                            
-                            <h3>6.3 标准 IO 实验（三） </h3>                            
-                            <h3><strong>【实验目的】 </strong></h3>
-                            <p>
-                             	通过本实验掌握标准 I/O 的使用    
-                            </p>
-                            <h3><strong>【实验内容】</strong></h3>
-                            <p>编程读写一个文件 test.txt，每隔 1 秒向文件中写入一行数据，类似这样 </p>                              				
-                            <p>1,  2007-7-30 15:16:42 </p>					
-                            <p>2,  2007-7-30 15:16:43 </p>	
-                            <p>该程序应该无限循环，直到按 Ctrl-C 中断程序。下次再启动程序写文件时可以追加到原文件之后，并 且序号能够接续上次的序号，比如： </p>					
-                            <p>1,  2007-7-30 15:16:42 </p>	
-                            <p>2,  2007-7-30 15:16:43 </p>					
-                            <p>3,  2007-7-30 15:19:02 </p>	
-                            <p>4,  2007-7-30 15:19:03 </p>					
-                            <p>5,  2007-7-30 15:19:04 </p>                           
-                            <h3><strong>【实验平台】 </strong></h3>
-                            <p>
-                             	带有 Linux 操作系统的 PC 机。  
-                            </p>
-                            <h3><strong>【实验提示】 </strong></h3>                            
-                            <p>要追加写入文件，同时要读取该文件的内容以决定下一个序号是几，应该用什么模式打开文件？</p>					
-                            <p>首先判断一下打开的文件是否为新文件，如果是新文件，就从序号 1 开始写入；如果不是新文件，则 统计原来有多少行，比如有 n 行，然后从序号 n+1 开始写入。以后每写一行就把行号加 1。 </p>	
-                            <p>获取当前的系统时间需要调用函数 time()，得到的结果是一个 time_t 类型，其实就是一个大整数， 其值表示从 UTC 时间 1970 年 1 月 1 日 00:00:00（称为 UNIX 的 Epoch 时间）到当前时刻的秒钟数。然 后调用 localtime()将 time_t 所表示的 UTC 时间转换为本地时间（我们是+8 区，比 UTC 多 8 个小时） 并转成 struct tm 类型，该类型的各数据成员分别表示年月日时分秒，请自己写出转换格式的代码， 不要使用 ctime()或 asctime()函数。具体用法请查阅 man page。time 和 localtime 函数需要头文件 time.h。 </p>					
-                            <p>调用 sleep(n)可使程序睡眠 n 秒，该函数需要头文件 unistd.h。</p>	
-                            
-                            <h3>6.4 标准 IO 实验（四） </h3>                            
-                            <h3><strong>【实验目的】 </strong></h3>
-                            <p>
-                             	通过本实验掌握标准 I/O 的使用    
-                            </p>
-                            <h3><strong>【实验内容】</strong></h3>
-                            <p>一个文件 test.txt，文件内容为： </p>                              				
-                            <p>1</p>					
-                            <p>2</p>	
-                            <p>3</p>					
-                            <p>4</p>	
-                            <p>5</p>					                    
-                            <h3><strong>【实验平台】 </strong></h3>
-                            <p>
-                             	PC 机、ubuntu 操作系统，gcc 等工具   
-                            </p>
-                            <h3><strong>【实验提示】 </strong></h3>  
-                            <p>把正确的内容写入一个临时文件，把临时文件重命名即可； </p>
+                            <p>要求实现以下功能：</p>					
+                            <p>列出的信息包括模式字段，链接数，用户名，组名，文件大小，文件建立时间，文件名，以上字段从 左到右一次显示。</p>	                          
+                            <h3><strong>【实验提示】</strong></h3>                        				
+                            <p>用 stat 获得文件信息，存储在 struct stat 结构中，/usr/include/sys/stat.h 描述了 struct stat 的成员变量， 这里只列出要用到的成员变量 </p>					
+                            <p>ushort st_mode; 文件类型和许可权限</p>	
+                            <p>ushort st_nlink; 连接数</p>					
+                            <p>ushort st_uid; 属主的用户 ID</p>	
+                            <p>ushort st_gid; 属主的组 ID</p>		
+                            <p>ulong st_size; 普通文件的字节长度</p>					
+                            <p>ulong st_ctime; 最后文件状态更改时间 </p>	
+                            <p>用 ctime 将文件状态的最后修改时间转换为字符串；</p>					
+                            <p>用/usr/include/sys/stat.h 中定义的宏将 st_mode 的位分离出来，并填充到一个字符数组中，等待输出；</p>	
+                            <p>用 getpwuid()和 getgrgid()将用户 ID 和组 ID 然后转换成字符串。</p>
+                            <h3><strong>【实验思考】</strong></h3> 
+                            <p>1、在以上的基础上如果输入的是文件目录怎么办？将以上的函数封装起来作为一个功能函数。利用 opendir()、readdir()、closedir()来操作目录，并调用前面编写的函数处理和输出文件信息。</p>					
+                            <p>2、如何实现类似于“ls”的一个 myls 的命令，即可以实现包含-l 、-a 参数的 myls 命令。参数处理可以利用 getopt 函数来实现。 </p>	                            
                             
                             <hr>
                             <div class="row">
@@ -337,8 +269,8 @@
                                 <div class="col-md-6">
                                     <div class="small text-right">
                                         <h5>Stats:</h5>
-                                        <div> <i class="fa fa-comments-o"> </i> 16 comments </div>
-                                        <i class="fa fa-eye"> </i> 136 views
+                                        <div> <i class="fa fa-comments-o"> </i> 32 comments </div>
+                                        <i class="fa fa-eye"> </i> 236 views
                                     </div>
                                 </div>
                             </div>
