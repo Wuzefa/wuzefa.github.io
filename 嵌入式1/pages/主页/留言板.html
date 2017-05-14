@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>吴泽发的毕业设计</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/主页.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+	<link href="../../css/style.css" />
+    <style>
+		p{
+			font-size: 20px;
+			color: #000000;
+		}
+    </style>
+	<script language="JavaScript"> 
+	function inputnumber() 
+	{ 
+	if (event.keyCode>47 && event.keyCode<58) 
+	return true 
+	else 
+	alert("请输入数字，不要留下字母！！!"); 
+	return false; 
+	} 
+	function chkform() 
+	{ 
+	if (form1.Guestname.value =="") 
+	{ 
+	alert("请留下您的大名!"); 
+	form1.Guestname.focus(); 
+	form1.Guestname.select(); 
+	return false; 
+	} 
+	if (form1.address.value =="") 
+	{ 
+	alert("您还没有留下地址!"); 
+	form1.address.focus(); 
+	form1.address.select(); 
+	return false; 
+	} 
+	
+	if (form1.phone.value =="") 
+	{ 
+	alert("请留下您的电话，方便我们尽快联系您!"); 
+	form1.phone.focus(); 
+	form1.phone.select(); 
+	return false; 
+	} 
+	
+	if (form1.Memo.value =="") 
+	{ 
+	alert("请留下你留言!"); 
+	form1.Memo.focus(); 
+	form1.Memo.select(); 
+	return false; 
+	} 
+	
+	var email = form1.guest_email.value 
+	if (email.length!="") 
+	{ 
+	if (email.indexOf("@")<2) 
+	{ 
+	alert("请输入正确邮箱地址!"); 
+	form1.guest_email.focus(); 
+	form1.guest_email.select(); 
+	return false; 
+	} 
+	if (email.indexOf(".")<5) 
+	{ 
+	alert("请输入正确邮箱地址!"); 
+	form1.guest_email.focus(); 
+	form1.guest_email.select(); 
+	return false; 
+	} 
+	} 
+	return true; 
+	} 
+	</script>     
+    
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">嵌入式课外实验网站</a>
+            </div>
+            <!-- /.navbar-header -->
+            
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-desktop fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-film fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="../../../个人简历.html"><i class="fa fa-user fa-fw"></i>个人资料</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i>设置</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="../主页/login.html"><i class="fa fa-sign-out fa-fw"></i>注销</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+            
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="../主页/index.html"><i class="fa fa-linux fa-fw"></i> Linux主页内容</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Linux命令详解<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="../Linux命令详解/命令详解1.html"> 添加、修改、切换用户</a>
+                                </li>
+                                <li>
+                                    <a href="../Linux命令详解/命令详解2.html"> 拷贝、移动或更名、删除</a>
+                                </li>
+                                <li>
+                                    <a href="../Linux命令详解/命令详解3.html">创建、查看目录、查看当前路径</a>
+                                </li>
+                                <li>
+                                    <a href="../Linux命令详解/命令详解4.html">打包与压缩、解压缩</a>
+                                </li>
+                                <li>
+                                    <a href="../Linux命令详解/命令详解5.html">访问权限、改变访问权限</a>
+                                </li>
+                                <li>
+                                    <a href="../Linux命令详解/命令详解6.html">关机、查看磁盘、目录大小</a>
+                                </li>
+                                <li>
+                                    <a href="../Linux命令详解/命令详解7.html">网络配置、网络状态、软件安装</a>
+                                </li>
+                                <li>
+                                    <a href="../Linux命令详解/命令详解8.html">挂载、查找文件、字符串</a>
+                                </li>
+                                <li>
+                                    <a href="../Linux命令详解/命令详解9.html">查看CPU、进程、帮助</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i>Linux应用实验（一）<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="../实验文章/实验1.html">1.常用命令及vi, gdb的使用</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验2.html">2.Linux系统shell程序设计</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验3.html">3.Linux系统GCC编译器的使用</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验4.html">4.GDB 调试工具的使用</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验5.html">5.Makefile 工程管理器 </a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验6.html">6.Linux系统标准I/O</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验7.html">7.Linux系统文件目录操作编程 </a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验8.html">8.Linux系统文件信息的遍历</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验9.html">9.Linux系统fork等系统调用</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验10.html">10.fork等函数编写执行命令</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i>Linux应用实验（二）<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="../实验文章/实验11.html">11.Linux 系统守护进程</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验12.html">12.Linux 无名管道通信</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验13.html">13.Linux 有名管道通信</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验14.html">14.Linux 信号机制</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验15.html">15.Linux 系统信号量</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验16.html">16.Linux 共享内存通信</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验17.html">17.Linux 系统 tcp网络协议编程</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验18.html">18.Linux 系统 udp网络协议编程</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验19.html">19.Linux 系统 select I/O复用</a>
+                                </li>
+                                <li>
+                                    <a href="../实验文章/实验20.html">20.Linux 消息队列实验 </a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i>其他<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="../主页/留言板.html">留言</a>
+                                </li>
+                                <li>
+                                    <a href="../主页/login.html">注销</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+		<div id="page-wrapper">
+            <div class="text-center article-title">
+                <h1>
+               	          留言板模块  
+                </h1>
+            <span class="text-muted"><i class="fa fa-clock-o"></i>2017.5.15</span>                                
+            </div>			
+        <div class="wrapper wrapper-content  animated fadeInRight article">
+            <div class="row">
+            	<div class="col-lg-4"></div>
+                <div class="col-lg-6">
+					<table width="330" border="0" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC"> 
+					<form name="form1" method="post" action="留言" onSubmit="return chkform();"> 
+					<tr bgcolor="#FFFFFF"> 
+					<td width="150" height="52">姓名：</td> 
+					<td width="150"><input name="Guestname" type="text" id="Guestname"></td> 
+					</tr> 
+					<tr bgcolor="#FFFFFF"> 
+					<td height="52">电话：</td> 
+					<td><input name="phone" type="text" id="phone"></td> 
+					</tr> 
+					<tr bgcolor="#FFFFFF"> 
+					<td height="52">地址：</td> 
+					<td><input name="address" type="text" id="address"></td> 
+					</tr> 
+					<tr bgcolor="#FFFFFF"> 
+					<td height="52">邮箱：</td> 
+					<td><input name="guest_email" type="text" id="guest_email"></td> 
+					</tr> 
+					<tr bgcolor="#FFFFFF"> 
+					<td height="52">QQ：</td> 
+					<td><input name="qq" type="text" id="qq" onKeypress="return inputnumber()"></td> 
+					</tr> 
+					<tr bgcolor="#FFFFFF"> 
+					<td height="52">您的留言：</td> 
+					<td><textarea name="Memo" cols="30" rows="5" id="Memo"></textarea></td> 
+					</tr> 
+					<tr align="center" bgcolor="#FFFFFF"> 
+					<td height="52" colspan="2"><input type="submit" name="Submit" value="提交"> 
+					<input type="reset" name="Submit" value="重置"></td> 
+					</tr> 
+					</form> 
+					</table> 
+                </div>
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../../js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->  
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/主页.js"></script>
+    
+    <!-- Metis Menu Plugin JavaScript -->  
+    <script src="../../js/metisMenu.js"></script>
+</body>
+
+</html>
