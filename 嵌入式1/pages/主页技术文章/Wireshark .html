@@ -223,7 +223,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Samba</h1>
+                    <h1 class="page-header">Wireshark</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>		
@@ -232,23 +232,19 @@
             		<div class="thumbnail media-lib-item">
             			<img src="../../../img/Linux/Linux.jpg" />
             		</div>
-            		<h3>Samba</h3>
-            		<p>Linux与Linux之间通过<font style="color: red;">NFS</font>实现共享</p>
-            		<p>Windows与windows之间通过<font style="color: red;">共享目录</font>实现共享</p>
-            		<p>Linux与windows之间怎么实现共享？</p>
-            		<p><font style="color: red;">Samba</font></p>
-            		<p>修改/etc/samba/smb.conf，添加： </p>
-            		<p>[root]</p>
-            		<p>comment = Root Directories </p>
-            		<p>browseable = yes</p>            		
-            		<p>writeable = yes</p>            		
-            		<p>path = / </p>            		
-            		<p>valid users = smb（用户名）</p>            		
+            		<h3>Wireshark</h3>
+            		<p>Wireshark （2006年夏天之前叫做 Ethereal） 是一款非常优秀的，可在Linux和Windows上使 用的开源网络协议分析器。它可以实时检测网络 通讯数据，也可以抓取网络通讯数据。可以通过通讯数据，也可以抓取网络通讯数据。可以通过 图形界面浏览这些数据，可以查看网络通讯数据包中每一层的详细内容。</p>         		
             	</div>
-            	<div class="col-lg-6">             		
-            		<h3>Samba（添加用户）</h3>
-            		<p>Useradd smb   //添加smb系统用户 </p>
-            		<p>Smbpasswd -a smb   //修改密码</p>     		
+            	<div class="col-lg-6">   
+            		<p>Rpm –ivh lm_sensors-2.10.0-3.1.i386.rpm </p>
+            		<p>Rpm –ivh net-snmp-5.3.1-9.el5.i386.rpm </p>
+            		<p>Rpm –ivh wireshark-0.99.6-1.el5.i386.rpm</p>
+            		<p>Rpm –ivh wireshark-gnome-0.99.6-1.el5.i386.rpm</p>
+            		<p><font style="color: red;">(以上4个RPM包都在RHEL5安装盘的servers目录下)</font></p> 
+            		<div class="thumbnail media-lib-item">
+	            		<img src="../../img/wireshark.jpg" />
+            		</div>            		
+
             	</div>
             </div>     
         </div>
