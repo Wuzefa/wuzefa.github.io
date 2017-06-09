@@ -243,8 +243,6 @@ font-size: 30px;
 font-weight: 700;
 text-transform: uppercase;
 line-height: 30px;
-margin: auto;
-width: 100%;
 }
 .top-navbar .nav > li {
 position: relative;
@@ -369,6 +367,7 @@ border:0px solid black;
 }
 .navbar-header {
     background: #09192A;
+    float: left;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 background-color: #B40101;
