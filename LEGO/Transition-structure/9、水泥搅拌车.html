@@ -1,9 +1,469 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEGO</title>
+    <!-- Bootstrap Styles-->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="../assets/css/custom-styles.css" rel="stylesheet" />
+</head>
+	<style type="text/css">
+
+	</style>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand"  href="index.html">LEGO Teaching</a>
+            </div>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>             
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a class="active-menu" href="index.html"><i class="fa fa-dashboard"></i>小小建筑师<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="../Small-architect/1、城墙.html"> 1、城墙</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/2、杯子.html"> 2、杯子</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/3、人行天桥.html"> 3、人行天桥</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/4、拱桥.html"> 4、拱桥</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/5、旋转楼梯.html"> 5、旋转楼梯</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/6、雨天的屋顶.html"> 6、雨天的屋顶</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/7、金字塔.html"> 7、金字塔</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/8、奖杯.html"> 8、奖杯</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/9、游泳池.html"> 9、游泳池</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/10、梯子.html"> 10、梯子</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/11、高铁.html"> 11、高铁</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/12、折叠梯.html"> 12、折叠梯</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/13、溜冰鞋.html"> 13、溜冰鞋</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/14、抽屉.html"> 14、抽屉</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/15、旅行箱.html"> 15、旅行箱</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/16、手推车.html"> 16、手推车</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/17、椅子.html"> 17、椅子</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/18、高塔.html"> 18、高塔</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/19、二层小楼.html"> 19、二层小楼</a>
+                            </li>
+                            <li>
+                                <a href="../Small-architect/20、小猪上树.html"> 20、小猪上树</a>
+                            </li>
+                        </ul>                        
+                    </li>
+                    <li>
+                        <a href="ui-elements.html"><i class="fa fa-desktop"></i>小小机械师<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="../Small-mechanic/1、烧烤游戏.html"> 1、烧烤游戏</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/2、跷跷板.html"> 2、跷跷板</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/3、天平.html"> 3、天平</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/4、投石器.html"> 4、投石器</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/5、不倒翁.html"> 5、不倒翁</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/6、测风仪.html"> 6、测风仪</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/7、水车.html"> 7、水车</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/8、打蛋器.html"> 8、打蛋器</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/9、棘轮小车.html"> 9、棘轮小车</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/10、城门.html"> 10、城门</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/11、水井辘轳.html"> 11、水井辘轳</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/12、弩.html"> 12、弩</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/13、汽车发射器.html"> 13、汽车发射器</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/14、小丑的眼睛.html"> 14、小丑的眼睛</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/15、传送带.html"> 15、传送带</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/16、秋千.html"> 16、秋千</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/17、攻城车.html"> 17、攻城车</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/18、手摇风扇.html"> 18、手摇风扇</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/19、坦克.html"> 19、坦克</a>
+                            </li>
+                            <li>
+                                <a href="../Small-mechanic/20、大吊车.html"> 20、大吊车</a>
+                            </li>
+                        </ul>                        
+                    </li>
+					<li>
+                        <a href="chart.html"><i class="fa fa-bar-chart-o"></i>小小设计师<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="../Small-designer/1、门锁.html"> 1、门锁</a>
+                            </li>
+                            <li>
+                                <a href="../Small-designer/2、双开门.html"> 2、双开门</a>
+                            </li>
+                            <li>
+                                <a href="../Small-designer/3、饮料机.html"> 3、饮料机</a>
+                            </li>
+                            <li>
+                                <a href="../Small-designer/4、斜拉桥.html"> 4、斜拉桥</a>
+                            </li>
+                            <li>
+                                <a href="../Small-designer/5、荷兰的风车.html"> 5、荷兰的风车</a>
+                            </li>
+                            <li>
+                                <a href="../Small-designer/6、挤压机.html"> 6、挤压机</a>
+                            </li>
+                            <li>
+                                <a href="../Small-designer/7、雨刷器.html"> 7、雨刷器</a>
+                            </li>
+                            <li>
+                                <a href="../Small-designer/8、四驱车.html"> 8、四驱车</a>
+                            </li>
+                            <li>
+                                <a href="../Small-designer/9、水泥搅拌车.html"> 9、水泥搅拌机</a>
+                            </li>
+                            <li>
+                                <a href="../Small-designer/10、测量小车.html"> 10、测量小车</a>
+                            </li>
+                        </ul>                        
+                    </li>
+                    <li>
+                        <a href="tab-panel.html"><i class="fa fa-qrcode"></i><span class="fa arrow"></span>过渡结构</a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="../Transition-structure/1、吹不倒的小树.html"> 1、吹不倒的小树</a>
+                            </li>
+                            <li>
+                                <a href="../Transition-structure/2、停车场.html"> 2、停车场</a>
+                            </li>
+                            <li>
+                                <a href="../Transition-structure/3、乐高魔术.html"> 3、乐高魔术</a>
+                            </li>
+                            <li>
+                                <a href="../Transition-structure/4、防空炮.html"> 4、防空炮</a>
+                            </li>
+                            <li>
+                                <a href="../Transition-structure/5、篮球架.html"> 5、篮球架</a>
+                            </li>
+                            <li>
+                                <a href="../Transition-structure/6、病床.html"> 6、病床</a>
+                            </li>
+                            <li>
+                                <a href="../Transition-structure/7、宝剑与盾牌.html"> 7、宝剑与盾牌</a>
+                            </li>
+                            <li>
+                                <a href="../Transition-structure/8、杠秤.html"> 8、杠秤</a>
+                            </li>
+                            <li>
+                                <a href="../Transition-structure/9、水泥搅拌车.html"> 9、水泥搅拌车</a>
+                            </li>
+                            <li>
+                                <a href="../Transition-structure/10、工具与恐龙.html"> 10、工具与恐龙</a>
+                            </li>
+                        </ul>                           
+                    </li>                
+                    <li>
+                        <a href="table.html"><i class="fa fa-table"></i>结构与力（一）<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="../Structural&force（一）/1、钓鱼竿.html"> 1、钓鱼竿</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/2、眼镜.html"> 2、眼镜</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/3、高塔.html"> 3、高塔</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/4、斜拉桥.html"> 4、斜拉桥</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/5、桁架塔.html"> 5、桁架塔</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/6、桁架桥.html"> 6、桁架桥</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/7、活动吊桥.html"> 7、活动吊桥</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/8、独轮车.html"> 8、独轮车</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/9、攻城车.html"> 9、攻城车</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/10、运兵车.html"> 10、运兵车</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/11、缆车.html"> 11、缆车</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/12、小丑.html"> 12、小丑</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/13、弩枪.html"> 13、弩枪</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/14、入口计数器.html"> 14、入口计数器</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（一）/15、会拐弯的小车.html"> 15、会拐弯的小车</a>
+                            </li>
+                        </ul>                           
+                    </li>
+                    <li>
+                        <a href="form.html"><i class="fa fa-legal"></i>结构与力（二）<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="../Structural&force（二）/1、台秤.html"> 1、台秤</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（二）/2、投石车.html"> 2、投石车</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（二）/3、户外晾衣架.html"> 3、户外晾衣架</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（二）/4、垃圾桶.html"> 4、垃圾桶</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（二）/5、打桩机.html"> 5、打桩机</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（二）/6、扫地车.html"> 6、扫地车</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（二）/7、伸缩钓鱼竿.html"> 7、伸缩钓鱼竿</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（二）/8、新颖健身器.html"> 8、新颖健身器</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（二）/9、测距车.html"> 9、测距车</a>
+                            </li>
+                            <li>
+                                <a href="../Structural&force（二）/10、自行车.html"> 10、自行车</a>
+                            </li>
+                        </ul>                           
+                    </li>
+                    <li>
+                        <a href="form.html"><i class="fa fa-gears"></i>动力机械<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="../Power&machinery/1、旋转飞椅.html"> 1、旋转飞椅</a>
+                            </li>
+                            <li>
+                                <a href="../Power&machinery/2、齿轮墙.html"> 2、齿轮墙</a>
+                            </li>
+                            <li>
+                                <a href="../Power&machinery/3、吊车.html"> 3、吊车</a>
+                            </li>
+                            <li>
+                                <a href="../Power&machinery/4、城门.html"> 4、城门</a>
+                            </li>
+                            <li>
+                                <a href="../Power&machinery/5、传送带.html"> 5、传送带</a>
+                            </li>
+                            <li>
+                                <a href="../Power&machinery/6、大力挤压机.html"> 6、大力挤压机</a>
+                            </li>
+                            <li>
+                                <a href="../Power&machinery/7、电钻车.html"> 7、电钻车</a>
+                            </li>
+                            <li>
+                                <a href="../Power&machinery/8、骑刃王.html"> 8、骑刃王</a>
+                            </li>
+                            <li>
+                                <a href="../Power&machinery/9、打蛋器.html"> 9、打蛋器</a>
+                            </li>
+                            <li>
+                                <a href="../Power&machinery/10、汽车雨刷器.html"> 10、汽车雨刷器</a>
+                            </li>
+                            <li>
+                                <a href="../Power&machinery/11、刷干桶.html"> 11、刷干桶</a>
+                            </li>
+                        </ul>                         
+                    </li>
+                    <li>
+                        <a href="form.html"><i class="fa fa-edit"></i>头脑风暴<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="../Brain-storming/1、EV3小车.html"> 1、EV3小车</a>
+                            </li>
+                        </ul>                           
+                    </li>
+                    <li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /. NAV SIDE  -->
+
+
+
+        <div id="page-wrapper">
+            <div class="col-lg-12">
+                <h2>水泥搅拌车</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="../主页/index.html">主页</a>
+                    </li>
+                    <li>
+                        <a href="8、杠秤.html">上一页</a>
+                    </li>
+                    <li>
+                        <a href="10、工具与恐龙.html">下一页</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="row">
+                <div class="col-lg-11 col-lg-offset-1">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <div class="text-center article-title">
+                            <span class="text-muted"><i class="fa fa-user"></i>Wuzefa</span><br />                            	
+                            <span class="text-muted"><i class="fa fa-clock-o"></i>2017.6.25</span>                                
+                            </div>
+                            <h3>教学目标：</h3>
+                            <p>1、了解水泥搅拌车的原理</p>
+							<p>2、认识并了解涡杆的作用</p>
+							<p>3、个性设计作品</p>
+							<h3>联系：</h3>
+							<h4>相关图片：</h4>
+			        		<div class="thumbnail media-lib-item">
+                         	   <img src="../img/Transition-structure/9、水泥搅拌车/水泥搅拌车3.jpg"/> 
+			        		</div>							
+							<h4>相关故事：</h4>    
+							<p>相传范蠡在经商中发现，人们在市场买卖东西，都是用眼估堆，很难做到公平交易，便产生了创造一种测定货物重量的工具的想法。</p>
+							<h3>建构：</h3>						
+							<p>1、搭建车体、及涡轮结构。</p>
+			        		<div class="thumbnail media-lib-item">
+                         	   <img src="../img/Transition-structure/9、水泥搅拌车/水泥搅拌车1.jpg"/> 
+			        		</div>	
+							<p>2、安装搅拌桶及装饰。</p>
+			        		<div class="thumbnail media-lib-item">
+                         	   <img src="../img/Transition-structure/9、水泥搅拌车/水泥搅拌车2.jpg"/> 
+			        		</div>	
+							<p>3、能力强小朋友的选择框架的搭法。</p>
+			        		<div class="thumbnail media-lib-item">
+                         	   <img src="../img/Transition-structure/9、水泥搅拌车/水泥搅拌车4.jpg"> 
+			        		</div>																							
+							<h3>反思：</h3>  
+							<p>1、涡轮箱作用是否一定需要涡轮箱？（涡轮蜗杆机构是一个常用的机械机构，涡轮箱体的作用是为了让涡轮，蜗杆机构更坚固，易于安装。但同时，箱体在某些时候却又占用空间，我们如何让孩子们知道，这个构建的真实作用部分是涡轮蜗杆，没有箱体一样可以做到）</p>
+							<p>2、有的孩子可能一开始不会想到涡轮箱，可能利用其他零件也能完成，那么此时，我们是否该干涉？（教学目标里有涡轮箱的运用，但同时，我们该释放孩子的想法，给予其机会创造，根据孩子本身能力，可以完全任由其发挥）</p>
+							<h3>延续：</h3> 
+							<p>对于喜欢研究的孩子可以让其改变齿轮组来改变搅拌桶的旋转速度。</p>
+							<p>对于做的慢的孩子，最后要留出时间让其玩一会自己的作品，培养其自信和对乐高的兴趣。</p>
+							<p>本节课属于工程类，最后可以做一堂工程类情景大课堂。</p>
+                                <div class="col-md-6">
+                                        <h5>Tags:</h5>
+                                        <button class="btn btn-primary btn-xs" type="button">水泥搅拌车</button>      
+                                        <button class="btn btn-white btn-xs" type="button">涡轮传动</button>                                        
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small text-right">
+                                        <h5>Stats:</h5>
+                                        <div> <i class="fa fa-comments-o"> </i> 41 comments </div>
+                                        <i class="fa fa-eye"> </i> 624 views
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="../assets/js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Js -->
+    <script src="../assets/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="../assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="../assets/js/morris/morris.js"></script>
+    <!-- Custom Js -->
+    <script src="../assets/js/custom-scripts.js"></script>
+
+
+</body>
+
 </html>
