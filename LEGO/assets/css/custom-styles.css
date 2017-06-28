@@ -23,6 +23,13 @@ body {
     background:#E5EBF2;
    
 }
+
+#page1{
+    min-height: 600px;
+    background:#E5EBF2;
+   
+}
+
 #page-inner {
     width:100%;
     margin:10px 20px 10px 0px;
@@ -405,6 +412,23 @@ line-height: 1.428571429;
      #page-wrapper{
                margin: 0 0 0 260px;
         padding: 15px 30px;
+        min-height: 1200px;
+		
+    }
+	
+	
+    .navbar-side {
+        z-index: 1;
+        position: absolute;
+        width: 260px;
+    }
+
+   .navbar {
+ border-radius: 0px; 
+}
+ @media(min-width:768px) {
+     #page1{
+               margin: 0 0 0 260px;
         min-height: 1200px;
 		
     }
