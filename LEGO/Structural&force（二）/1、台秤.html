@@ -1,9 +1,75 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEGO</title>
+    <!-- Bootstrap Styles-->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="../assets/css/custom-styles.css" rel="stylesheet" />
+</head>
+	<style type="text/css">
+		.img-page{
+			height: 421px;
+		}
+	</style>
+<body>
+    <div id="wrapper">
+
+        <!--/. NAV TOP  -->
+        <div id="rightCon"></div>
+        <!-- /. NAV SIDE  -->
+        <div id="page1">
+		<div class="full-slide-image" id="full-img-slide">
+			<div class="slide-inner more-padding">
+				<div class="slide-text-content">
+					<div class="container-fluid img-page">
+						<h1 style="text-align: center;margin-top: 15px; color: white;">此网站版权归作者所有，请勿盗用</h1>
+						<!--<button class="btn btn-lg btn-warning btn-learn-more btn-border-only">LEARN MORE</button>
+						<a href="http://goo.gl/V32dLM" target="_blank" class="btn btn-lg btn-success btn-learn-more">PURCHASE NOW</a>-->
+					</div><!-- /.container -->
+				</div><!-- /.slide-text-content -->
+			</div><!-- /.slide-inner -->
+		</div><!-- /.full-slide-image -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="../assets/js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Js -->
+    <script src="../assets/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="../assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="../assets/js/morris/morris.js"></script>
+    <!-- Custom Js -->
+    <script src="../assets/js/custom-scripts.js"></script>
+    <script type="text/javascript" src="../assets/jq/backstretch/jquery.backstretch.min.js" ></script>
+    <script type="text/javascript">
+			$("#full-img-slide").backstretch([
+			  "../img/page/1.jpg",
+			  "../img/page/2.jpg",
+			  "../img/page/3.jpg",
+			  "../img/page/4.jpg",
+			  "../img/page/5.jpg",
+			  ], {
+				fade: 750,
+				duration: 4000
+			});	
+			
+	</script>
+	<script>$("#rightCon").load('../page/list.html');</script>
+	
+
+</body>
+
 </html>
