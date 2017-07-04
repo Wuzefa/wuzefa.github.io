@@ -3,24 +3,73 @@
 <head>
 <meta charset="utf-8" />
 <title>哈尔滨游记</title>	
-<link rel="stylesheet" href="../css/相册/baguettebox.min.css">
-<link rel="stylesheet" href="../css/相册/lrtk.css">
-<script src="../js/baguettebox.min.js"></script>
+		<link rel="stylesheet" href="../css/相册/baguettebox.min.css">
+		<link rel="stylesheet" href="../css/相册/lrtk.css">
+    	<link href="../css/bootstrap.min.css" rel="stylesheet">
+        <script src="../js/baguettebox.min.js"></script>	    	
+    	<style type="text/css">
+    		.navbar{
+    			margin-bottom:0px;
+    		}
+    	</style>
 </head>
 <body>		
-	<div id="article">
-		<h1>Trip to Harbin</h1>				
-		<div class="baguetteBoxOne gallery">
-		        <a href="../img/哈尔滨/1-1.JPG"><img src="../img/哈尔滨/1-1.JPG"></a>
-		        <a href="../img/哈尔滨/1-2.JPG"><img src="../img/哈尔滨/1-2.JPG"></a>
-		        <a href="../img/哈尔滨/1-3.JPG"><img src="../img/哈尔滨/1-3.JPG"></a>
-		        <a href="../img/哈尔滨/1-4.JPG"><img src="../img/哈尔滨/1-4.JPG"></a>
-		        <a href="../img/哈尔滨/1-5.jpg"><img src="../img/哈尔滨/1-5.jpg"></a>
-		        <a href="../img/哈尔滨/1-6.jpg"><img src="../img/哈尔滨/1-6.jpg"></a>
-		        <a href="../img/哈尔滨/1-7.jpg"><img src="../img/哈尔滨/1-7.jpg"></a>
-		        <a href="../img/哈尔滨/1-8.jpg"><img src="../img/哈尔滨/1-8.jpg"></a>        
-		</div>		
-	</div>	
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">
+						<img src="../img/sy.png" width="20px" />
+					</a> 					
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>	
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../CSS3下的页面/CSS3框架集.html">CSS3</a></li>    						
+						<li><a href="../JavaScript下的网页/Javascript框架集.html">JavaScript</a></li>    						
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								Jquery/Ajax<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="../JQuery下的页面/JQuery框架集.html">Jquery</a></li>
+								<li><a href="#">Ajax</a></li>						
+							</ul>
+						</li>
+						<li><a href="../嵌入式1/pages/主页/index.html">Linux</a></li>
+						<li><a href="../LEGO/page/index.html">LEGO</a></li>
+						<li><a href="../个人简历.html">About me</a></li>
+					</ul>     					
+					<form class="navbar-form navbar-right myform" action="">
+						<input type="text" class="form-control button_01"  placeholder="Please input content"/>
+						<button class="btn btn-primary" onclick="submit1()">search</button>
+					</form>
+				</div>
+			</div>
+		</nav>	
+	</header>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-lg-12">
+				<div class="baguetteBoxOne gallery">
+						<h1>Trip to Harbin</h1>						
+				        <a href="../img/哈尔滨/1-1.JPG"><img src="../img/哈尔滨/1-1.JPG"></a>
+				        <a href="../img/哈尔滨/1-2.JPG"><img src="../img/哈尔滨/1-2.JPG"></a>
+				        <a href="../img/哈尔滨/1-3.JPG"><img src="../img/哈尔滨/1-3.JPG"></a>
+				        <a href="../img/哈尔滨/1-4.JPG"><img src="../img/哈尔滨/1-4.JPG"></a>
+				        <a href="../img/哈尔滨/1-5.jpg"><img src="../img/哈尔滨/1-5.jpg"></a>
+				        <a href="../img/哈尔滨/1-6.jpg"><img src="../img/哈尔滨/1-6.jpg"></a>
+				        <a href="../img/哈尔滨/1-7.jpg"><img src="../img/哈尔滨/1-7.jpg"></a>
+				        <a href="../img/哈尔滨/1-8.jpg"><img src="../img/哈尔滨/1-8.jpg"></a>        
+				</div>					
+  			</div>
+  		</div>
+  	</div>	
 <script>
 baguetteBox.run('.baguetteBoxOne', {
     animation: 'fadeIn',
