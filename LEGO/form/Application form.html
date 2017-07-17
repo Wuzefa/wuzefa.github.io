@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学员预约表</title>
+    <!-- Bootstrap Styles-->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+</head>
+	<style type="text/css">
+  	
+	#wrapper{
+		background: white;
+	}
+	#page-wrapper{
+		margin: 0px;
+		background:white;
+		border: 1px solid black;
+		margin: 10px 60px;
+	}
+	h1{
+		font-size: 45px;
+	}
+		.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline{
+		margin-left: 0px;
+	}	
+	.btn1{
+		width: 100px;margin: auto;display: inline-block;
+	}
+	.btn2{
+		width: 100px;margin: auto;display: inline-block;margin-left: 30px;
+	}
+	@media screen and (max-width: 850px){
+		h1{
+		    font-size: 28px;
+		}
+	}  	
+	</style>	
+<body>
+    <div id="wrapper">
+        <!--/. NAV TOP  -->
+        <div id="page-wrapper">
+    		<div class="thumbnail media-lib-item">
+         	   <img src="../img/系统实验/3.png" /> 
+    		</div>	  
+            <h1 style="text-align: center;">学员预约表</h1>    		
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          	 基本信息
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>姓名</label>
+                                            <input class="form-control">
+                                        </div>
+	                                    <div class="form-group">
+	                                        <label>性别</label>
+	                                        <select class="form-control">
+	                                            <option>男</option>
+	                                            <option>女</option>
+	                                        </select>
+	                                    </div> 
+	                                    <div class="form-group">
+	                                        <label>出生日期</label>	                                    	
+    										<input class="form-control" id="datepicker">
+	                                    </div>    
+                                        <div class="form-group">
+                                            <label>联系电话</label>
+                                            <input class="form-control">
+                                        </div>	                                    
+	                                    <div class="form-group">
+	                                        <label>所在学校</label>
+	                                        <select class="form-control">
+	                                            <option>北师大幼儿园</option>
+	                                            <option>大成经典幼儿园</option>
+	                                            <option>小宝家幼儿园</option>
+	                                            <option>大手拉小手幼儿园</option>
+	                                            <option>三帆朝阳小学</option>
+	                                            <option>花家地西里小学</option>
+	                                            <option>其他</option>
+	                                        </select>
+	                                    </div> 	                                    
+                                        <div class="form-group">
+                                            <label>预约时间</label>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">周二15：30-17：00
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">周二17：30-19：00
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">周三15：30-17：00
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">周三17：30-19：00
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">周四15：30-17：00
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">周四17：30-19：00
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>希望孩子得到哪些方面的锻炼？</label><br />
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">动手能力
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">专注力
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">团队合作
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">想象力
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">领导力
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">语言表达
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">抗挫折能力
+                                            </label>
+                                        </div>
+										<div class="row">
+											<div class="col-lg-12">
+												<div style="width: 300px;height: 50px;display: block;text-align: center;margin: auto;">
+                        						    <button type="submit" class="btn btn-info btn1">提交</button>		
+                        						    <button type="reset" class="btn btn-info btn2">重置</button>	                        			    
+												</div>
+											</div>
+										</div>
+                                </div>
+
+
+
+                                </div>
+                                <!-- /.col-lg-4 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+
+
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="../assets/js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Js -->
+	<script>
+		  $(function() {
+		    $( "#datepicker" ).datepicker();
+		  });
+	</script>   
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">	  
+</body>
+
+</html>
