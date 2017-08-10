@@ -1,0 +1,3 @@
+jQuery.extend({getCookie:function(sName){var sRE='(?:; )?'+sName+'=([^;]*)';var oRE=new RegExp(sRE);if(oRE.test(document.cookie)){return decodeURIComponent(RegExp['$1']);}else{return null;};}});$(function(){var ws_uid=$.getCookie('ws_uid');var ws_name=$.getCookie('ws_name');if(ws_uid){if(ws_name==null||ws_name==' '||ws_name=='Customer'){ws_name='My Account';}
+ws_name=decodeURI(ws_name).replace('+',' ');if(ws_name.length>=12){ws_name=ws_name.substr(0,9)+'...';}
+$("a.member").html(ws_name);}});
