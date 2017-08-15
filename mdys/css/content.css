@@ -32,13 +32,13 @@
 
 /*TOOLS*/
 .BODY_LEFT_TOOLS{width:80%;margin:25px auto; background:#ffffff;border-bottom:1px solid #D2D2D2;height:32px;}
-.BODY_LEFT_TOOLS_COLOR1{width:20%;background:url("../images/train/php.png") no-repeat;background-size:30px;height:100%;float:left;}
-.BODY_LEFT_TOOLS_COLOR2{width:20%;background:url("../images/train/java.png") no-repeat;background-size:30px;height:100%;float:left;}
-.BODY_LEFT_TOOLS_COLOR3{width:20%;background:url("../images/train/php.png") no-repeat;background-size:30px;height:100%;float:left;}
-.BODY_LEFT_TOOLS_COLOR4{width:20%;background:url("../images/train/andrio.png") no-repeat;background-size:30px;height:100%;float:left;}
-.BODY_LEFT_TOOLS_COLOR5{width:20%;background:url("../images/train/ui.png") no-repeat;background-size:30px;height:100%;float:left;}
-.BODY_LEFT_TOOLS_COLOR6{width:20%;background:url("../images/train/html5.png") no-repeat;background-size:30px;height:100%;float:left;}
-.BODY_LEFT_TOOLS_COLOR7{width:20%;background:url("../images/train/ruby.png") no-repeat;background-size:30px;height:100%;float:left;}
+.BODY_LEFT_TOOLS_COLOR1{width:20%;background:url("../images/lego-icon/icon-1.png") no-repeat;background-size:30px;height:100%;float:left;}
+.BODY_LEFT_TOOLS_COLOR2{width:20%;background:url("../images/lego-icon/icon-2.png") no-repeat;background-size:30px;height:100%;float:left;}
+.BODY_LEFT_TOOLS_COLOR3{width:20%;background:url("../images/lego-icon/icon-7.png") no-repeat;background-size:30px;height:100%;float:left;}
+.BODY_LEFT_TOOLS_COLOR4{width:20%;background:url("../images/lego-icon/icon-4.png") no-repeat;background-size:30px;height:100%;float:left;}
+.BODY_LEFT_TOOLS_COLOR5{width:20%;background:url("../images/lego-icon/icon-5.png") no-repeat;background-size:30px;height:100%;float:left;}
+.BODY_LEFT_TOOLS_COLOR6{width:20%;background:url("../images/lego-icon/icon-6.png") no-repeat;background-size:30px;height:100%;float:left;}
+.BODY_LEFT_TOOLS_COLOR7{width:20%;background:url("../images/lego-icon/icon-2.png") no-repeat;background-size:30px;height:100%;float:left;}
 
 .BODY_LEFT_TOOLS_TEXT a{width:60%;color:#666;font-weight:bolder;line-height:32px;float:left;padding:0 10px;font-size:15px;font-family:'Microsoft YaHei';}
 /*TOOLS*/
@@ -56,7 +56,7 @@ height: 100%;
 float: left;
 margin-left: 25px;}
 .BODY_RIGHT_TITLE{background:#d4d4d8;height:40px;border-bottom:1px solid #eee;}
-.BODY_RIGHT_TITLE_CONTENT1{float:left;height:100%;width:100px;color:#000;font-weight:bolder;line-height:40px;padding:0 10px;font-size:17px;}
+.BODY_RIGHT_TITLE_CONTENT1{float:left;height:100%;width:102px;color:#000;font-weight:bolder;line-height:40px;padding:0 10px;font-size:17px;}
 .BODY_RIGHT_TITLE_CONTENT2{float:right;height:100%;width:300px;color:#000;font-size:14px;line-height:40px;text-align:center;}
 .BODY_RIGHT_CONTENT{padding: 0px 80px 35px 80px }
 /*尾部*/
