@@ -89,7 +89,7 @@ margin-left: 25px;}
 border:1px solid #d9dfe1;
 	}
 	.model_show_img{
-		width:844px;
+		width:900px;
 		margin:0 auto;
 		}	
 	.model_show_img li{
@@ -100,6 +100,8 @@ border:1px solid #d9dfe1;
 		text-align:center;
 		background:#666666;
 		color:#ffffff;
+	    overflow: hidden;
+	    position: relative;	
 		}
 .model_show_img2{
 		width:640px;

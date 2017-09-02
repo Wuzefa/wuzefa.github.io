@@ -43,7 +43,37 @@ zoom: 1;
 	    font-size:24px;
 	    font-weight:bold;
 	    color:#f03748;
-	}		
+	}	
+	 .model_show_img .li_right{
+		float: right;
+	}	
+	.text_content{
+	    top: 200px;
+	    width: 400px;
+	    height: 200px;
+	    transition: 0.5s;
+	    position: absolute;
+	    background: #000000;
+	    background: rgba(0,0,0,0.6);
+	}	
+	.text_content span{
+	    left: 50%;
+	    bottom: 10px;
+	    margin-left: -54px;
+	    width: 108px;
+	    height: 28px;
+	    line-height: 28px;
+	    text-align: center;
+	    display: block;
+	    color: #ffffff;
+	    position: absolute;
+	    background: #ff6000;
+	    border-radius: 12px;
+	}	
+	li:hover .text_content{
+		top: 0;
+    	transition: 0.5s;
+	}
 </style>
 <body>
 <!-- 悬浮代码 开始 -->
@@ -112,61 +142,77 @@ zoom: 1;
   </div>
 </div>
 
-
-
-
 <div class='BODY'>
-				<div class='BODY_LEFT'>
-				<div class='BODY_LEFT_TITLE'>课程介绍</div>
-				<div class='BODY_LEFT_CONTENT'>
-<!--************************************** 小小建筑师 **************************************-->
-				<div class='BODY_LEFT_TOOLS'>
-							<div class='BODY_LEFT_TOOLS_COLOR1'></div>
-							<div class='BODY_LEFT_TOOLS_TEXT'><a href='lego_course/Small-architect.html'>小小建筑师</a></div>
-				</div>
-<!-- **************************************小小机械师************************************** -->
-				<div class='BODY_LEFT_TOOLS'>
-							<div class='BODY_LEFT_TOOLS_COLOR2'></div>
-							<div class='BODY_LEFT_TOOLS_TEXT'><a href='lego_course/Small-mechanic.html'>小小机械师</a></div>
-				</div>
-<!-- **************************************小小设计师************************************** -->
-				<div class='BODY_LEFT_TOOLS'>
-							<div class='BODY_LEFT_TOOLS_COLOR4'></div>
-							<div class='BODY_LEFT_TOOLS_TEXT'><a href='lego_course/Small-designer.html'>小小设计师</a></div>
-				</div>
-<!-- **************************************结构与力************************************** -->
-				<div class='BODY_LEFT_TOOLS'>
-							<div class='BODY_LEFT_TOOLS_COLOR7'></div>
-							<div class='BODY_LEFT_TOOLS_TEXT'><a href='lego_course/Structural&force.html'>结构与力</a></div>
-				</div>
-<!-- **************************************动力机械************************************** -->
-				<div class='BODY_LEFT_TOOLS'>
-							<div class='BODY_LEFT_TOOLS_COLOR5'></div>
-							<div class='BODY_LEFT_TOOLS_TEXT'><a href='lego_course/Power&machinery.html'>动力机械</a></div>
-				</div>
-<!-- **************************************wodo/EV3编程************************************** -->
-				<div class='BODY_LEFT_TOOLS'>
-							<div class='BODY_LEFT_TOOLS_COLOR6'></div>
-							<div class='BODY_LEFT_TOOLS_TEXT'><a href='lego_course/wedo-EV3.html'>wodo/EV3编程</a></div>
-				</div>
-				<div class='BODY_LEFT_CSDN_INFO'></div>
-
-				</div>
-
-
-				</div>
-				<div class='BODY_RIGHT'>
+				<div class="train_model_content">
+					<!--培养标题-->
 				<div class='BODY_RIGHT_TITLE'>
-				<div class='BODY_RIGHT_TITLE_CONTENT1'>乐高课程介绍</div>
-				<div class='BODY_RIGHT_TITLE_CONTENT2'>当前位置&nbsp;>&nbsp;首页&nbsp;>&nbsp;课程介绍&nbsp;>&nbsp;乐高课程</div>
+				<div class='BODY_RIGHT_TITLE_CONTENT1'>学员作品</div>
+				<div class='BODY_RIGHT_TITLE_CONTENT2'>当前位置&nbsp;>&nbsp;首页&nbsp;>&nbsp;学员作品</div>
 				</div>
+				<!--培养标题 end-->
+				 <div class='BODY_RIGHT_CONTENT'>
+				 		<ul class="model_show_img" style="margin-top:20px;">
+	                    	<li class="box_student"><img src="images/student_style/lego_stu_06.png"/><br/>学员：王疏轩&nbsp;&nbsp;作品：篮球架
+	                    		<div class="text_content">
+		                    		<p style="margin-top: 65px;">教学目标：</p>
+		                    		<p>1、了解篮球架结构</p>
+		                    		<p>2、设计一个坚固的篮球架</p>
+		                    		<p>3、进行投篮游戏</p>   
+	                    		<span>了解详情 >></span>	                    		
+	                    		</div>
+	                    	</li>
+	                    	<li class="box_student li_right"><img src="images/student_style/lego_stu_07.png"/><br/>学员：赵思涵&nbsp;&nbsp;作品：坦克
+	                    		<div class="text_content">
+		                    		<p style="margin-top: 65px;">教学目标：</p>
+		                    		<p>1、了解坦克结构</p>
+		                    		<p>2、学会轮毂、履带的使用</p>
+		                    		<p>3、创意设计坦克</p>   
+	                    		<span>了解详情 >></span>	                    		
+	                    		</div>
+	                    	</li>
+	                    	<li class="box_student"><img src="images/student_style/lego_stu_06.png"/><br/>学员：王疏轩&nbsp;&nbsp;作品：篮球架
+	                    		<div class="text_content">
+		                    		<p style="margin-top: 65px;">教学目标：</p>
+		                    		<p>1、了解篮球架结构</p>
+		                    		<p>2、设计一个坚固的篮球架</p>
+		                    		<p>3、进行投篮游戏</p>   
+	                    		<span>了解详情 >></span>	                    		
+	                    		</div>
+	                    	</li>
+	                    	<li class="box_student li_right"><img src="images/student_style/lego_stu_07.png"/><br/>学员：赵思涵&nbsp;&nbsp;作品：坦克
+	                    		<div class="text_content">
+		                    		<p style="margin-top: 65px;">教学目标：</p>
+		                    		<p>1、了解坦克结构</p>
+		                    		<p>2、学会轮毂、履带的使用</p>
+		                    		<p>3、创意设计坦克</p>   
+	                    		<span>了解详情 >></span>	                    		
+	                    		</div>
+	                    	</li>
+	                    	<li class="box_student"><img src="images/student_style/lego_stu_06.png"/><br/>学员：王疏轩&nbsp;&nbsp;作品：篮球架
+	                    		<div class="text_content">
+		                    		<p style="margin-top: 65px;">教学目标：</p>
+		                    		<p>1、了解篮球架结构</p>
+		                    		<p>2、设计一个坚固的篮球架</p>
+		                    		<p>3、进行投篮游戏</p>   
+	                    		<span>了解详情 >></span>	                    		
+	                    		</div>
+	                    	</li>
+	                    	<li class="box_student li_right"><img src="images/student_style/lego_stu_07.png"/><br/>学员：赵思涵&nbsp;&nbsp;作品：坦克
+	                    		<div class="text_content">
+		                    		<p style="margin-top: 65px;">教学目标：</p>
+		                    		<p>1、了解坦克结构</p>
+		                    		<p>2、学会轮毂、履带的使用</p>
+		                    		<p>3、创意设计坦克</p>   
+	                    		<span>了解详情 >></span>	                    		
+	                    		</div>
+	                    	</li>
 
-				<div class='BODY_RIGHT_CONTENT'>
-				<img src="images/lego/lego_bg_02.png" style="width:700px; height:auto;margin:25px auto;"/>
+                        </ul>
+                        <div style="clear:both;"></div>
+				 </div>
 				</div>
-				</div>
-				<div style="clear:both;"></div>
 </div>
+
 <div style="clear:both;"></div>
 <!-------------联系我们------------------>
 	<div class="contact">
