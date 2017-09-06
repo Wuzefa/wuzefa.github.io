@@ -190,7 +190,7 @@ body{
 }
 .part1 .container img.bg2{
     top:-30px;
-    left:540px;
+    left:500px;
     position:absolute;
 }
 .part1 .container img.bg3{
@@ -222,7 +222,7 @@ body{
 }
 .part1 .container .info.p1{
     top:52px;
-    left:-50px;
+    left:-35px;
 }
 .part1 .container .info.p2{
     top:665px;
@@ -230,7 +230,7 @@ body{
 }
 .part1 .container .info2{
     top:700px;
-    left:-110px;
+    left:-60px;
     position:absolute;
 }
 .part1 .container .info2 ul li{
