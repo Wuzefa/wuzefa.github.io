@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8' />
+</head>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/home.css" rel="stylesheet" type="text/css" />
+<link href="css/content.css" rel="stylesheet" type="text/css" />
+<title>文章咨询</title>
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type='text/javascript' src='js/common.js'></script>
+<script type='text/javascript' src='js/slideDown.js'></script>
+
+<!--此处开始兼容IE7,8代码的透明度开始-->
+<!--[if IE]>
+<style type="text/css">
+.MENUWRAP,.MEUN li:hover {
+background:transparent;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4BFFFFFF,endColorstr=#4BFFFFFFs);
+zoom: 1;
+}
+</style>
+<![endif]-->
+<!--此处开始兼容IE7,8代码的透明度结束-->
+
+<style>
+	.header .logo img {
+	    max-width: 65%;
+	}
+	.phone{
+	    margin-top:25px;
+	    margin-right: 25px;
+	    width:250px;
+	    height:55px;
+	    background: url(images/lego/phone.gif) no-repeat left top;
+	}
+	.phone-text h1{
+	    font-size:16px;
+	    color:#4d4d4d;
+	}
+	.phone-text p{
+	    font-size:24px;
+	    font-weight:bold;
+	    color:#f03748;
+	}		
+	#content {
+	    margin: 0 auto;
+	    width: 100%;
+	    max-width: 1150px;
+	    overflow: hidden;
+	}	
+	.content-menu {
+	    width: 800px;
+	}	
+	.fl {
+	    float: left;
+	    display: inline;
+	}
+	.content-box {
+	    padding: 30px 0;
+	    width: 800px;
+	    height: 140px;
+	    border-bottom: 1px solid #e6e6e6;
+	}	
+	.content-box img {
+	    float: left;
+	    width: 220px;
+	    height: 140px;
+	}
+	img {
+	    border: 0px;
+	}	
+	.content-box-info {
+	    float: right;
+	    width: 565px;
+	}	
+	.content-box-info h1 {
+	    font-size: 22px;
+	    line-height: 34px;
+	}	
+	.content-box-info p {
+	    margin-top: 8px;
+	    font-size: 14px;
+	    line-height: 22px;
+	    color: #666666;
+	}	
+	.content-box-info a{
+		text-decoration: none;
+	}
+	.content-box-info p span {
+	    margin-right: 20px;
+	    font-size: 14px;
+	    line-height: 22px;
+	    color: #666666;
+	}	
+	.content-hot {
+	    float: right;
+	    width: 320px;
+	}	
+	.title.t12 {
+	    transition: 0.5s;
+	    background: url(images/Article-consultation/title-tag12.png) no-repeat center left;
+	}
+	.content-hot-news:hover .title.t12 {
+	    transition: 0.5s;
+	    background: url(images/Article-consultation/title-tag12-h.png) no-repeat center left;
+	}	
+	.title {
+	    width: 100%;
+	    height: 62px;
+	    position: relative;
+	    transition: 0.5s;
+	    background: url() no-repeat center left;
+	}	
+	.title.t12 h1 {
+	    margin-left: 60px;
+	}
+	.title h1 {
+	    padding: 17px 0 11px;
+	    margin-left: 70px;
+	    font-size: 18px;
+	    border-bottom: 1px solid #0088f1;
+	}	
+	.content-hot-news-box {
+	    padding: 10px 0;
+	    width: 320px;
+	    min-height: 75px;
+	    border-bottom: 1px solid #f2f2f2;
+	}	
+	.content-hot-news-box img {
+	    float: left;
+	    width: 120px;
+	    height: 75px;
+	}
+	.content-box a:hover h1 {
+	    transition: 0.5s;
+	    color: #0079d7;
+	}	
+	.content-box a:hover p {
+	    transition: 0.5s;
+	    color: #0079d7;
+	}	
+	.content-hot-news-box a:hover h1 {
+	    transition: 0.5s;
+	    color: #0079d7;
+	}
+	.content-hot-news-box h1 {
+	    float: right;
+	    margin-top: 12px;
+	    width: 190px;
+	    line-height: 24px;
+	}	
+	.content-hot-link {
+	    margin-top: 20px;
+	}	
+	.content-hot-link ul li {
+	    float: left;
+	}	
+	.content-hot-link ul li a {
+	    margin-right: 4px;
+	    margin-bottom: 3px;
+	    padding: 0 12px;
+	    line-height: 35px;
+	    color: #ffffff;
+	    display: block;
+	    background: #35a2f6;
+	    text-decoration: none;
+	}
+	</style>
+<body>
+<!-- 悬浮代码 开始 -->
+<div class="weixin">
+    <div class="xixi">
+     <a href=tencent://message/?uin=345248837&Site=乐高教育网&Menu=yes><img border="0" SRC=http://wpa.qq.com/pa?p=1:345248837:10 alt="在线咨询！"></a><br />
+    </div>
+</div>
+<!-- 代码 结束 -->
+
+<div class="header" id="header">
+	<div class="container head">
+		<div class="logo_box">
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/lego/3.jpg" alt="Wondershare Official" />
+				</a>
+			</div>					
+		</div>
+        <div class="phone fr">
+            <div class="phone-text fr">
+                <h1>咨询热线（9:00-24:00）</h1>
+                <p>010-64751520</p>
+            </div>
+        </div>
+
+
+    <div class="clear"></div>
+    <div class="navSearch hidden">
+      <ul class="nav">
+        <li><a href="index.html" class="title">首页</a></li>
+        <li>
+			<a href="#" class="title">课程介绍</a>
+			<ul class="child" style="display:none">
+			    <li><a href="lego_course.html" class="title">乐高课程</a></li>
+				<li><a href="#" class="title">演讲口才</a></li>
+			</ul>
+        </li>
+		<li>
+			<a href="lego_teacher.html" class="title">师资团队</a>		
+        </li>
+		<li>
+			<a href="#" class="title">学员风采</a>
+			<ul class="child" style="display:none">
+				<li><a href="student_style.html" class="title">乐高风采</a></li>
+				<li><a href="#" class="title">口才风采</a></li>
+			</ul>
+        </li>
+		<li>
+			<a href="National-franchise.html" class="title" target="_blank">全国加盟</a>			
+        </li>
+		<li>
+			<a href="#" class="title">文章咨询</a>
+        </li>
+		<!--<li>-->
+			<!--<a href="about.html" class="title">关于我们</a>-->
+        <!--</li>-->
+        <li style="border-right:1px solid #eee;">
+			<a href="about-us.html" class="title">联系我们</a>
+		</li>
+      </ul>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+
+    <div id="content">
+        <div class="content-menu fl">
+            <div class="content-box">
+                <a href="http://www.it61.cn/news/technology/2861.html" target="_blank"><img src="http://www.it61.cn/img/201708/1504145720012.jpg"></a>
+                <div class="content-box-info">
+                    <a href="http://www.it61.cn/news/technology/2861.html" target="_blank"><h1>【盘点】人工智能最牛的20所美国大学</h1></a>
+                    <a href="http://www.it61.cn/news/technology/2861.html" target="_blank"><p>人工智能的时代正在来临，从无人驾驶汽车、医疗机器人、超市机器人等等，可以看到人工智能未来必会对世界产生重大的改变。</p></a>
+                    <p>作者：<span>小童</span><span>2017-08-31</span></p>
+                </div>
+            </div>
+            <div class="content-box">
+                <a href="http://www.it61.cn/news/technology/2861.html" target="_blank"><img src="http://www.it61.cn/img/201708/1504145720012.jpg"></a>
+                <div class="content-box-info">
+                    <a href="http://www.it61.cn/news/technology/2861.html" target="_blank"><h1>【盘点】人工智能最牛的20所美国大学</h1></a>
+                    <a href="http://www.it61.cn/news/technology/2861.html" target="_blank"><p>人工智能的时代正在来临，从无人驾驶汽车、医疗机器人、超市机器人等等，可以看到人工智能未来必会对世界产生重大的改变。</p></a>
+                    <p>作者：<span>小童</span><span>2017-08-31</span></p>
+                </div>
+            </div>
+            <div class="content-box">
+                <a href="http://www.it61.cn/news/technology/2861.html" target="_blank"><img src="http://www.it61.cn/img/201708/1504145720012.jpg"></a>
+                <div class="content-box-info">
+                    <a href="http://www.it61.cn/news/technology/2861.html" target="_blank"><h1>【盘点】人工智能最牛的20所美国大学</h1></a>
+                    <a href="http://www.it61.cn/news/technology/2861.html" target="_blank"><p>人工智能的时代正在来临，从无人驾驶汽车、医疗机器人、超市机器人等等，可以看到人工智能未来必会对世界产生重大的改变。</p></a>
+                    <p>作者：<span>小童</span><span>2017-08-31</span></p>
+                </div>
+            </div>       
+        </div>   
+        
+	    <div class="content-hot">
+	        <div class="content-hot-img">	
+	            <a href="http://tb.53kf.com/code/client/10080416/5" target="_blank" class="content-hot-a a1">在线咨询</a>
+	            <a href="http://tb.53kf.com/code/client/10080416/5" target="_blank" class="content-hot-a a2">我要报名</a>
+	            <div class="clear"></div>
+	        </div>
+	        <div class="content-hot-news">
+	            <div class="title t12">
+	                <h1>热点新闻<!--<a href="http://tb.53kf.com/code/client/10080416/5" target="_blank" class="fr">more+</a>--></h1>
+	            </div>
+			
+	            <div class="content-hot-news-box">
+	                <a href="http://www.it61.cn/news/kid-coding/2880.html" target="_blank"><img src="http://www.it61.cn/img/201709/1504753279749.JPG"></a>
+	                <a href="http://www.it61.cn/news/kid-coding/2880.html" target="_blank"><h1>先人一步学编程，让孩子的未来更开阔</h1></a>
+	            </div>
+	            <div class="content-hot-news-box">
+	                <a href="http://www.it61.cn/news/kid-coding/2880.html" target="_blank"><img src="http://www.it61.cn/img/201709/1504753279749.JPG"></a>
+	                <a href="http://www.it61.cn/news/kid-coding/2880.html" target="_blank"><h1>先人一步学编程，让孩子的未来更开阔</h1></a>
+	            </div>
+	            <div class="content-hot-news-box">
+	                <a href="http://www.it61.cn/news/kid-coding/2880.html" target="_blank"><img src="http://www.it61.cn/img/201709/1504753279749.JPG"></a>
+	                <a href="http://www.it61.cn/news/kid-coding/2880.html" target="_blank"><h1>先人一步学编程，让孩子的未来更开阔</h1></a>
+	            </div>
+	            <div class="content-hot-news-box">
+	                <a href="http://www.it61.cn/news/kid-coding/2880.html" target="_blank"><img src="http://www.it61.cn/img/201709/1504753279749.JPG"></a>
+	                <a href="http://www.it61.cn/news/kid-coding/2880.html" target="_blank"><h1>先人一步学编程，让孩子的未来更开阔</h1></a>
+	            </div>
+	            <div class="content-hot-news-box">
+	                <a href="http://www.it61.cn/news/kid-coding/2880.html" target="_blank"><img src="http://www.it61.cn/img/201709/1504753279749.JPG"></a>
+	                <a href="http://www.it61.cn/news/kid-coding/2880.html" target="_blank"><h1>先人一步学编程，让孩子的未来更开阔</h1></a>
+	            </div>
+	            <div class="content-hot-news-box">
+	                <a href="http://www.it61.cn/news/kid-coding/2880.html" target="_blank"><img src="http://www.it61.cn/img/201709/1504753279749.JPG"></a>
+	                <a href="http://www.it61.cn/news/kid-coding/2880.html" target="_blank"><h1>先人一步学编程，让孩子的未来更开阔</h1></a>
+	            </div>
+			
+			
+	        </div>
+	        <div class="content-hot-link">
+	          <ul>
+	              <li><a href="http://tb.53kf.com/code/client/10080416/5" target="_blank">儿童编程</a></li>
+	              <li><a href="http://tb.53kf.com/code/client/10080416/5" target="_blank">少儿乐高机器人</a></li>
+	              <li><a href="http://tb.53kf.com/code/client/10080416/5" target="_blank">儿童编程</a></li>
+	              <li><a href="http://tb.53kf.com/code/client/10080416/5" target="_blank">少儿乐高机器人</a></li>
+	              <li><a href="http://tb.53kf.com/code/client/10080416/5" target="_blank">儿童编程夏令营</a></li>
+	              <li><a href="http://tb.53kf.com/code/client/10080416/5" target="_blank">天才</a></li>
+	          </ul>
+	        </div>
+	    </div>
+	    <div class="clear"></div>	       
+	</div>
+
+<!-------------联系我们------------------>
+	<div class="contact">
+		<div class="FOOTER_INFO1">r
+			<div class="FOOTER_ABOUT1">
+						<ul>
+						<li><h3><b>官方微信</b></h3></li>
+						<li>扫一扫有惊喜</li>
+						<li>
+							<img src="images/lego/1.jpg" style="width:40%;"/>
+							<img src="images/一诺/公众号图片/yn_00.jpg" style="width:40%;"/>								
+						</li>
+					   </ul>
+			</div>
+			<div class="FOOTER_ABOUT2">
+						<ul>
+						<li><h3><b>联系我们</b></h3></li>
+						<li>地址：北京市朝阳区广顺北大街33号大西洋新城529号楼中心会所一层</li>
+						<li style="position:relative">电话：
+							<div style="padding-left:40px;position:absolute;top:0px">
+								<p>010-64751520、13240996566</p>
+							</div>
+						</li>					
+						<li>地址：威海市新威路37号三和置业二楼</li>
+						<li style="position:relative">电话：
+							<div style="padding-left:40px;position:absolute;top:0px">
+								<p>010-64751520、17662703238</p>
+							</div>
+						</li>									
+					   </ul>
+			</div>
+			<div class="FOOTER_ABOUT3">
+						<ul>
+							<li style="margin-left:-20px;"><h3><b>友情链接</b></h3></li>
+							<li><a href="http://www.mdyseducation.com/">明德优尚（北京）教育科技有限公司</a></li>
+							<li><a href="http://www.semia.com/">西觅亚官方网站</a></li>
+						</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+	  <div class="container">
+		<p>
+			<a href="index.html">首页</a> | 
+			<a href="#">课程介绍</a> | 
+			<a href="#">师资团队</a> | 
+			<a href="#">学员风采</a> | 
+			<a href="#">全国加盟</a> | 		
+		</p>
+		<p>
+			<strong>Copyright &copy; 
+			<script type="text/javascript">var myDate = new Date();var year = myDate.getFullYear();document.write(year) 
+			</script> 
+			Mingdeyoushang. All Rights Reserved.
+			</strong>
+		</p>
+	  </div>
+	</div>
+</body>
+</html>

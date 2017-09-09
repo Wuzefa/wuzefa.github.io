@@ -6,12 +6,12 @@
 <link href="css/global.css" rel="stylesheet" type="text/css" />
 <link href="css/home.css" rel="stylesheet" type="text/css" />
 <link href="css/content.css" rel="stylesheet" type="text/css" />
-<title>学员风采展示</title>
+<title>联系我们</title>
 <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 <script type='text/javascript' src='js/common.js'></script>
 <script type='text/javascript' src='js/slideDown.js'></script>
-
+<script type='text/javascript' src='js/baiduapi.js'></script>
 <!--此处开始兼容IE7,8代码的透明度开始-->
 <!--[if IE]>
 <style type="text/css">
@@ -23,7 +23,8 @@ zoom: 1;
 </style>
 <![endif]-->
 <!--此处开始兼容IE7,8代码的透明度结束-->
-
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"></script>
 <style>
 	.header .logo img {
 	    max-width: 65%;
@@ -43,37 +44,10 @@ zoom: 1;
 	    font-size:24px;
 	    font-weight:bold;
 	    color:#f03748;
-	}	
-	 .model_show_img .li_right{
-		float: right;
-	}	
-	.text_content{
-	    top: 200px;
-	    width: 400px;
-	    height: 200px;
-	    transition: 0.5s;
-	    position: absolute;
-	    background: #000000;
-	    background: rgba(0,0,0,0.6);
-	}	
-	.text_content span{
-	    left: 50%;
-	    bottom: 10px;
-	    margin-left: -54px;
-	    width: 108px;
-	    height: 28px;
-	    line-height: 28px;
-	    text-align: center;
-	    display: block;
-	    color: #ffffff;
-	    position: absolute;
-	    background: #ff6000;
-	    border-radius: 12px;
-	}	
-	li:hover .text_content{
-		top: 0;
-    	transition: 0.5s;
-	}
+	}		
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 </style>
 <body>
 <!-- 悬浮代码 开始 -->
@@ -142,59 +116,17 @@ zoom: 1;
 </div>
 
 <div class='BODY'>
-				<div class="train_model_content">
-					<!--培养标题-->
-				<div class='BODY_RIGHT_TITLE'>
-				<div class='BODY_RIGHT_TITLE_CONTENT1'>学员作品</div>
-				<div class='BODY_RIGHT_TITLE_CONTENT2'>当前位置&nbsp;>&nbsp;首页&nbsp;>&nbsp;学员作品</div>
-				</div>
-				<!--培养标题 end-->
-				 <div class='BODY_RIGHT_CONTENT'>
-				 		<ul class="model_show_img" style="margin-top:20px;">
-	                    	<li class="box_student"><img src="images/student_style/lego_stu_06.png"/><br/>学员：王疏轩&nbsp;&nbsp;作品：篮球架
-	                    		<div class="text_content">
-		                    		<p style="margin-top: 65px;">教学目标：</p>
-		                    		<p>1、了解篮球架结构</p>
-		                    		<p>2、设计一个坚固的篮球架</p>
-		                    		<p>3、进行投篮游戏</p>   
-	                    		<span>了解详情 >></span>	                    		
-	                    		</div>
-	                    	</li>
-	                    	<li class="box_student li_right"><img src="images/student_style/lego_stu_07.png"/><br/>学员：赵思涵&nbsp;&nbsp;作品：坦克
-	                    		<div class="text_content">
-		                    		<p style="margin-top: 65px;">教学目标：</p>
-		                    		<p>1、了解坦克结构</p>
-		                    		<p>2、学会轮毂、履带的使用</p>
-		                    		<p>3、创意设计坦克</p>   
-	                    		<span>了解详情 >></span>	                    		
-	                    		</div>
-	                    	</li>
-	                    	<li class="box_student"><img src="images/student_style/lego_stu_09.png"/><br/>学员：任奕华、庞钧泽&nbsp;&nbsp;作品：投石车
-	                    		<div class="text_content">
-		                    		<p style="margin-top: 65px;">教学目标：</p>
-									<p>1、认识投石车的结构及作用</p>
-									<p>2、初步认识杠杆及费力杠杆</p>
-									<p>3、认识弹力</p> 
-	                    		<span>了解详情 >></span>	                    		
-	                    		</div>
-	                    	</li>
-	                    	<li class="box_student li_right"><img src="images/student_style/lego_stu_08.png"/><br/>学员：雷凯越&nbsp;&nbsp;作品：水泥搅拌车
-	                    		<div class="text_content">
-		                    		<p style="margin-top: 65px;">教学目标：</p>
-									<p>1、了解水泥搅拌车的结构</p>
-									<p>2、学习涡轮箱的工作原理</p>
-									<p>3、设计搭建水泥厂</p>
-	                    		<span>了解详情 >></span>	                    		
-	                    		</div>
-	                    	</li>
 
-                        </ul>
-                        <div style="clear:both;"></div>
-				 </div>
-				</div>
+  <!--百度地图容器-->
+  <div>
+  	<h1 style="text-align: center; font-size: 25px;">联系地址</h1>
+  </div>
+  <div style="width:697px;height:550px;border:#ccc solid 1px;margin: auto;" id="dituContent"></div>
+
 </div>
-
 <div style="clear:both;"></div>
+
+
 <!-------------联系我们------------------>
 	<div class="contact">
 		<div class="FOOTER_INFO1">
@@ -252,5 +184,102 @@ zoom: 1;
 		</p>
 	  </div>
 	</div>
+	<script type="text/javascript">
+	    //创建和初始化地图函数：
+	    function initMap(){
+	        createMap();//创建地图
+	        setMapEvent();//设置地图事件
+	        addMapControl();//向地图添加控件
+	        addMarker();//向地图中添加marker
+	    }
+	    
+	    //创建地图函数：
+	    function createMap(){
+	        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+	        var point = new BMap.Point(116.49073,40.018401);//定义一个中心点坐标
+	        map.centerAndZoom(point,14);//设定地图的中心点和坐标并将地图显示在地图容器中
+	        window.map = map;//将map变量存储在全局
+	    }
+	    
+	    //地图事件设置函数：
+	    function setMapEvent(){
+	        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+	        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+	        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+	        map.enableKeyboard();//启用键盘上下左右键移动地图
+	    }
+	    
+	    //地图控件添加函数：
+	    function addMapControl(){
+	        //向地图中添加缩放控件
+		var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+		map.addControl(ctrl_nav);
+	        //向地图中添加缩略图控件
+		var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+		map.addControl(ctrl_ove);
+	        //向地图中添加比例尺控件
+		var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+		map.addControl(ctrl_sca);
+	    }
+	    
+	    //标注点数组
+	    var markerArr = [{title:"朝阳区大西洋新529中心会所一层乐高活动中心",content:"3-16岁乐高机器人教育课程",point:"116.471542|39.997732",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+			 ];
+	    //创建marker
+	    function addMarker(){
+	        for(var i=0;i<markerArr.length;i++){
+	            var json = markerArr[i];
+	            var p0 = json.point.split("|")[0];
+	            var p1 = json.point.split("|")[1];
+	            var point = new BMap.Point(p0,p1);
+				var iconImg = createIcon(json.icon);
+	            var marker = new BMap.Marker(point,{icon:iconImg});
+				var iw = createInfoWindow(i);
+				var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+				marker.setLabel(label);
+	            map.addOverlay(marker);
+	            label.setStyle({
+	                        borderColor:"#808080",
+	                        color:"#333",
+	                        cursor:"pointer"
+	            });
+				
+				(function(){
+					var index = i;
+					var _iw = createInfoWindow(i);
+					var _marker = marker;
+					_marker.addEventListener("click",function(){
+					    this.openInfoWindow(_iw);
+				    });
+				    _iw.addEventListener("open",function(){
+					    _marker.getLabel().hide();
+				    })
+				    _iw.addEventListener("close",function(){
+					    _marker.getLabel().show();
+				    })
+					label.addEventListener("click",function(){
+					    _marker.openInfoWindow(_iw);
+				    })
+					if(!!json.isOpen){
+						label.hide();
+						_marker.openInfoWindow(_iw);
+					}
+				})()
+	        }
+	    }
+	    //创建InfoWindow
+	    function createInfoWindow(i){
+	        var json = markerArr[i];
+	        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+	        return iw;
+	    }
+	    //创建一个Icon
+	    function createIcon(json){
+	        var icon = new BMap.Icon("images/us_cursor.gif", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+	        return icon;
+	    }
+	    
+	    initMap();//创建和初始化地图
+	</script>	
 </body>
 </html>
