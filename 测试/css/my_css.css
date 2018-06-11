@@ -56,9 +56,9 @@
 		.icon_01 ul li a:hover{
 			color: #e13e41;/*background: url(images/家长端主界面/10-相机.png)no-repeat center 10px;*/
 		}
-		.icon_01 ul li::before{
+		/*.icon_01 ul li::before{
 			height: 35px;width: 1px;background: #cccccc;content: "";display: block;float: right;margin-top: 50px;
-		}
+		}*/
 		.icon_01 ul .li-none::before{
 			display: none;
 		}    	
