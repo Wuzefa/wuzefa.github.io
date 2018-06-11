@@ -1,0 +1,58 @@
+			.cont2{
+				height: 70px;background: white;line-height: 70px;
+			}
+			.cont2 span{
+				color: orangered;font-size: 24px;margin-left: 30px;display: block;position: relative;font-weight: bolder;
+			}
+			.span1::before{
+				content: "";display: block;height: 40px;width: 15px;background: orangered;position: absolute;left: -35px;top: 16px;border-radius: 5px;
+			}
+			.cont2-left,.cont2-right{
+				float: left;
+			}
+			.cont2-right{
+				float: right;
+			}
+			.more2{
+				font-size: 20px;color: orangered;display: block;margin-right: 16px;text-decoration: none;
+			}    
+       
+			.icon_01{
+				height: 120px;border-top: 1px solid #cccccc ;border-bottom: 1px solid #CCCCCC;
+			}
+			.icon_01 ul li{
+				list-style: none;display: block;float: left;width: 20%;text-align: center;
+			}
+			.icon_01 ul li a{
+				text-decoration: none;display: block;color: #696969;font-size: 16px;height: 85px;line-height: 130px;
+			}
+			.icon_01 ul li:nth-child(1) a{
+				background: url(../images/家长端/个人信息_所在班级.png)no-repeat center 10px;
+			}
+			.icon_01 ul li:nth-child(2) a{
+				background: url(../images/家长端/个人中心_班级通告.png)no-repeat center 10px;
+			}
+			.icon_01 ul li:nth-child(3) a{
+				background: url(../images/家长端/排课.png)no-repeat center 10px;
+			}
+			.icon_01 ul li:nth-child(4) a{
+				background: url(../images/家长端/积分.png)no-repeat center 10px;
+			}
+			.icon_01 ul li:nth-child(5) a{
+				background: url(../images/家长端/订单.png)no-repeat center 10px;
+			}
+			.icon_01 ul li a:hover{
+				color: #e13e41;/*background: url(images/家长端主界面/10-相机.png)no-repeat center 10px;*/
+			}
+			.icon_01 ul li::before{
+				height: 35px;width: 1px;background: #cccccc;content: "";display: block;float: right;margin-top: 50px;
+			}
+			.icon_01 ul .li-none::before{
+				display: none;
+			}    	
+			.picture .picture_01 ul li{
+				display: block;float: left;width: 33%;margin-top: 10px;text-align: center;
+			}
+			.pic img{
+				height: 200px;width: 98%;border: 1px solid black;margin: 2px;padding: ;
+			}
