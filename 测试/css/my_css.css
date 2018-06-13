@@ -70,3 +70,28 @@
 		}
 		
 
+		.weui-grid__label		
+		{
+			color: black;
+			font-weight: 600;
+			font-size: 14px;
+		}
+		
+		/*教师端*/
+		.weui-flex{
+			background: ghostwhite;
+		}
+		.weui-flex__item {
+			text-align: center;
+		}		
+		.weui-flex__item{
+			padding: 15px;
+		}
+		.weui-flex__item i{
+			color: red;
+			font-size: 20px;
+			font-style: normal;
+		}
+		.weui-footer__links{
+			margin-top: 10px;
+		}
