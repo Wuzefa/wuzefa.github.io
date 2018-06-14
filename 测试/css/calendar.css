@@ -1,0 +1,130 @@
+@CHARSET "UTF-8";
+html,body{
+	padding:0;
+	margin:0;
+	font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+	background: #F8F8F8;
+}
+*{
+	font-size: .2rem;
+}
+.f_grow1{
+	flex-grow:1;
+}
+.flex{
+	display:flex;
+}
+.flex_col{
+	display:flex;
+	flex-direction:column;
+}
+#calendar{
+	margin: .1rem .2rem;
+	background:#fff;
+}
+#calendar nav{
+	margin-bottom:.03rem;
+	padding:.1rem;
+	padding-bottom:0;
+	display:flex;
+	justify-content: center;
+}
+#calendar nav>*{
+	display:inline-block;
+}
+#calendar nav>span{
+    width:.55rem;
+    height:.55rem;
+    border-radius:.1rem;
+    text-align: center;
+}
+#calendar nav>span i{
+	font-size:.5rem;
+	color:white;
+}
+#calendar nav>div.month{
+	line-height: .55rem;
+    font-size: .3rem;
+    letter-spacing: .02rem;
+        color: #333;
+    text-shadow: 1px 1px 1px rgba(221, 227, 255, 0.77);
+    font-weight: bold;
+    margin:0 .2rem;
+}
+#calendar nav span.prev{
+	background: #ca5b87;
+}
+#calendar nav span.next{
+	background: #2e71e6;
+	
+}
+#calendar nav span:before{
+    
+}
+#calendar .c_head{
+	background: linear-gradient(135deg, #ca5b87 33%,#2989d8 71%,#2e71e6 91%);
+	color: rgba(255,255,255,0.9);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: .2rem .2rem 0 0;
+	height: 0.65rem;
+	line-height: .65rem;
+	padding: 0 .2rem;
+	text-align: center;
+}
+#calendar .c_head>div{
+	flex-grow:1;
+	font-size:.26rem;
+}
+#calendar .c_body{
+	padding:.2rem;
+	background: #fff;
+	border-bottom-left-radius: .2rem;
+	border-bottom-right-radius: .2rem;
+	border-left: 1px solid #dadada;
+    border-right: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+#calendar .c_row{
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.12);
+	display:flex;
+}
+#calendar .c_row:LAST-CHILD{
+	box-shadow: none;
+}
+#calendar .c_row>div{
+	flex-grow:1;
+	height: .8rem;
+	font-size: .26rem;
+	color: #000;
+	font-weight: 300;
+	text-shadow: 1px 1px 1px rgba(221, 227, 255, 0.77);
+	box-shadow: -1px 0 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	padding: .05rem;
+	flex-shrink: 0;
+    flex-basis: 1px;
+    position:relative;
+}
+#calendar .c_row>div.active:before{
+	content: '';
+	position:absolute;
+	background:rgba(255, 0, 101, 0.19);
+	top:0;bottom:0;left:0;right:0;
+}
+#calendar .c_row>div:FIRST-CHILD{
+	box-shadow:none
+}
+#calendar .c_row .day{
+	font-size:.3rem;
+	color: #031d69;
+    font-weight: bold;
+}
+#calendar .c_row .lesson{
+	position: absolute;
+    bottom: 0;
+    right: .0;
+    width: .5rem;
+    height: .5rem;
+    background-image: url(../images/lesson.png);
+    background-size: 100%;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>课程表</title>
+<meta charset="utf-8" />
+<meta name="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link href="http://assets.xiaoguanceo.net/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/calendar.css" />
+	<style>
+
+			.j_page_title{
+			background: url(images/06.jpg) ;height: 200px;color: black;margin: 0px;
+			}
+			.j_page_title	p{
+				display: block;padding: 70px 0px;font-size: 40px;font-weight: 600;text-align: center;margin: 0px;
+			}
+			.weui-cell__bd i{
+				display: block;width: 20px;height: 20px;float: left;margin-right: 5px;
+			}	
+			.weui-footer, .weui-grid__label {
+			    text-align: center;
+			    font-size: 14px;
+			}
+			.weui-footer a{
+			    color: #586c94;text-decoration: none;
+			}			
+			
+	</style>
+
+</head>
+
+<body class="f_page">
+	
+	<h1 class="j_page_title">
+		<p>排课表</p>			
+	</h1>	
+	
+	
+	<div id="calendar">
+		<nav>
+			<span id="prev" class="prev"><i class="fa fa-caret-left"></i></span>
+			<div class="month">2017年6月份</div>
+			<span id="next" class="next"><i class="fa fa-caret-right"></i></span>
+		</nav>
+		<div class="c_head flex">
+			<div>周一</div>
+			<div>周二</div>
+			<div>周三</div>
+			<div>周四</div>
+			<div>周五</div>
+			<div>周六</div>
+			<div>周日</div>
+		</div>
+		<div class="c_body">
+			<div class="c_row">
+			
+				<div><span class="day">1</span></div>
+				<div><span class="day">2</span></div>
+				<div><span class="day">3</span></div>
+				<div><span class="day">4</span></div>
+				<div><span class="day">5</span><span class="lesson"></span></div>
+				<div><span class="day">6</span><span class="lesson"></span></div>
+				<div><span class="day">7</span></div>
+			</div>
+			<div class="c_row">
+				<div><span class="day">8</span><span class="lesson"></span></div>
+				<div><span class="day">9</span></div>
+				<div><span class="day">10</span></div>
+				<div class="active"><span class="day">11</span><span class="lesson"></span></div>
+				<div><span class="day">12</span></div>
+				<div><span class="day">13</span></div>
+				<div><span class="day">14</span></div>
+			</div>
+			<div class="c_row">
+				<div><span class="day">15</span></div>
+				<div><span class="day">16</span></div>
+				<div><span class="day">17</span></div>
+				<div><span class="day">18</span></div>
+				<div><span class="day">19</span></div>
+				<div><span class="day">20</span></div>
+				<div><span class="day">21</span></div>
+			</div>
+			<div class="c_row">
+				<div><span class="day">22</span></div>
+				<div><span class="day">23</span></div>
+				<div><span class="day">24</span></div>
+				<div><span class="day">25</span></div>
+				<div><span class="day">26</span></div>
+				<div><span class="day">27</span></div>
+				<div><span class="day">28</span></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="weui-footer">
+	  <p class="weui-footer__links">
+	    <a href="测试界面.html" class="weui-footer__link">返回首页</a>
+	  </p>			
+	  <p class="weui-footer__text">Copyright © 2017-2018 校管CEO</p>
+	</div>
+	
+</body>
+<script src="js/base.js"></script>
+</html>
