@@ -6,7 +6,8 @@
 <meta name="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <link href="http://assets.xiaoguanceo.net/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="css/calendar.css" />
+<link rel="stylesheet" href="css/calendar.css" />		
+<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
 	<style>
 
 			.j_page_title{
@@ -27,7 +28,24 @@
 			}			
 			#calendar .c_row>div{
 				height: 1rem;
+			}
+			.weui-panel{
+				padding: 5px;
+			}	
+				
+			.calendar_text{
+				margin-left: 25px;
 			}			
+			.calendar_text p{
+				font-size: 15px;
+			}					
+			.weui-flex__item{
+				padding: 15px;
+			}
+			.weui-btn_primary {
+			    background-color: #2b81dd;
+			}
+					
 	</style>
 
 </head>
@@ -38,7 +56,7 @@
 		<p>排课表</p>			
 	</h1>	
 	
-	
+	<!--排课表start-->
 	<div id="calendar">
 		<nav>
 			<span id="prev" class="prev"><i class="fa fa-caret-left"></i></span>
@@ -94,7 +112,29 @@
 			</div>
 		</div>
 	</div>
-	
+	<!--排课表end-->
+
+    <div class="calendar_text">
+        	<p>班级：周一17：30蔡蔡</p>
+        	<p>课程：凉亭</p>
+        	<p>日期：2018年06月25日【星期一】</p>
+        	<p>时段：17:30~19:00</p>
+        	<p>内容：凉亭</p>
+        	<p>状态：未上课</p>			
+    </div>
+	<div class="weui-flex">
+	  <div class="weui-flex__item">
+	  		<a href="javascript:;" class="weui-btn weui-btn_primary">申请请假</a>
+	  </div>
+	  <div class="weui-flex__item">
+	  		<a href="javascript:;" class="weui-btn weui-btn_primary">申请补课</a>
+	  </div>
+	</div>
+    <hr />
+                </div>
+            </div>
+        </div>
+
 	<div class="weui-footer">
 	  <p class="weui-footer__links">
 	    <a href="测试界面.html" class="weui-footer__link">返回首页</a>
