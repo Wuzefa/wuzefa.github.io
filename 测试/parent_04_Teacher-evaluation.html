@@ -14,7 +14,6 @@
 <link rel="stylesheet" href="wechat/assets/css/jatomwx.css">
 <link rel="stylesheet" href="css/new_file.css" />
 <link rel="stylesheet" href="css/my_css.css" />
-
 	<style>
 	
 			.weui-cell__bd i{
@@ -26,6 +25,33 @@
 			.weui-media-box__des{
 				font-size: 16px;
 			}
+			
+			.j_text_danger {
+				text-align: center;
+				font-size: 15px;
+				color: #337ab7;
+			}
+			.left_01{
+				float: left;
+			}
+			.right_01{
+				float: right;
+			}
+			.j_box.j_box_primary{
+							margin-top: 10px;
+							}				
+			.j_obj_item_label{
+				margin-left: 20px;
+			}
+			.j_obj_item .j_obj_item_text{
+				margin-left: 45px;
+			}
+			.j_mt10{
+				margin-top: 0px;
+			}
+			.j_pd10{
+				padding: 0px;
+			}
 	</style>
 <div class="j_page_inner">
 			<!-- 核心内容——start -->
@@ -33,11 +59,11 @@
 				<p>教师评价</p>
 			</h1>
 			<div class="weui-panel">
+							
             <div class="weui-panel__hd j_text_danger">
-             ~  
-            <button data-target="#conditionsPanelPopup" class="open-popup j_text_primary j_fright">
-               <i class="fa fa-flag"></i>条件查询
-             </button>
+             <a class="left_01"><</a>
+             <a class="center_01">2018年5月29日</a>
+             <a class="right_01">></a>
             </div>
             </div>
             <div id="listbox">
@@ -75,61 +101,64 @@
 								<tr><td colspan="2">综合评语：</td></tr>
 								<tr><td colspan="2" style="text-indent:2em;padding:5px;">宝贝本节课专注力挺不错的，而且在课堂上活跃度很高，心情挺不错的，哈哈。对于零件的灵活运用也越来越棒了，但是执行解决问题的能力需要继续加油，有些小小的依赖性哦。希望宝贝继续加油。</td></tr>
 								
-		            	</tbody></table>
-		            <ul class="weui-media-box__info">
-		              <li class="weui-media-box__info__meta j_clear" style="line-height:30px">上课时间:2018年05月21日 
-		              	<a href="wechat/fwh/studentParentFeedback/goInDetail/56290" class="weui-btn weui-btn_mini weui-btn_primary j_fright">和教师沟通</a>
-		              </li>
-		            </ul>
+		            </tbody></table>
+		            
+							<div class="j_page_inner">
+										<!-- 核心内容——start -->
+										<!-- 参数详情 start -->
+									</div>								
+										<!-- 参数详情 end -->
+										<!-- 介绍 start -->
+										<div class="j_box j_box_primary">
+											<div class="j_box_title j_text_primary j_tcenter">
+												<i class="fa fa-wechat"></i>
+												<h3>与教师交流反馈</h3>
+											</div>
+											<div class="j_box_content" style="background: rgb(235,235,235);">
+												<div id="wxmsgs"></div>
+											</div>
+										</div>
+										<div class="weui-cells weui-cells_form">
+											<div class="weui-cell">
+												<div class="weui-cell__bd">
+													 <textarea id="content" maxlength="200" class="weui-textarea" placeholder="请输入互动内容" rows="3"></textarea>
+												</div>
+											</div>
+											
+											<div class="j_obj_item">
+												<span class="j_obj_item_label">对课程进行评分：</span> 
+												<span class="j_obj_item_text"> 
+											
+													<span class="score">☆</span>						
+													
+													<span class="score">☆</span>					
+													
+													<span class="score">☆</span>
+									
+													<span class="score">☆</span>
+											
+													<span class="score">☆</span>
+											
+												</span>
+											</div>													
+											
+											<div class="weui-cell">
+												<div class="weui-cell__bd">
+													<a href="javascript:;" class="weui-btn weui-btn_primary" onclick="submit()">提交回复</a>
+												</div>
+											</div>
+										</div>
+										<!-- 介绍 end -->
+							
+										<!-- 核心内容——end -->
+									</div>		            
+		            
+		            
 		          </div>
 		      </div>	
 		      </div>	
-		  
-			 <div class="weui-panel">
-		        <div class="weui-panel__bd">
-		          <div class="weui-media-box weui-media-box_text">
-		            <h4 class="weui-media-box__title">钻孔机</h4>
-		            <div class="j_hline"></div>
-		             <table class="weui-media-box__desc j_text_default">
-								
-								
-								
-								<tbody><tr><td>：</td><td>4</td></tr>
-								
-								<tr><td>语言表达：</td><td>4</td></tr>
-								
-								<tr><td>抗挫折能力：</td><td>4</td></tr>
-								
-								<tr><td>解决问题能力：</td><td>3</td></tr>
-								
-								<tr><td>创造力：</td><td>5</td></tr>
-								
-								<tr><td>专注力：</td><td>4</td></tr>
-								
-								<tr><td>知识点掌握：</td><td>4</td></tr>		
-								
-								<tr><td>器材灵活使用：</td><td>3</td></tr>
-								
-								
-								
-								
-								
-		             			
-								<tr><td>沟通时间：</td><td>2018-05-14</td></tr>
-								<tr><td>评价教师：</td><td>蔡天宇</td></tr>
-								<tr><td colspan="2">综合评语：</td></tr>
-								<tr><td colspan="2" style="text-indent:2em;padding:5px;">帅帅本次课堂表现情况良好，而且今天上课表现很兴奋，因为课堂上告诉各位小宝贝本节课稍微有些难度，而且会把主动权交给每个小朋友，让孩子自己去想办法进行尝试改进再尝试的循环过程。宝贝自己也信心满满，说最喜欢难的啦。哈哈。本节课创意性良好，宝贝继续加油</td></tr>
-								
-		            	</tbody></table>
-		            <ul class="weui-media-box__info">
-		              <li class="weui-media-box__info__meta j_clear" style="line-height:30px">上课时间:2018年05月14日 
-		              	<a href="wechat/fwh/studentParentFeedback/goInDetail/56289" class="weui-btn weui-btn_mini weui-btn_primary j_fright">和教师沟通</a>
-		              </li>
-		            </ul>
-		          </div>
-		      </div>	
-		      </div>	
-		  
+
+
 			<!-- 核心内容——end -->
 		</div>
 
