@@ -23,35 +23,63 @@
 		<div class="j_page_inner">
 			
 			<h1 class="j_page_title">
-				<p>学员考勤与划课</p>			
+				<p>意见反馈</p>			
 			</h1>
-        
-			<div class="weui-cells" style="margin-top: 10px;">
-			<a class="weui-cell weui-cell_access" href="">
-	                <div class="weui-cell__bd">
-	                	<i class="icon_01"></i>
-	                    <p class="j_text_primary">今日课程考勤情况</p>
-	                </div>
-	                <div class="weui-cell__ft">
-	                </div>
-	            </a>
-	            <a class="weui-cell weui-cell_access" href="">
-	                <div class="weui-cell__bd">
-	                	<i class="icon_02"></i>	                	
-	                    <p  class="j_text_primary">历史考勤纪录查询</p>
-	                </div>
-	                <div class="weui-cell__ft">
-	                </div>
-	            </a>
-	            <a class="weui-cell weui-cell_access" href="">
-	                <div class="weui-cell__bd">
-	                	<i class="icon_02"></i>	                	
-	                    <p  class="j_text_primary">划课记录查询</p>
-	                </div>
-	                <div class="weui-cell__ft">
-	                </div>
-	            </a>
-	            </div>
+			<form action="wechat/fwh/parentWeixinFeedback/add" method="post" id="form">
+							<div class="weui-cells__title">反馈类型</div>
+							<div class="weui-cells weui-cells_radio">
+								<label class="weui-cell weui-check__label" for="type1">
+									<div class="weui-cell__bd">
+										<p>系统问题反馈</p>
+									</div>
+									<div class="weui-cell__ft">
+										<input type="radio" class="weui-check" value="1" name="feedback.type" id="type1" checked="checked">
+										<span class="weui-icon-checked"></span>
+									</div>
+								</label> 
+								<label class="weui-cell weui-check__label" for="type2">
+			
+									<div class="weui-cell__bd">
+										<p>校区问题反馈</p>
+									</div>
+									<div class="weui-cell__ft">
+										<input type="radio" name="feedback.type" value="2" class="weui-check" id="type2"> 
+										<span class="weui-icon-checked"></span>
+									</div>
+								</label>
+								<label class="weui-cell weui-check__label" for="type3">
+			
+									<div class="weui-cell__bd">
+										<p>其他问题反馈</p>
+									</div>
+									<div class="weui-cell__ft">
+										<input type="radio" name="feedback.type" value="8" class="weui-check" id="type3"> 
+										<span class="weui-icon-checked"></span>
+									</div>
+								</label>
+							</div>
+			
+							<div class="weui-cells__title">主题</div>
+							<div class="weui-cells">
+							  <div class="weui-cell">
+							    <div class="weui-cell__bd">
+							      <input class="weui-input" type="text" required="" name="feedback.subject" placeholder="请输入主题">
+							    </div>
+							  </div>
+							</div>
+			
+							<div class="weui-cells__title">详细描述</div>
+							<div class="weui-cells weui-cells_form">
+								<div class="weui-cell">
+									<div class="weui-cell__bd">
+										<textarea class="weui-textarea" name="feedback.content" required="" placeholder="请输入文本" rows="3"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="weui-btn-area">
+								<input type="submit" class="weui-btn weui-btn_primary">
+							</div>
+						</form>        
 			
 	        
 	        

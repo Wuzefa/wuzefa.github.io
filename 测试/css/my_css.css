@@ -99,6 +99,84 @@
 		background: url(../images/06.jpg) ;height: 100px;color: black;margin: 0px;
 		}
 		.j_page_title	p{
-			display: block;padding: 20px 0px;font-size: 30px;text-align: center;margin: 0px;
+			display: block;padding: 25px 0px;font-size: 30px;text-align: center;margin: 0px;
 		}	
 		
+
+/*课程表头部*/
+			.weui-cell__bd i{
+				display: block;width: 20px;height: 20px;float: left;margin-right: 5px;
+			}
+			.weui-media-box__title{
+				font-size: 20px;font-weight: 600;
+			}
+			.weui-media-box__des{
+				font-size: 16px;
+			}
+			
+			.j_text_danger {
+				font-size: 15px;
+				color: #337ab7;
+			}
+			.new_shijian{
+				text-align: center;
+			}
+			.left_01{
+				float: left;
+			}
+			.right_01{
+				float: right;
+			}
+			.j_box.j_box_primary{
+							margin-top: 10px;
+							}				
+			.j_obj_item_label{
+				margin-left: 20px;
+			}
+			.j_obj_item .j_obj_item_text{
+				margin-left: 45px;
+			}
+			.j_mt10{
+				margin-top: 0px;
+			}
+			.j_pd10{
+				padding: 0px;
+			}
+			.weui-btn_primary {
+		    background-color: #337ab7;
+			}
+
+/*手机前面图标	*/		
+			.weui-cell__bd i{
+				display: block;width: 20px;height: 20px;float: left;margin-right: 5px;
+			}
+			.icon_001{
+				background: url(../images/icon_small/icon_01.png) no-repeat 0px 5px;
+			}
+			.icon_002{
+				background: url(../images/icon_small/icon_02.png) no-repeat 0px 5px;;
+			}
+			.icon_003{
+				background: url(../images/icon_small/icon_03.png) no-repeat 0px 5px;;
+			}
+			
+/*parent_01_Registration-information*/
+			.weui-cell__bd i{
+				display: block;width: 20px;height: 20px;float: left;margin-right: 5px;
+			}
+			/*家长报名列表*/
+			.weui-media-box__title{
+				font-size: 20px;font-weight: 600;
+			}
+			.weui-media-box__des{
+				font-size: 16px;
+			}
+			.weui-flex {
+				background: white;
+			}
+			.j_flex_grid{
+				padding: 0px;
+			}
+			.weui-flex__item i {
+				color: #1d89ab;
+			}
