@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />			
+			<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+			<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">			
+			<link rel="stylesheet" href="css/my_css.css" />
+			<link rel="stylesheet" href="css/style-index.css" />
+	</head>
+	<body>
+
+<div class="weui-tab">
+  <div class="weui-tab__bd">
+    <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+      <h1>页面一111</h1>
+    </div>
+    <div id="tab2" class="weui-tab__bd-item">
+      <h1>页面二222</h1>
+    </div>
+    ...
+  </div>
+
+  <div class="weui-tabbar">
+    <a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
+      ...
+    </a>
+    <a href="#tab2" class="weui-tabbar__item">
+      ...
+    </a>
+    ...
+  </div>
+</div>
+
+  <div class="weui-tabbar">
+    <a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
+      <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
+      <div class="weui-tabbar__icon">
+        <img src="images/icon_small/icon_01.png" alt="">
+      </div>
+      <p class="weui-tabbar__label">微信</p>
+    </a>
+    <a href="#tab2" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <img src="./images/icon_nav_msg.png" alt="">
+      </div>
+      <p class="weui-tabbar__label">通讯录</p>
+    </a>
+    <a href="#tab2" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <img src="./images/icon_nav_article.png" alt="">
+      </div>
+      <p class="weui-tabbar__label">发现</p>
+    </a>
+    <a href="#tab1" class="weui-tabbar__item">
+      <div class="weui-tabbar__icon">
+        <img src="./images/icon_nav_cell.png" alt="">
+      </div>
+      <p class="weui-tabbar__label">我</p>
+    </a>
+  </div>
+</div>
+
+
+		
+
+		<!--<div class="weui-footer">
+		  <p class="weui-footer__links">
+		    <a href="测试界面.html" class="weui-footer__link">返回首页</a>
+		  </p>			
+		  <p class="weui-footer__text">Copyright © 2017-2018 校管CEO</p>
+		</div>-->
+		<script src="js/jquery.js"></script>
+		<!--基础组件-->
+		<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+		<!--为了使用幻灯片，你必须引用如下的JS文件-->
+		<!--<script src="js/idangerous.swiper.min.js"></script>
+		<script src="js/idangerous.swiper.scrollbar.js"></script>		-->
+		<!--拓展组件-->
+		<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>	
+		<!--引入我的JS-->
+		<script src="js/my_js.js"></script>		
+		<script>
+		    var mySwiper = new Swiper('.swiper-PicNewsList',{
+		        pagination: '.pagination',
+		        loop:true,
+		        grabCursor: true,
+		        paginationClickable: true,
+		        autoplay: 3000,
+		        autoplayDisableOnInteraction : false,
+		    })
+		
+		    var mySwiper = new Swiper('.swiper-teacherList',{
+		        slidesPerView: 4,
+		    })
+		
+		    var tabsSwiper = new Swiper('.swiper-HotNews',{
+		        speed:500,
+		        onSlideChangeStart: function(){
+		          $(".tabs .active").removeClass('active')
+		          $(".tabs a").eq(tabsSwiper.activeIndex).addClass('active')  
+		        }
+		    })
+		    $(".tabs a").on('touchstart mousedown',function(e){
+		        e.preventDefault()
+		        $(".tabs .active").removeClass('active')
+		        $(this).addClass('active')
+		        tabsSwiper.swipeTo( $(this).index() )
+		    })
+		    $(".tabs a").click(function(e){
+		        e.preventDefault()
+		    })
+		
+		    $('.ind-courseNav li span').click(function() {
+		        $(this).parents('li').addClass('current');
+		    });
+		    $('.cou-clear').click(function() {
+		        $(".ind-courseNav ul li").removeClass('current');;
+		    });
+		    $("#search_text").click(function(){
+		      $("#search_bar").addClass("weui_search_focusing");
+		    });
+		    $("#search_cancel").click(function(){
+		      $("#search_bar").removeClass("weui_search_focusing");
+		    });
+		    
+		</script>
+	</body>
+</html>

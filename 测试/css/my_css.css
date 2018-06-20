@@ -25,11 +25,11 @@
 		.cont2-right{
 			float: right;
 		}
-		.more2{
+		/*.more2{
 			font-size: 16px;color: orangered;display: block;margin-right: 16px;text-decoration: none;
-		}    
+		}    */
    
-		.icon_01{
+		/*.icon_01{
 			height: 90px;border-top: 1px solid #cccccc ;border-bottom: 1px solid #CCCCCC;
 		}
 		.icon_01 ul li{
@@ -54,14 +54,14 @@
 			background: url(../images/parent/icon_bottom_05.png)no-repeat center 20px;
 		}
 		.icon_01 ul li a:hover{
-			color: #e13e41;/*background: url(images/家长端主界面/10-相机.png)no-repeat center 10px;*/
+			color: #e13e41;background: url(images/家长端主界面/10-相机.png)no-repeat center 10px;
 		}
-		/*.icon_01 ul li::before{
+		.icon_01 ul li::before{
 			height: 35px;width: 1px;background: #cccccc;content: "";display: block;float: right;margin-top: 50px;
-		}*/
+		}
 		.icon_01 ul .li-none::before{
 			display: none;
-		}    	
+		}    	*/
 		.picture .picture_01 ul li{
 			display: block;float: left;width: 50%;margin-top: 2px;text-align: center;
 		}
@@ -107,17 +107,10 @@
 			.weui-cell__bd i{
 				display: block;width: 20px;height: 20px;float: left;margin-right: 5px;
 			}
-			.weui-media-box__title{
-				font-size: 20px;font-weight: 600;
-			}
 			.weui-media-box__des{
 				font-size: 16px;
 			}
 			
-			.j_text_danger {
-				font-size: 15px;
-				color: #337ab7;
-			}
 			.new_shijian{
 				text-align: center;
 			}
@@ -165,9 +158,6 @@
 				display: block;width: 20px;height: 20px;float: left;margin-right: 5px;
 			}
 			/*家长报名列表*/
-			.weui-media-box__title{
-				font-size: 20px;font-weight: 600;
-			}
 			.weui-media-box__des{
 				font-size: 16px;
 			}

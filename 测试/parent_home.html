@@ -9,6 +9,11 @@
 			<link rel="stylesheet" href="css/my_css.css" />
 			<link rel="stylesheet" href="css/style-index.css" />
 	</head>
+	<style>
+		.weui-flex{
+			background:#eee ;
+		}
+	</style>
 	<body>
 		<!--头顶栏-->
 		<div class="swiper-container swiper-PicNewsList">
@@ -122,11 +127,11 @@
 		  </a>
 		</div>		
 
+
+			
+
 		<div class="">
-		    <div class="ind-hd">
-		        <h4><span>课程导航</span></h4>
-		    </div>
-		    <section>
+		    <!--<section>
 				<div class="icon_01">
 					<ul>
 						<li><a href="#">学生</a></li>
@@ -136,9 +141,54 @@
 						<li class="li-none"><a href="#">订单数</a></li>
 					</ul>
 				</div>        	
-		    </section>
+		    </section>-->
 		</div>
 		
+	    <div class="ind-hd">
+	        <h4><span>课程导航</span></h4>
+	    </div>		
+		
+		<div class="j_box">
+				<div class="j_box_content j_pd10">
+				<div class="weui-flex j_flex_grid">
+				  <div class="weui-flex__item">
+				  		<a href="wechat/fwh/student/list">
+				            <i class="j_text_red">2</i>
+				            <p class="weui-grid__label">学生</p>
+				        </a>
+				  </div>
+				  
+				  <div class="weui-flex__item">
+				  		<a href="wechat/fwh/studentLesson/listAll">
+				            <i class="j_text_red">3</i>
+				            <p class="weui-grid__label">班级数</p>
+				        </a>
+				  </div>
+				  <div class="weui-flex__item">
+				  <a href="wechat/fwh/lessonArrange/todayList">
+				           <i class="j_text_red">1</i>
+				            <p class="weui-grid__label">今日排课</p>
+				        </a>
+				  </div>
+				  
+				  <div class="weui-flex__item">
+				  <a href="wechat/fwh/parentScoreLog">
+				            <i class="j_text_red">1</i>
+				            <p class="weui-grid__label">积分</p>
+				        </a>
+				  </div>
+				  <div class="weui-flex__item">
+				  <a href="wechat/fwh/order">
+				            <i class="j_text_red">1</i>
+				            <p class="weui-grid__label">订单数</p>
+				        </a>
+				  </div>
+				 
+				</div>
+				</div>
+	</div>		
+
+
 		<div class="cont2">
 			<div class="cont2-left">
 				<span class="span1">最新动态</span>
