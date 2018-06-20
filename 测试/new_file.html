@@ -9,60 +9,170 @@
 			<link rel="stylesheet" href="css/my_css.css" />
 			<link rel="stylesheet" href="css/style-index.css" />
 	</head>
+	<style>
+		.weui-grid{
+			width: 33.2%;
+			background: white;
+		}	
+		.home_top{
+			background: #1e4186;
+			font-size: 15px;
+			color: white;
+			font-family: "微软雅黑";
+		}
+	</style>
 	<body>
+	<div class="weui-tab">
 
-<div class="weui-tab">
-  <div class="weui-tab__bd">
-    <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
-      <h1>页面一111</h1>
-    </div>
-    <div id="tab2" class="weui-tab__bd-item">
-      <h1>页面二222</h1>
-    </div>
-    ...
-  </div>
+		<div class="home_top">
+		  <div class="weui-flex__item picture_top">铁蛋家长(铁蛋)</div>
 
-  <div class="weui-tabbar">
-    <a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
-      ...
-    </a>
-    <a href="#tab2" class="weui-tabbar__item">
-      ...
-    </a>
-    ...
-  </div>
+		</div>
+		
+
+		<div class="swiper-container swiper-PicNewsList">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide" style="background-image:url(images/1.jpg)"><a href="#"></a></div>
+		        <div class="swiper-slide" style="background-image:url(images/2.jpg)"><a href="#"></a></div>
+		        <div class="swiper-slide" style="background-image:url(images/3.jpg)"><a href="#"></a></div>
+		        <div class="swiper-slide" style="background-image:url(images/4.jpg)"><a href="#"></a></div>
+		        <div class="swiper-slide" style="background-image:url(images/5.jpg)"><a href="#"></a></div>
+		    </div>
+		    <div class="pagination"></div>
+		</div>	
+
+
+
+		<!--菜单栏-->
+		<div class="weui-grids weui-list1">
+		  <a href="parent_01_Registration-information.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="images/parent/icon_nav_01_order.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		      报名信息
+		    </p>
+		  </a>
+		  <!--<a href="parent_02.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="images/parent/icon_nav_02_Check.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		      考勤管理
+		    </p>
+		  </a>-->
+		  <!--<a href="parent_02photo.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="images/parent/icon_nav_03_photo.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		    课堂风采
+		    </p>
+		  </a>-->
+		  <a href="parent_04_Teacher-evaluation.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="images/parent/icon_nav_04_evaluate.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		    教师评价
+		    </p>
+		  </a>
+		  <!--<a href="" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="images/parent/icon_nav_05_Communicate.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		    教师沟通
+		    </p>
+		  </a>-->
+		  <a href="parent_06_calendar.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="images/parent/icon_nav_06_Schedule .png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		    课程表
+		    </p>
+		  </a>
+		  <a href="parent_07_book.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="images/parent/icon_nav_07_book.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		    图书借阅
+		    </p>
+		  </a>
+		  <!--<a href="" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="images/parent/icon_nav_08_.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		    申请管理
+		    </p>
+		  </a>-->
+		  <!--<a href="" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="images/parent/icon_nav_09.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		    推荐列表
+		    </p>
+		  </a>-->
+		  <a href="parent_08_propose.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="images/parent/icon_nav_10.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		    意见列表
+		    </p>
+		  </a>
+		  <!--<a href="" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="images/parent/icon_nav_11.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		    每日签到
+		    </p>
+		  </a>-->
+		  <!--<a href="teacher_home.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="images/parent/icon_nav_12.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		    链接教师端
+		    </p>
+		  </a>-->
+		</div>		
+
+		  <div class="weui-tabbar bottom_list">
+		    <a href="javascript:;" class="weui-tabbar__item weui-bar__item--on">
+		      <div class="weui-tabbar__icon">
+		        <img src="images/parent/icon_bottom_02.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">首页</p>
+		    </a>
+		    <a href="parent_02photo.html" class="weui-tabbar__item">
+		      <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>		    	
+		      <div class="weui-tabbar__icon">
+		        <img src="images/parent/icon_nav_03_photo.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">课堂风采</p>
+		    </a>
+		    <a href="javascript:;" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="images/parent/icon_bottom_05.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">亲子教育</p>
+		    </a>
+		    <a href="javascript:;" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="images/parent/icon_bottom_01.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">我的</p>
+		    </a>
+		  </div>
+		</div>
+
 </div>
-
-  <div class="weui-tabbar">
-    <a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
-      <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
-      <div class="weui-tabbar__icon">
-        <img src="images/icon_small/icon_01.png" alt="">
-      </div>
-      <p class="weui-tabbar__label">微信</p>
-    </a>
-    <a href="#tab2" class="weui-tabbar__item">
-      <div class="weui-tabbar__icon">
-        <img src="./images/icon_nav_msg.png" alt="">
-      </div>
-      <p class="weui-tabbar__label">通讯录</p>
-    </a>
-    <a href="#tab2" class="weui-tabbar__item">
-      <div class="weui-tabbar__icon">
-        <img src="./images/icon_nav_article.png" alt="">
-      </div>
-      <p class="weui-tabbar__label">发现</p>
-    </a>
-    <a href="#tab1" class="weui-tabbar__item">
-      <div class="weui-tabbar__icon">
-        <img src="./images/icon_nav_cell.png" alt="">
-      </div>
-      <p class="weui-tabbar__label">我</p>
-    </a>
-  </div>
-</div>
-
-
 		
 
 		<!--<div class="weui-footer">

@@ -1,6 +1,14 @@
 		.weui-grid{
 			width: 25%;
 		}			
+	
+		.bottom_list{
+			width: 100%;
+			height: 50px;
+			position: fixed;
+		}	
+	
+					
 		.ind-hd h4 {
 		    text-align: center;
 		    padding: 15px 0;
