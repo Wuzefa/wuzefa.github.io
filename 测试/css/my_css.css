@@ -1,6 +1,14 @@
 		.weui-grid{
 			width: 25%;
 		}			
+
+		.home_top{
+			background: #1e4186;
+			font-size: 15px;
+			color: white;
+			font-family: "微软雅黑";
+		}
+
 	
 		.bottom_list{
 			width: 100%;
