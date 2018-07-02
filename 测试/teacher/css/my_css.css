@@ -1,0 +1,187 @@
+		.weui-grid{
+			width: 25%;
+		}			
+
+		.home_top{
+			background: #1e4186;
+			font-size: 15px;
+			color: white;
+			font-family: "微软雅黑";
+		}
+
+	
+		.bottom_list{
+			width: 100%;
+			height: 50px;
+			position: fixed;
+		}	
+	
+					
+		.ind-hd h4 {
+		    text-align: center;
+		    padding: 15px 0;
+		    position: relative;
+		}			
+		.weui-footer__text{
+			padding: 5px;
+		}			
+					
+		.cont2{
+			height: 50px;line-height: 50px;
+		}
+		.cont2 span{
+			color: orangered;font-size: 16px;margin-left: 30px;display: block;position: relative;font-weight: bolder;
+		}
+		.span1::before{
+			content: "";display: block;height: 40px;width: 15px;background: orangered;position: absolute;left: -35px;top: 5px;border-radius: 5px;
+		}
+		.cont2-left,.cont2-right{
+			float: left;
+		}
+		.cont2-right{
+			float: right;
+		}
+		.more2{
+			font-size: 16px;color: orangered;display: block;margin-right: 16px;text-decoration: none;
+		}    
+   
+		/*.icon_01{
+			height: 90px;border-top: 1px solid #cccccc ;border-bottom: 1px solid #CCCCCC;
+		}
+		.icon_01 ul li{
+			list-style: none;display: block;float: left;width: 20%;text-align: center;
+		}
+		.icon_01 ul li a{
+			text-decoration: none;display: block;color: #696969;font-size: 16px;height: 85px;line-height: 130px;
+		}
+		.icon_01 ul li:nth-child(1) a{
+			background: url(../images/parent/icon_bottom_01.png)no-repeat center 20px;
+		}
+		.icon_01 ul li:nth-child(2) a{
+			background: url(../images/parent/icon_bottom_02.png)no-repeat center 20px;
+		}
+		.icon_01 ul li:nth-child(3) a{
+			background: url(../images/parent/icon_bottom_03.png)no-repeat center 20px;
+		}
+		.icon_01 ul li:nth-child(4) a{
+			background: url(../images/parent/icon_bottom_04.png)no-repeat center 20px;
+		}
+		.icon_01 ul li:nth-child(5) a{
+			background: url(../images/parent/icon_bottom_05.png)no-repeat center 20px;
+		}
+		.icon_01 ul li a:hover{
+			color: #e13e41;background: url(images/家长端主界面/10-相机.png)no-repeat center 10px;
+		}
+		.icon_01 ul li::before{
+			height: 35px;width: 1px;background: #cccccc;content: "";display: block;float: right;margin-top: 50px;
+		}
+		.icon_01 ul .li-none::before{
+			display: none;
+		}    	*/
+		.picture .picture_01 ul li{
+			display: block;float: left;width: 50%;margin-top: 2px;text-align: center;
+		}
+		.pic img{
+			height: 200px;width: 99%;
+		}
+		
+
+		.weui-grid__label		
+		{
+			color: black;
+			font-size: 14px;
+		}
+		.weui-footer a{
+			margin-top: 10px;
+		}
+		
+		/*教师端*/
+		.weui-flex{
+			background: ghostwhite;
+		}
+		.weui-flex__item {
+			text-align: center;
+		}	
+		.weui-flex__item{
+			padding: 10px;
+		}
+		.weui-flex__item i{
+			color: red;
+			font-size: 20px;
+			font-style: normal;
+		}
+		.j_page_title{
+		background: url(../images/06.jpg) ;height: 100px;color: black;margin: 0px;
+		}
+		.j_page_title	p{
+			display: block;padding: 25px 0px;font-size: 30px;text-align: center;margin: 0px;
+		}	
+		
+
+/*课程表头部*/
+			.weui-cell__bd i{
+				display: block;width: 20px;height: 20px;float: left;margin-right: 5px;
+			}
+			.weui-media-box__des{
+				font-size: 16px;
+			}
+			
+			.new_shijian{
+				text-align: center;
+			}
+			.left_01{
+				float: left;
+			}
+			.right_01{
+				float: right;
+			}
+			.j_box.j_box_primary{
+							margin-top: 10px;
+							}				
+			.j_obj_item_label{
+				margin-left: 20px;
+			}
+			.j_obj_item .j_obj_item_text{
+				margin-left: 45px;
+			}
+			.j_mt10{
+				margin-top: 0px;
+			}
+			.j_pd10{
+				padding: 0px;
+			}
+			.weui-btn_primary {
+		    background-color: #337ab7;
+			}
+
+/*手机前面图标	*/		
+			.weui-cell__bd i{
+				display: block;width: 20px;height: 20px;float: left;margin-right: 5px;
+			}
+			.icon_001{
+				background: url(../images/icon_small/icon_01.png) no-repeat 0px 5px;
+			}
+			.icon_002{
+				background: url(../images/icon_small/icon_02.png) no-repeat 0px 5px;;
+			}
+			.icon_003{
+				background: url(../images/icon_small/icon_03.png) no-repeat 0px 5px;;
+			}
+			
+/*parent_01_Registration-information*/
+			.weui-cell__bd i{
+				display: block;width: 20px;height: 20px;float: left;margin-right: 5px;
+			}
+			/*家长报名列表*/
+			.weui-media-box__des{
+				font-size: 16px;
+			}
+			.weui-flex {
+				background: white;
+			}
+			.j_flex_grid{
+				padding: 0px;
+			}
+			.weui-flex__item i {
+				color: #1d89ab;
+			}

@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<!--    <base href="http://www.yurongtianxia.com:80/">-->
+		<meta charset="utf-8" />
+		<title>班级列表</title>
+		<meta http-equiv="pragma" content="no-cache" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-696" data-genuitec-path="/EOMS/WebRoot/wechat/common/header.html">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<link href="admin/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+		<link rel="stylesheet" href="wechat/assets/css/jatomwx.css">
+		<link rel="stylesheet" href="css/new_file.css" />
+		<link rel="stylesheet" href="css/my_css.css" />
+		
+		<style>
+			.weui-media-box__thumb {
+			width: 80px;
+			height: 80px;
+			border-radius: 100%;
+			overflow: hidden;
+		}
+		.my_top .weui-cell__bd p {
+			color: #000000;
+		}
+		
+		.weui-cell__bd_name {
+			margin-left: 20px;
+		}		
+		</style>		
+		<div class="j_page_inner">
+			<!-- 核心内容——start -->
+			<!--<h1 class="j_page_title">
+				<p>课程点评</p>
+			</h1>-->
+			<!--<div class="weui-panel">
+
+				<div class="weui-panel__hd j_text_danger new_shijian">
+					<a class="left_01">
+						<</a>
+							<a class="center_01">2018年5月29日</a>
+							<a class="right_01">></a>
+				</div>
+			</div>-->
+			<div id="listbox">
+			<a class="weui-cell weui-cell_access my_top" href="">
+				<div class="weui-media-box__hd">
+					<img class="weui-media-box__thumb" src="images/3.jpg">
+				</div>
+				<div class="weui-cell__bd weui-cell__bd_name">
+					<p class="j_text_primary">杨墨涵<span style="color: red;"> (已划课)</span></p>
+					<p class="j_text_primary">男</p>
+				</div>
+				<div class="weui-cell__ft" style="color: blue;">跳过
+				</div>
+			</a>
+			<div class="weui-flex">
+			  <div class="weui-flex__item">
+			  	<p style="font-weight: 600;font-size: 15px;display: inline-block;float: left;margin-left: 10px;">课程内容：凉亭</p>
+			  	<a href="javascript:;" class="weui-btn weui-btn_warn" style="width: 100px;font-size: 12px;float: right;">加载上次评价</a>
+			  </div>
+			</div>
+
+				<div class="weui-cells weui-cells_form" style="margin-top: 0px;">
+				  <div class="weui-cell">
+				    <div class="weui-cell__bd">
+				      <div class="weui-uploader">
+				        <div class="weui-uploader__hd">
+				          <p class="weui-uploader__title">图片上传</p>
+				          <div class="weui-uploader__info">0/5</div>
+				        </div>
+				        <div class="weui-uploader__bd">
+				          <ul class="weui-uploader__files" id="uploaderFiles">
+				            <li class="weui-uploader__file" style="background-image:url(../images/1.jpg)"></li>
+				            <li class="weui-uploader__file" style="background-image:url(../images/2.jpg)"></li>
+				            <li class="weui-uploader__file" style="background-image:url(../images/3.jpg)"></li>
+				            <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(./images/pic_160.png)">
+				              <div class="weui-uploader__file-content">
+				                <i class="weui-icon-warn"></i>
+				              </div>
+				            </li>
+				            <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(./images/pic_160.png)">
+				              <div class="weui-uploader__file-content">50%</div>
+				            </li>
+				          </ul>
+				          <div class="weui-uploader__input-box">
+				            <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="weui-panel">
+					<div class="weui-panel__bd">
+						<div class="weui-media-box weui-media-box_text">
+							<table class="weui-media-box__desc j_text_default">
+
+								<tbody>
+									<tr>
+										<td></td>
+										<td>
+
+											<tr>
+												<td>语言表达：</td>
+												<td><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /></td>
+											</tr>
+
+											<tr>
+												<td>抗挫折能力：</td>
+												<td><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /></td>
+											</tr>
+
+											<tr>
+												<td>解决问题能力：</td>
+												<td><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /></td>
+											</tr>
+
+											<tr>
+												<td>创造力：</td>
+												<td><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /></td>
+											</tr>
+
+											<tr>
+												<td>专注力：</td>
+												<td><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /></td>
+											</tr>
+
+											<tr>
+												<td>知识点掌握：</td>
+												<td><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /></td>
+											</tr>
+
+											<tr>
+												<td>器材灵活使用：</td>
+												<td><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /><img src="images/parent/star_01.png" /></td>
+											</tr>
+
+								</tbody>
+							</table>
+
+							<div class="j_page_inner">
+								<!-- 核心内容——start -->
+								<!-- 参数详情 start -->
+							</div>
+							<!-- 参数详情 end -->
+							<!-- 介绍 start -->
+							<div class="j_box j_box_primary">
+								<div class="j_box_title j_text_primary j_tcenter">
+									<i class="fa fa-wechat"></i>
+									<h3>综合评语</h3>
+								</div>
+								<div class="j_box_content" style="background: rgb(235,235,235);">
+									<div id="wxmsgs"></div>
+								</div>
+							</div>
+							<div class="weui-cells weui-cells_form">
+								<div class="weui-cell">
+									<div class="weui-cell__bd">
+										<textarea id="content" maxlength="200" class="weui-textarea" placeholder="请输入评语" rows="3"></textarea>
+									</div>
+								</div>
+
+								<div class="weui-cell">
+									<div class="weui-cell__bd">
+										<a href="javascript:;" class="weui-btn weui-btn_primary" onclick="submit()">保存</a>
+									</div>
+								</div>
+							</div>
+							<!-- 介绍 end -->
+
+							<!-- 核心内容——end -->
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- 核心内容——end -->
+		</div>
+
+		<div class="weui-footer j_pd10 j_mt10" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-695" data-genuitec-path="/EOMS/WebRoot/wechat/common/footer.html">
+			<p class="weui-footer__text">
+				<a id="backwxhome" href="wxhome">返回首页</a>
+			</p>
+		</div>
+		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+		<script src="wechat/assets/js/jatomwx.js"></script>
+		<script>
+			var tm = new Date().getTime();
+			document.getElementById("backwxhome").href = "wxhome?t=" + tm;
+		</script>
+		</body>
+
+</html>

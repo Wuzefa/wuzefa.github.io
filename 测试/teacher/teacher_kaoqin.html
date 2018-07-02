@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>课程表</title>
+		<meta charset="utf-8" />
+		<meta name="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link href="http://assets.xiaoguanceo.net/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<link rel="stylesheet" href="css/my_css.css" />
+		<link rel="stylesheet" href="css/calendar.css" />
+
+	</head>
+	<style>
+		header{
+			position: relative;height: 50px;background-color: #2b81dd;text-align: center;font-size: 21px;line-height: 50px;color: white;font-family: "微软雅黑";
+		}
+		header a{
+			position: absolute;left: 10px;color: white;text-decoration: none;font-size: 15px;
+		}
+		header h1{
+			text-align: center;font-size: 20px;
+		}	
+		.j_page_title p{
+			padding: 25px 30px;
+		}
+		.weui-cell .weui-btn{
+			margin-top: 0px;margin: 3px 30px;font-size: 13px;
+		}
+		.weui-cells:before{
+			height: 0px;
+		}
+		.weui-flex__item{
+			background: #2b81dd;color: white;
+		}
+	</style>
+	<body class="f_page">
+		<div class="kaoqin_title">
+			
+		</div>
+		<header>
+			<a href="teacher_bottom03_kecheng.html">&lt;返回</a>
+			<h1>学员考勤</h1>
+		</header>
+		
+	    <div class="weui-cell__bd">
+			<div class=" calendar_text" style="border: none;">
+				<p>班级：周四17：30蔡蔡</p>
+				<p>教室：学龄教室A</p>
+				<p>日期：2018年06月25日【星期一】</p>
+				<p>时段：17:30~19:00</p>
+				<p>体系：建设世界4+</p>    
+				<p>课程：凉亭</p>				    
+			</div>
+	    </div>
+		<!--考勤start-->
+	<div class="weui-cells">	
+		<div class="weui-flex">
+		  <div class="weui-flex__item">
+		  	<span style="float: left;">姓名</span>
+		  	<span style="float: left; margin-left: 47%;">状态</span>
+		  	<span style="float: left; margin-left: 15%;">考勤</span>
+		  	<span style="float: right; margin-right: 5%;">划课</span>
+		  </div>
+		</div>		
+	  <div class="weui-cell">
+	    <div class="weui-cell__bd">
+	      <p>杨墨涵(4.1岁)</p><span style="color: red;">(剩余课时：46次)</span>
+	    </div>
+		<a href="javascript:;" class="weui-btn weui-btn_primary">请假</a>
+		<a href="javascript:;" class="weui-btn weui-btn_primary">签到</a>	
+		<div class="weui-cells weui-cells_checkbox">
+		  <label class="weui-cell">
+		    <div class="weui-cell__hd">
+		      <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+		      <i class="weui-icon-checked"></i>
+		    </div>
+		</div>			
+	  </div>  
+	</div>
+	<div class="weui-cells">
+	  <div class="weui-cell">
+	    <div class="weui-cell__bd">
+	      <p>杨墨涵(4.1岁)</p><span style="color: red;">(剩余课时：46次)</span>
+	    </div>
+		<a href="javascript:;" class="weui-btn weui-btn_primary">请假</a>
+		<a href="javascript:;" class="weui-btn weui-btn_primary">签到</a>	
+		<div class="weui-cells weui-cells_checkbox">
+		  <label class="weui-cell">
+		    <div class="weui-cell__hd">
+		      <input type="checkbox" class="weui-check"  id="s11" checked="checked">
+		      <i class="weui-icon-checked"></i>
+		    </div>
+		</div>			
+	  </div>  
+	</div>
+	<div class="weui-cells">
+	  <div class="weui-cell">
+	    <div class="weui-cell__bd">
+	      <p>杨墨涵(4.1岁)</p><span style="color: red;">(剩余课时：46次)</span>
+	    </div>
+		<a href="javascript:;" class="weui-btn weui-btn_primary">请假</a>
+		<a href="javascript:;" class="weui-btn weui-btn_primary">签到</a>	
+		<div class="weui-cells weui-cells_checkbox">
+		  <label class="weui-cell">
+		    <div class="weui-cell__hd">
+		      <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+		      <i class="weui-icon-checked"></i>
+		    </div>
+		</div>			
+	  </div>  
+	</div>
+	<a href="javascript:;" class="weui-btn weui-btn_primary" style="position: fixed;bottom: 10px;width: 96%;margin-left: 2%;">确定划课</a>
+	
+	<div class="weui-flex" style="margin-bottom: 80px;">
+	  <div class="weui-flex__item">
+	  	<span style="float: left;">共计3人</span>
+	  	<span style="float: left; margin-left: 42%;">缺勤:1</span>
+	  	<span style="float: left; margin-left: 14%;">出勤:2</span>
+	  	<span style="float: right; margin-right: 5%;">划课:2</span>
+	  </div>
+	</div>			
+
+	</body>
+	<script src="js/base.js"></script>
+
+</html>
