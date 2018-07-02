@@ -16,45 +16,59 @@
 		<link rel="stylesheet" href="css/new_file.css" />
 		<link rel="stylesheet" href="css/my_css.css" />
 		<style>
-
+		.j_wfbox{
+			padding: 0px;
+		}
+			.j_wfbox_content{
+			width: 48%;
+		    float: left;
+		    padding: 4px;
+			}
 		</style>
-		<script>
-			"undefined" == typeof CODE_LIVE && (! function(e) {
-				var t = {
-						nonSecure: "59279",
-						secure: "59284"
-					},
-					c = {
-						nonSecure: "http://",
-						secure: "https://"
-					},
-					r = {
-						nonSecure: "127.0.0.1",
-						secure: "gapdebug.local.genuitec.com"
-					},
-					n = "https:" === window.location.protocol ? "secure" : "nonSecure";
-				script = e.createElement("script"), script.type = "text/javascript", script.async = !0, script.src = c[n] + r[n] + ":" + t[n] + "/codelive-assets/bundle.js", e.getElementsByTagName("head")[0].appendChild(script)
-			}(document), CODE_LIVE = !0);
-		</script>
 	</head>
+
 
 	<body data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-793" data-genuitec-path="/EOMS/WebRoot/wechat/qyh/class/home.jsp">
 		<div class="j_page" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-793" data-genuitec-path="/EOMS/WebRoot/wechat/qyh/class/home.jsp">
 			<div class="j_page_inner">
 
-				<!--<h1 class="j_page_title">
+			<h1 class="j_page_title">
 				<p>学员相册</p>			
-			</h1>-->
+			</h1>
 
-				<div class="j_page_inner">
-					<!-- 核心内容——start -->
-					<div class="weui-panel__hd j_text_danger new_shijian">
-						<a class="left_01">
-							<</a>
-								<a class="center_01">2018年5月29日</a>
-								<a class="right_01">></a>
+			<div class="weui-tab">
+			  <div class="weui-navbar">
+			    <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+			      学员照片库
+			    </a>
+			    <a class="weui-navbar__item" href="#tab2">
+			      待处理照片
+			    </a>
+
+			  </div>
+			  <div class="weui-tab__bd">
+			    <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+
+			<div class="j_page">
+					<div class="j_page_inner">
+						<!-- 核心内容——start -->
+						<div class="weui-panel">
+			            <div class="weui-panel__hd j_text_danger"> ~  
+			            <button data-target="#conditionsPanelPopup" class="open-popup j_text_primary j_fright">
+			               <i class="fa fa-flag"></i>条件查询
+			             </button>
+			            </div>
+			            </div>
+			            		<div class="j_waterfall" id="listbox">
+			            			
+			            			<p class="hasMore" data-value="false"></p>
+			            		</div>
+			            		 
+						<!-- 核心内容——end -->
 					</div>
 				</div>
+
+				<!--学员照片start-->
 				<div class="j_waterfall" id="listbox">
 
 					<a href="wechat/fwh/media/picDetail/8334" class="j_wfbox">
@@ -86,6 +100,39 @@
 				</div>
 
 				<a href="wechat/fwh/media/ajaxPicList?classId=0&amp;startTime=&amp;endTime=&amp;page=2" data-target="listbox" class="readMoreBtn">加载更多</a>
+
+			    </div>
+			    <div id="tab2" class="weui-tab__bd-item">
+					<!--待处理照片-->
+					<a href="wechat/fwh/media/picDetail/8334" class="j_wfbox">
+						<div class="j_wfbox_content">
+							<p class="img" style="background-image: url(images/2.jpg);"></p>
+							<span>照片8334_2018.06.12</span>
+						</div>
+					</a>
+					<a href="wechat/fwh/media/picDetail/8334" class="j_wfbox">
+						<div class="j_wfbox_content">
+							<p class="img" style="background-image: url(images/3.jpg);"></p>
+							<span>照片8334_2018.06.12</span>
+						</div>
+					</a>
+					<a href="wechat/fwh/media/picDetail/8334" class="j_wfbox">
+						<div class="j_wfbox_content">
+							<p class="img" style="background-image: url(images/2.jpg);"></p>
+							<span>照片8334_2018.06.12</span>
+						</div>
+					</a>
+					<a href="wechat/fwh/media/picDetail/8334" class="j_wfbox">
+						<div class="j_wfbox_content">
+							<p class="img" style="background-image: url(images/3.jpg);"></p>
+							<span>照片8334_2018.06.12</span>
+						</div>
+					</a>
+
+			    </div>
+
+			  </div>
+			</div>
 
 				<!-- 核心内容——end -->
 			</div>
