@@ -185,3 +185,6 @@
 			.weui-flex__item i {
 				color: #1d89ab;
 			}
+		.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{
+		    color: #89b3f7;
+		}
