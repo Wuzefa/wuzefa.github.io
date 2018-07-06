@@ -1,0 +1,555 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<!--    <base href="http://www.yurongtianxia.com:80/">-->
+		<meta charset="utf-8" />
+		<title>班级列表</title>
+		<meta http-equiv="pragma" content="no-cache" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-696" data-genuitec-path="/EOMS/WebRoot/wechat/common/header.html">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<link href="admin/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+		<link rel="stylesheet" href="wechat/assets/css/jatomwx.css">
+		<link rel="stylesheet" href="css/new_file.css" />
+		<link rel="stylesheet" href="css/my_css.css" />
+		<style>
+
+		</style>
+	</head>
+
+	<body data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-793" data-genuitec-path="/EOMS/WebRoot/wechat/qyh/class/home.jsp">
+		<div class="j_page" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-793" data-genuitec-path="/EOMS/WebRoot/wechat/qyh/class/home.jsp">
+			<div class="j_page_inner">
+				<!-- 核心内容——start -->
+				<div class="box_01"></div>
+				<h1 class="j_page_title">
+					<p>预约补课</p>			
+				</h1>
+<form action="wechat/fwh/auditionApply/add" method="post" id="form">
+				<div class="weui-cells__title">孩子姓名</div>
+				<div class="weui-cells">
+					<div class="weui-cell">
+						<div class="weui-cell__bd">
+							<input class="weui-input" required="" type="text" name="apply.studentName" disabled="" value="杨墨涵" placeholder="请输入孩子姓名">
+						</div>
+					</div>
+				</div>
+				<div class="weui-cells__title">联系人</div>
+				<div class="weui-cells">
+					<div class="weui-cell">
+						<div class="weui-cell__bd">
+							<input class="weui-input" required="" value="帅帅爸爸" name="apply.parentName" type="text" placeholder="请输入联系人姓名">
+						</div>
+					</div>
+				</div>
+				<div class="weui-cells__title">联系电话</div>
+				<div class="weui-cells">
+					<div class="weui-cell">
+						<div class="weui-cell__bd">
+							<input class="weui-input" required="" type="text" value="13911162270" name="apply.phone" placeholder="请输入联系人电话">
+						</div>
+					</div>
+				</div>
+				<div class="weui-cells__title hide">试听课程</div>
+				<div class="weui-cells weui-cells_radio hide">
+					
+					<label class="weui-cell weui-check__label" for="l8">
+						<div class="weui-cell__bd">
+							<p>机械世界 5+</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" checked="checked" class="weui-check" name="apply.lessonId" value="8" id="l8">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l9">
+						<div class="weui-cell__bd">
+							<p>探索世界 5+</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="9" id="l9">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l10">
+						<div class="weui-cell__bd">
+							<p>设计世界 6+</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="10" id="l10">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l11">
+						<div class="weui-cell__bd">
+							<p>改变世界 6+</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="11" id="l11">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l12">
+						<div class="weui-cell__bd">
+							<p>过渡结构 7+</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="12" id="l12">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l13">
+						<div class="weui-cell__bd">
+							<p>结构与力一 8+</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="13" id="l13">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l14">
+						<div class="weui-cell__bd">
+							<p>机械设计一 8+</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="14" id="l14">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l15">
+						<div class="weui-cell__bd">
+							<p>动力研究二 9+</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="15" id="l15">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l16">
+						<div class="weui-cell__bd">
+							<p>机械设计二 9+</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="16" id="l16">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l17">
+						<div class="weui-cell__bd">
+							<p>疯狂大脑  10+</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="17" id="l17">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l18">
+						<div class="weui-cell__bd">
+							<p>头脑风暴  11+</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="18" id="l18">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l19">
+						<div class="weui-cell__bd">
+							<p>超级实验 12+</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="19" id="l19">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l20">
+						<div class="weui-cell__bd">
+							<p>结构探索 7+（new）</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="20" id="l20">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l21">
+						<div class="weui-cell__bd">
+							<p>科学实验I 7+ （new）</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="21" id="l21">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l22">
+						<div class="weui-cell__bd">
+							<p>机械世界I  7+（new）</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="22" id="l22">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l23">
+						<div class="weui-cell__bd">
+							<p>机械探索I 8+（new）</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="23" id="l23">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l25">
+						<div class="weui-cell__bd">
+							<p>超级建筑师 4+（new）</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="25" id="l25">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l27">
+						<div class="weui-cell__bd">
+							<p>超级机械工程师 4+（new）</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="27" id="l27">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l29">
+						<div class="weui-cell__bd">
+							<p>超级导演 5+ （new）</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="29" id="l29">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l30">
+						<div class="weui-cell__bd">
+							<p>超级设计师 6+（new）</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="30" id="l30">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l38">
+						<div class="weui-cell__bd">
+							<p>望京校区幼儿特色体系</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="38" id="l38">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l39">
+						<div class="weui-cell__bd">
+							<p>望京校区学龄特色体系</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="39" id="l39">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l42">
+						<div class="weui-cell__bd">
+							<p>动力研究（一）8+</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="42" id="l42">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l43">
+						<div class="weui-cell__bd">
+							<p>望京校区国际班基础课</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="43" id="l43">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l44">
+						<div class="weui-cell__bd">
+							<p>济南国际班课程</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="44" id="l44">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l46">
+						<div class="weui-cell__bd">
+							<p>望京校区幼儿试听课体系</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="46" id="l46">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l47">
+						<div class="weui-cell__bd">
+							<p>望京校区学龄试听课体系</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="47" id="l47">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l49">
+						<div class="weui-cell__bd">
+							<p>过渡课程（济南现行）</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="49" id="l49">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l52">
+						<div class="weui-cell__bd">
+							<p>望京2018年国际班训练营</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="52" id="l52">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l55">
+						<div class="weui-cell__bd">
+							<p>济南幼儿大赛集训课程</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="55" id="l55">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l56">
+						<div class="weui-cell__bd">
+							<p>济南学龄大赛集训课程</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="56" id="l56">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l57">
+						<div class="weui-cell__bd">
+							<p>管道工程3+ (new)</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="57" id="l57">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l60">
+						<div class="weui-cell__bd">
+							<p>城市与生活 3+ （new）</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="60" id="l60">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l61">
+						<div class="weui-cell__bd">
+							<p>百变工程4+（new）</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="61" id="l61">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l62">
+						<div class="weui-cell__bd">
+							<p>国际班课程</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="62" id="l62">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l63">
+						<div class="weui-cell__bd">
+							<p>国际班课程II</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="63" id="l63">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l64">
+						<div class="weui-cell__bd">
+							<p>国际班课程III</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="64" id="l64">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l65">
+						<div class="weui-cell__bd">
+							<p>幼儿体验课程</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="65" id="l65">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l66">
+						<div class="weui-cell__bd">
+							<p>学龄体验课程</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="66" id="l66">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l69">
+						<div class="weui-cell__bd">
+							<p>wedo 2.0</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="69" id="l69">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l74">
+						<div class="weui-cell__bd">
+							<p>长春国际班</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="74" id="l74">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l75">
+						<div class="weui-cell__bd">
+							<p>燕郊校区幼儿特色体系</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="75" id="l75">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l77">
+						<div class="weui-cell__bd">
+							<p>燕郊校区学龄特色体系</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="77" id="l77">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l78">
+						<div class="weui-cell__bd">
+							<p>济南幼儿课程</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="78" id="l78">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l79">
+						<div class="weui-cell__bd">
+							<p>济南学龄课程</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="79" id="l79">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+					<label class="weui-cell weui-check__label" for="l80">
+						<div class="weui-cell__bd">
+							<p>中海乐高英语特色课</p>
+						</div>
+						<div class="weui-cell__ft">
+							<input type="radio" class="weui-check" name="apply.lessonId" value="80" id="l80">
+							<span class="weui-icon-checked"></span>
+						</div>
+					</label> 
+					
+				</div>
+				<div class="weui-cells__title">预约备注</div>
+				<div class="weui-cells weui-cells_form">
+				  <div class="weui-cell">
+				    <div class="weui-cell__bd">
+				      <textarea name="apply.parentRemark" class="weui-textarea" placeholder="请输入孩子合适补课的时间段，例如，上午10点-12点，耐心等待校区给您安排" rows="3"></textarea>
+				    </div>
+				  </div>
+				</div>
+				<div class="weui-cells__title">预约日期</div>
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<input class="weui-input" required="" name="apply.inviteDate" type="date" value="2018-06-11">
+					</div>
+				</div>
+				<div class="weui-btn-area">
+					<input type="submit" class="weui-btn weui-btn_primary">
+				</div>
+			</form>
+
+
+
+				<!-- 核心内容——end -->
+			</div>
+		</div>
+		<div class="weui-footer j_pd10 j_mt10" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-695" data-genuitec-path="/EOMS/WebRoot/wechat/common/footer.html">
+			<p class="weui-footer__text">
+				<a id="backwxhome" href="wxhome">返回首页</a>
+			</p>
+		</div>
+		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+		<script src="wechat/assets/js/jatomwx.js"></script>
+
+	</body>
+
+</html>

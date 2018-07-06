@@ -1,41 +1,113 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 
 	<head>
-		<!--    <base href="http://www.yurongtianxia.com:80/">-->
+		<title>家长反馈</title>
 		<meta charset="utf-8" />
-		<title>班级列表</title>
-		<meta http-equiv="pragma" content="no-cache" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-696" data-genuitec-path="/EOMS/WebRoot/wechat/common/header.html">
-		<meta http-equiv="cache-control" content="no-cache">
-		<meta http-equiv="expires" content="0">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<link rel="stylesheet" href="http://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
-		<link href="admin/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
-		<link rel="stylesheet" href="wechat/assets/css/jatomwx.css">
-		<link rel="stylesheet" href="css/new_file.css" />
+		<meta name="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link href="http://assets.xiaoguanceo.net/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<link rel="stylesheet" href="css/new_file.css" />		
 		<link rel="stylesheet" href="css/my_css.css" />
-		<div class="j_page_inner">
-			<!-- 核心内容——start -->
-			<h1 class="j_page_title">
-				<p>教师评价</p>
-			</h1>
-			<div class="weui-panel">
+		<link rel="stylesheet" href="css/calendar.css" />
+	</head>
+	<style>
+		#calendar nav>span {
+			width: 1.5rem;
+		}
+		
+		.date_word {
+			color: white;
+			vertical-align: super;
+		}
+		
+		.date_word {
+			line-height: 1px;
+		}
+		
+		.calendar_text p {
+			font-size: 13px;
+		}
+		
+		#calendar .c_row .lesson {
+			background-image: url(teacher/images/teacher/fankui_icon.png);
+		}
+		
+		#calendar .c_row>div.active:before {
+			background: rgba(104, 146, 199, 0.19);
+		}
+		/*#calendar .c_row .lesson02{
+		    background-image: url(images/parent/hongqi.png);			
+		}   */
 
-				<div class="weui-panel__hd j_text_danger new_shijian">
-					<a class="left_01">
-						<</a>
-							<a class="center_01">2018年5月29日</a>
-							<a class="right_01">></a>
+	</style>
+
+	<body class="f_page">
+
+		<h1 class="j_page_title">
+		<p>成长记录</p>			
+	</h1>
+
+		<!--排课表start-->
+		<div id="calendar">
+			<nav>
+				<span id="prev" class="prev"><i class="fa fa-caret-left"></i>
+					<span class="date_word">前一天</span>
+				</span>
+				<div class="month">当天</div>
+				<span id="next" class="next">
+					<span class="date_word">后一天 </span><i class="fa fa-caret-right"></i>
+				</span>
+			</nav>
+			<div class="c_head flex">
+				<div>周一</div>
+				<div>周二</div>
+				<div>周三</div>
+				<div>周四</div>
+				<div>周五</div>
+				<div>周六</div>
+				<div>周日</div>
+			</div>
+			<div class="c_body">
+				<div class="c_row">
+					<div><span class="day">8</span><span class="lesson lesson02"></span></div>
+					<div><span class="day">9</span></div>
+					<div><span class="day">10</span></div>
+					<div class="active"><span class="day">11</span><span class="lesson"></span></div>
+					<div><span class="day">12</span></div>
+					<div><span class="day">13</span></div>
+					<div><span class="day">14</span></div>
 				</div>
 			</div>
-			<div id="listbox">
+		</div>
+		<!--班级开头-->
+		<div class="weui-flex" style="background: #337ab7;">
+			<div class="weui-flex__item" style="color: white;padding: 2px;">周四17：30菜菜</div>
+		</div>
 
+				<div class="weui-cells weui-cells_form" style="margin-top: 0px;">
+				  <div class="weui-cell">
+				    <div class="weui-cell__bd">
+				      <div class="weui-uploader">
+				        <div class="weui-uploader__hd">
+				          <p class="weui-uploader__title">课堂风采</p>
+				          <div class="weui-uploader__info">0/3</div>
+				        </div>
+				        <div class="weui-uploader__bd">
+				          <ul class="weui-uploader__files" id="uploaderFiles">
+				            <li class="weui-uploader__file" style="background-image:url(images/1.jpg)"></li>
+				            <li class="weui-uploader__file" style="background-image:url(images/2.jpg)"></li>
+				            <li class="weui-uploader__file" style="background-image:url(images/3.jpg)"></li>
+				          </ul>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 				<div class="weui-panel">
 					<div class="weui-panel__bd">
 						<div class="weui-media-box weui-media-box_text">
-							<h4 class="weui-media-box__title">钓鱼</h4>
-							<div class="j_hline"></div>
 							<table class="weui-media-box__desc j_text_default">
 
 								<tbody>
@@ -92,15 +164,8 @@
 											<tr>
 												<td colspan="2" style="text-indent:2em;padding:5px;">宝贝本节课专注力挺不错的，而且在课堂上活跃度很高，心情挺不错的，哈哈。对于零件的灵活运用也越来越棒了，但是执行解决问题的能力需要继续加油，有些小小的依赖性哦。希望宝贝继续加油。</td>
 											</tr>
-
 								</tbody>
 							</table>
-
-							<div class="j_page_inner">
-								<!-- 核心内容——start -->
-								<!-- 参数详情 start -->
-							</div>
-							<!-- 参数详情 end -->
 							<!-- 介绍 start -->
 							<div class="j_box j_box_primary">
 								<div class="j_box_title j_text_primary j_tcenter">
@@ -157,16 +222,16 @@
 
 									<span class="score">☆</span>
 
-									</span>
-								</div>
+									</span>									
+								</div>	
 								<div class="j_obj_item">
 									<span class="j_obj_item_label">匿名评价：</span>
 									<span class="j_obj_item_text"> 
 									<span class="score">□</span>											
 									</span>									
 								
-								</div>	
-								
+								</div>									
+							
 							<div class="weui-cells weui-cells_form">
 								<div class="weui-cell">
 									<div class="weui-cell__bd">
@@ -176,33 +241,16 @@
 
 								<div class="weui-cell">
 									<div class="weui-cell__bd">
-										<a href="javascript:;" class="weui-btn weui-btn_primary" onclick="submit()">提交回复</a>
+										<a href="teacher_fakui02.html" class="weui-btn weui-btn_primary" onclick="submit()">提交回复</a>
 									</div>
 								</div>
 							</div>
 							<!-- 介绍 end -->
+
 							<!-- 核心内容——end -->
-						</div>
 
-					</div>
-				</div>
-			</div>
-
-			<!-- 核心内容——end -->
-		</div>
-
-		<div class="weui-footer j_pd10 j_mt10" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-695" data-genuitec-path="/EOMS/WebRoot/wechat/common/footer.html">
-			<p class="weui-footer__text">
-				<a id="backwxhome" href="wxhome">返回首页</a>
-			</p>
-		</div>
-		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-		<script src="http://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
-		<script src="wechat/assets/js/jatomwx.js"></script>
-		<script>
-			var tm = new Date().getTime();
-			document.getElementById("backwxhome").href = "wxhome?t=" + tm;
-		</script>
-		</body>
+	</body>
+	<script src="js/base.js"></script>
 
 </html>
+
