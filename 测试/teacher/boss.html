@@ -6,9 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />			
 		<link href="http://assets.xiaoguanceo.net/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
-<!--		<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">-->
+		<!--<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">-->
 		<link rel="stylesheet" href="css/my_css.css" />
-		<link rel="stylesheet" href="css/calendar.css" />				
+		<link rel="stylesheet" href="css/calendar.css" />	
+    	<script src="js/echarts.common.min.js"></script>		
 	</head>
 	<style>
 		.weui-flex__item{
@@ -52,7 +53,6 @@
 		#calendar .c_row>div.active:before {
 			background: rgba(104, 146, 199, 0.19);
 		}	
-		
 	</style>
 	<body>
 		<div class="weui-cells" id="school" onclick="showselect()">
@@ -95,6 +95,68 @@
 				</div>
 			</div>
 		</div>
+		
+		<div class="weui-cells" style="margin-top: 10px;">
+			<a class="weui-cell weui-cell_access" href="">
+				<div class="weui-cell__bd">
+					<i class="icon_001"></i>
+					<p class="j_text_primary">今日采单录入量</p>
+				</div>
+				<span style="color: red;margin-right: 10px;">5</span>
+				<span style="margin-right: 10px;">人</span>
+				<div class="weui-cell__ft">
+				</div>
+			</a>
+			<a class="weui-cell weui-cell_access" href="">
+				<div class="weui-cell__bd">
+					<i class="icon_002"></i>
+					<p class="j_text_primary">今日排课试听人数</p>
+				</div>
+				<span style="color: red;margin-right: 10px;">3</span>
+				<span style="margin-right: 10px;">人</span>				
+				<div class="weui-cell__ft">
+				</div>
+			</a>
+			<a class="weui-cell weui-cell_access" href="">
+				<div class="weui-cell__bd">
+					<i class="icon_003"></i>
+					<p class="j_text_primary">今日报名订单</p>
+				</div>
+				<span style="color: red;margin-right: 10px;">1</span>
+				<span style="margin-right: 10px;">人</span>				
+				<div class="weui-cell__ft">
+				</div>
+			</a>
+		</div>
+
+	    <div id="main" style="width: 400px;height:300px; display: block;margin: auto;"></div>
+	    <script type="text/javascript">
+	        // 基于准备好的dom，初始化echarts实例
+	        var myChart = echarts.init(document.getElementById('main'));
+	
+	        // 指定图表的配置项和数据
+	        var option = {
+	            title: {
+	                text: 'ECharts 入门示例'
+	            },
+	            tooltip: {},
+	            legend: {
+	                data:['销量']
+	            },
+	            xAxis: {
+	                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+	            },
+	            yAxis: {},
+	            series: [{
+	                name: '销量',
+	                type: 'bar',
+	                data: [5, 20, 36, 10, 10, 20]
+	            }]
+	        };
+	
+	        // 使用刚指定的配置项和数据显示图表。
+	        myChart.setOption(option);
+	    </script>
 
 		  <div class="weui-tabbar bottom_list">
 		    <a href="#" class="weui-tabbar__item weui-bar__item--on">
@@ -114,7 +176,7 @@
 		      <div class="weui-tabbar__icon">
 		        <img src="images/teacher/icon_new03.png" alt="">
 		      </div>
-		      <p class="weui-tabbar__label">排课表</p>
+		      <p class="weui-tabbar__label">报表</p>
 		    </a>
 		    <a href="#" class="weui-tabbar__item">
 		      <div class="weui-tabbar__icon">
