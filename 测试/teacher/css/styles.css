@@ -19,7 +19,7 @@ body {
   line-height: 50px;
   display: inline-block;
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   text-align: center;
   position: relative;
@@ -41,19 +41,19 @@ body {
 }
 
 .yellow {
-  background: #ffa000;
+  background: #337ab7;
 }
 
 .blue {
-  background: #40c4ff;
+  background: #337ab7;
 }
 
 .green {
-  background: #00e676;
+  background: #337ab7;
 }
 
 .purple {
-  background: #8e24aa;
+  background: #337ab7;
 }
 
 .pink {

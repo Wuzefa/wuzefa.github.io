@@ -4,7 +4,7 @@
 	<head>
 		<!--    <base href="http://www.yurongtianxia.com:80/">-->
 		<meta charset="utf-8" />
-		<title>班级列表</title>
+		<title>审核管理</title>
 		<meta http-equiv="pragma" content="no-cache" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-696" data-genuitec-path="/EOMS/WebRoot/wechat/common/header.html">
 		<meta http-equiv="cache-control" content="no-cache">
 		<meta http-equiv="expires" content="0">
@@ -49,9 +49,10 @@
 		<div class="j_page" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-793" data-genuitec-path="/EOMS/WebRoot/wechat/qyh/class/home.jsp">
 			<div class="j_page_inner">
 				<h1 class="j_page_title">				
-				<p>申请管理</p>	
-			</h1>
-
+					<p>审核管理<a style="font-size: 15px;position: fixed;right: 15px;top: 70px;color: #355c7e;">查看历史记录</a></p>
+					
+				</h1>
+				
 				<!--<div class="j_box">
 					<div class="j_box_content j_pd10">
 						<div class="weui-flex j_flex_grid">
@@ -81,18 +82,18 @@
 				<div class="weui-tab">
 					<div class="weui-navbar">
 						<a class="weui-navbar__item weui-bar__item--on" href="#tab1">
-							补签记录
+							补签审核
 						</a>
 						<a class="weui-navbar__item" href="#tab2">
-							请假记录
+							请假审核
 						</a>
 						<a class="weui-navbar__item" href="#tab3">
-							外出记录
+							外出审核
 						</a>
 						<a class="weui-navbar__item" href="#tab4">
-							资金记录
+							资金审核
 						</a>
-					</div>
+					</div>			
 					<div class="weui-tab__bd">
 						<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
 
@@ -101,71 +102,62 @@
 								<div class="weui-form-preview">
 									<div class="weui-form-preview__bd">
 										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">类型</label> <span class="weui-form-preview__value">请假</span>
+											<label class="weui-form-preview__label">申请人</label> <span class="weui-form-preview__value">曾茝倩</span>
 										</div>
 										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">开始时间</label> <span class="weui-form-preview__value">2018年04月20日 15:50</span>
+											<label class="weui-form-preview__label">所在部门</label> <span class="weui-form-preview__value">教学部</span>
 										</div>
 										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">结束时间</label> <span class="weui-form-preview__value">2018年04月20日 18:49</span>
+											<label class="weui-form-preview__label">申请时间</label> <span class="weui-form-preview__value">2018年04月20日 18:49</span>
+										</div>
+										<div class="weui-form-preview__item">
+											<label class="weui-form-preview__label">补签时间</label> <span class="weui-form-preview__value">2018年04月21日 18:49</span>
 										</div>
 
 										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">理由</label> <span class="weui-form-preview__value">家里有事</span>
-										</div>
-
-										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">状态</label> <span class="weui-form-preview__value j_text_success">已通过</span>
+											<label class="weui-form-preview__label">理由</label> <span class="weui-form-preview__value">忘记打卡</span>
 										</div>
 
 									</div>
 								</div>
-
+								<div class="weui-flex">
+									<div class="weui-flex__item" style="padding: 10px 30px;">
+										<a href="#" class="weui-btn weui-btn_primary">审核通过</a>
+									</div>
+									<div class="weui-flex__item" style="padding: 10px 30px;">
+										<a href="#" class="weui-btn weui-btn_primary">审核不通过</a>
+									</div>
+								</div>
 								<div class="weui-form-preview">
 									<div class="weui-form-preview__bd">
 										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">类型</label> <span class="weui-form-preview__value">请假</span>
+											<label class="weui-form-preview__label">申请人</label> <span class="weui-form-preview__value">曾茝倩</span>
 										</div>
 										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">开始时间</label> <span class="weui-form-preview__value">2018年04月11日 09:55</span>
+											<label class="weui-form-preview__label">所在部门</label> <span class="weui-form-preview__value">教学部</span>
 										</div>
 										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">结束时间</label> <span class="weui-form-preview__value">2018年04月11日 11:35</span>
+											<label class="weui-form-preview__label">申请时间</label> <span class="weui-form-preview__value">2018年04月20日 18:49</span>
+										</div>
+										<div class="weui-form-preview__item">
+											<label class="weui-form-preview__label">补签时间</label> <span class="weui-form-preview__value">2018年04月21日 18:49</span>
 										</div>
 
 										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">理由</label> <span class="weui-form-preview__value">回老家</span>
-										</div>
-
-										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">状态</label><span class="weui-form-preview__value j_text_danger">未通过</span>
+											<label class="weui-form-preview__label">理由</label> <span class="weui-form-preview__value">忘记打卡</span>
 										</div>
 
 									</div>
 								</div>
+								<div class="weui-flex">
+									<div class="weui-flex__item" style="padding: 10px 30px;">
+										<a href="#" class="weui-btn weui-btn_primary">审核通过</a>
+									</div>
+									<div class="weui-flex__item" style="padding: 10px 30px;">
+										<a href="#" class="weui-btn weui-btn_primary">审核不通过</a>
+									</div>
+								</div>	
 								
-								<div class="weui-form-preview">
-									<div class="weui-form-preview__bd">
-										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">类型</label> <span class="weui-form-preview__value">请假</span>
-										</div>
-										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">开始时间</label> <span class="weui-form-preview__value">2018年04月11日 09:55</span>
-										</div>
-										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">结束时间</label> <span class="weui-form-preview__value">2018年04月11日 11:35</span>
-										</div>
-
-										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">理由</label> <span class="weui-form-preview__value">回老家</span>
-										</div>
-
-										<div class="weui-form-preview__item">
-											<label class="weui-form-preview__label">状态</label><span class="weui-form-preview__value j_text_danger">未通过</span>
-										</div>
-
-									</div>
-								</div>
 							</div>
 
 						</div>
@@ -184,14 +176,6 @@
 				<!-- 核心内容——end -->
 			</div>
 		</div>
-		<section class="model-0">
-			<div class="float-btn-group" style="position: fixed; bottom:25px;float: left;">
-				<button class="btn-float btn-triger pink"><i class="icon-bars"></i></button>
-				<div class="btn-list">
-					<a href="#" class="btn-float yellow">补签</a><a href="#" class="btn-float blue">请假</a><a href="#" class="btn-float green">外出</a><a href="#" class="btn-float purple">资金</a>
-				</div>
-			</div>
-		</section>
 		
 
 		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
