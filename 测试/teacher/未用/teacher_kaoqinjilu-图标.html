@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>考勤记录</title>
+		<meta charset="utf-8" />
+		<meta name="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link href="http://assets.xiaoguanceo.net/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<link rel="stylesheet" href="css/my_css.css" />
+		<link rel="stylesheet" href="css/calendar.css" />
+
+	</head>
+	<style>
+		#calendar .c_row .lesson {
+			background-image: url(images/teacher/fankui_icon.png);
+		}		
+		#calendar .c_row>div.active:before {
+			background: rgba(104, 146, 199, 0.19);
+		}
+		
+			.weui-cell__bd h2,h4{
+				text-align: center;color: #337ab7;
+			}
+			.span_word01,.span_word02,.span_word03,.span_word04,.span_word05{
+				display: block;width: 16px;height: 16px;float: left;background: url(images/teacher/icon_001.png);margin: 2px 5px;
+			}
+			.span_word01_list{
+				display:inline-block;margin-left: 15px;color: #000000;
+			}
+			.span_word02{
+				background: url(images/teacher/icon_002.png);
+			}
+			.span_word03{
+				background: url(images/teacher/icon_003.png);
+			}
+			.span_word04{
+				background: url(images/teacher/icon_004.png);
+			}
+			.span_word05{
+				background: url(images/teacher/icon_005.png);
+			}
+			.weui-cell__bd p{
+				color:  #707070;
+			}	
+	</style>
+	<body class="f_page">
+
+		<h1 class="j_page_title">
+		<p>考勤记录</p>			
+	</h1>
+
+		<!--排课表start-->
+		<div id="calendar">
+			<nav>
+				<span id="prev" class="prev"><i class="fa fa-caret-left"></i></span>
+				<div class="month">2017年6月份</div>
+				<span id="next" class="next"><i class="fa fa-caret-right"></i></span>
+			</nav>
+			<div class="c_head flex">
+				<div>周一</div>
+				<div>周二</div>
+				<div>周三</div>
+				<div>周四</div>
+				<div>周五</div>
+				<div>周六</div>
+				<div>周日</div>
+			</div>
+			<div class="c_body">
+				<div class="c_row">
+
+					<div><span class="day">1</span><span class="lesson"></div>
+					<div><span class="day">2</span><span class="lesson"></div>
+					<div><span class="day">3</span><span class="lesson"></div>
+					<div><span class="day">4</span><span class="lesson"></div>
+					<div><span class="day">5</span><span class="lesson"></span></div>
+					<div><span class="day">6</span><span class="lesson"></span></div>
+					<div><span class="day">7</span></div>
+				</div>
+				<div class="c_row">
+					<div><span class="day">8</span><span class="lesson"></span></div>
+					<div><span class="day">9</span></div>
+					<div><span class="day">10</span></div>
+					<div class="active"><span class="day">11</span><span class="lesson"></span></div>
+					<div><span class="day">12</span></div>
+					<div><span class="day">13</span></div>
+					<div><span class="day">14</span></div>
+				</div>
+				<div class="c_row">
+					<div><span class="day">15</span></div>
+					<div><span class="day">16</span></div>
+					<div><span class="day">17</span></div>
+					<div><span class="day">18</span></div>
+					<div><span class="day">19</span></div>
+					<div><span class="day">20</span></div>
+					<div><span class="day">21</span></div>
+				</div>
+				<div class="c_row">
+					<div><span class="day">22</span></div>
+					<div><span class="day">23</span></div>
+					<div><span class="day">24</span></div>
+					<div><span class="day">25</span></div>
+					<div><span class="day">26</span></div>
+					<div><span class="day">27</span></div>
+					<div><span class="day">28</span></div>
+				</div>
+			</div>
+		</div>
+		<!--排课表end-->
+		<!--考勤-->	
+		<div class="calendar_text">
+		  <div class="weui-cell weui-cell_access" href="javascript:;">	
+		    <div class="weui-cell__bd">
+				<span class="span_word01"></span>
+				<p>日期:<span class="span_word01_list">2016年06月17日【星期四】</span> </p> 
+				<span class="span_word02"></span>
+				<p>考勤时间:<span class="span_word01_list">10:00-11:30</span> </p>
+				<span class="span_word03"></span>
+				<p>考勤状态:<span class="span_word01_list">10:00-11:30</span> </p>
+				<span class="span_word03"></span>
+				<p>实际签到时间:<span class="span_word01_list">10:00-11:30</span> </p>
+		    </div>
+		    </div>
+		    		<div class="weui-flex">
+			<div class="weui-flex__item">
+				<a href="javascript:;" class="weui-btn weui-btn_primary">申请请假</a>
+			</div>
+			<div class="weui-flex__item">
+				<a href="parent_goutong.html" class="weui-btn weui-btn_primary" style="background-color: green;">已签到</a>
+			</div>
+		</div>
+		  </div>
+		  
+		</div>
+
+		<!--考勤-->
+		<div class="calendar_text">
+			<p>日期：2017年06月11日</p>
+			<p>要求打卡时间：12:00以后</p>
+			<p>考勤状态：<span style="color: red;font-size: 15px;">早退</span></p>
+			<p>实际签到时间：11:52</p>
+		</div>
+		<div class="weui-flex">
+			<div class="weui-flex__item">
+				<a href="javascript:;" class="weui-btn weui-btn_primary">申请请假</a>
+			</div>
+			<div class="weui-flex__item">
+				<a href="parent_goutong.html" class="weui-btn weui-btn_warn">申请补签</a>
+			</div>
+		</div>
+		<!--考勤-->
+		<div class="calendar_text">
+			<p>日期：2017年06月11日</p>
+			<p>要求打卡时间：14:00以后</p>
+			<p>考勤状态：<span style="color: red;font-size: 15px;">请假</span></p>
+			<p>实际签到时间：13:52</p>
+		</div>
+		<div class="weui-flex">
+			<div class="weui-flex__item">
+				<a href="javascript:;" class="weui-btn weui-btn_warn">请假记录</a>
+			</div>
+			<div class="weui-flex__item">
+				<a href="parent_goutong.html" class="weui-btn weui-btn_warn">已请假</a>
+			</div>
+		</div>
+		<!--考勤-->
+		<div class="calendar_text">
+			<p>日期：2017年06月11日</p>
+			<p>要求打卡时间：20:00以后</p>
+			<p>考勤状态：<span style="color: green;font-size: 15px;">按时打卡</span></p>
+			<p>实际签到时间：</p>
+		</div>
+		<div class="weui-flex">
+			<div class="weui-flex__item">
+				<a href="javascript:;" class="weui-btn weui-btn_primary">申请请假</a>
+			</div>
+			<div class="weui-flex__item">
+				<a href="parent_goutong.html" class="weui-btn weui-btn_primary">考勤打卡</a>
+			</div>
+		</div>
+		
+		</div>
+		</div>
+		</div>
+
+		<div class="weui-footer">
+			<p class="weui-footer__links">
+				<a href="new_file.html" class="weui-footer__link">返回首页</a>
+			</p>
+		</div>
+
+	</body>
+	<script src="js/base.js"></script>
+
+</html>

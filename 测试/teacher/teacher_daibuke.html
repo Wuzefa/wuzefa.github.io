@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>补课管理</title>
+		<meta charset="utf-8" />
+		<meta name="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link href="http://assets.xiaoguanceo.net/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<link rel="stylesheet" href="css/my_css.css" />
+		<link rel="stylesheet" href="css/calendar.css" />
+
+	</head>
+	<style>
+		#calendar .c_row .lesson {
+			background-image: url(images/teacher/icon_qingjia.png);
+		}		
+		#calendar .c_row>div.active:before {
+			background: rgba(104, 146, 199, 0.19);
+		}
+	</style>
+	<body class="f_page">
+
+		<h1 class="j_page_title">
+		<p>补课管理</p>			
+	</h1>
+
+		<!--排课表start-->
+		<div id="calendar">
+			<nav>
+				<span id="prev" class="prev"><i class="fa fa-caret-left"></i></span>
+				<div class="month">2017年6月份</div>
+				<span id="next" class="next"><i class="fa fa-caret-right"></i></span>
+			</nav>
+			<div class="c_head flex">
+				<div>周一</div>
+				<div>周二</div>
+				<div>周三</div>
+				<div>周四</div>
+				<div>周五</div>
+				<div>周六</div>
+				<div>周日</div>
+			</div>
+			<div class="c_body">
+				<div class="c_row">
+
+					<div><span class="day">1</span><span class="lesson"></div>
+					<div><span class="day">2</span><span class="lesson"></div>
+					<div><span class="day">3</span><span class="lesson"></div>
+					<div><span class="day">4</span><span class="lesson"></div>
+					<div><span class="day">5</span><span class="lesson"></span></div>
+					<div><span class="day">6</span><span class="lesson"></span></div>
+					<div><span class="day">7</span></div>
+				</div>
+				<div class="c_row">
+					<div><span class="day">8</span><span class="lesson"></span></div>
+					<div><span class="day">9</span></div>
+					<div><span class="day">10</span></div>
+					<div class="active"><span class="day">11</span><span class="lesson"></span></div>
+					<div><span class="day">12</span></div>
+					<div><span class="day">13</span></div>
+					<div><span class="day">14</span></div>
+				</div>
+				<div class="c_row">
+					<div><span class="day">15</span></div>
+					<div><span class="day">16</span></div>
+					<div><span class="day">17</span></div>
+					<div><span class="day">18</span></div>
+					<div><span class="day">19</span></div>
+					<div><span class="day">20</span></div>
+					<div><span class="day">21</span></div>
+				</div>
+				<div class="c_row">
+					<div><span class="day">22</span></div>
+					<div><span class="day">23</span></div>
+					<div><span class="day">24</span></div>
+					<div><span class="day">25</span></div>
+					<div><span class="day">26</span></div>
+					<div><span class="day">27</span></div>
+					<div><span class="day">28</span></div>
+				</div>
+			</div>
+		</div>
+		<!--排课表end-->
+		<!--考勤-->
+		<div class="calendar_text">
+			<p>学员:宋子钰(5.0岁)[男]</p>
+			<p>家长:宋子钰妈妈[13333333333]</p>
+			<p>日期：2018-05-16</p>
+			<p>体系：探索世界5+</p>
+			<p>内容：测风仪</p>
+			<p>考勤状态：<span style="color: red;font-size: 15px;">旷课</span></p>			
+		</div>
+		<div class="weui-flex">
+			<div class="weui-flex__item">
+				<a href="teacher_goutong02.html" class="weui-btn weui-btn_primary">沟通家长</a>
+			</div>
+			<div class="weui-flex__item">
+				<a href="" class="weui-btn weui-btn_warn">忽略</a>
+			</div>
+		</div>
+		<!--考勤-->
+		<div class="calendar_text">
+			<p>学员:宋子钰(5.0岁)[男]</p>
+			<p>家长:宋子钰妈妈[13333333333]</p>
+			<p>日期：2018-05-23</p>
+			<p>体系：探索世界5+</p>
+			<p>内容：起重机</p>
+			<p>考勤状态：<span style="color: red;font-size: 15px;">请假</span></p>			
+		</div>
+		<div class="weui-flex">
+			<div class="weui-flex__item">
+				<a href="parent_goutong.html" class="weui-btn weui-btn_primary">沟通家长</a>
+			</div>
+			<div class="weui-flex__item">
+				<a href="parent_goutong.html" class="weui-btn weui-btn_primary" style="background: green;">已补课</a>
+			</div>
+		</div>
+
+
+		<div class="weui-footer">
+			<p class="weui-footer__links">
+				<a href="new_file.html" class="weui-footer__link">返回首页</a>
+			</p>
+		</div>
+
+	</body>
+	<script src="js/base.js"></script>
+
+</html>
