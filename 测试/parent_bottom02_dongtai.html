@@ -4,7 +4,7 @@
 	<head>
 		<!--    <base href="http://www.yurongtianxia.com:80/">-->
 		<meta charset="utf-8" />
-		<title>最新动态</title>
+		<title>动态墙</title>
 		<meta http-equiv="pragma" content="no-cache" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-696" data-genuitec-path="/EOMS/WebRoot/wechat/common/header.html">
 		<meta http-equiv="cache-control" content="no-cache">
 		<meta http-equiv="expires" content="0">
@@ -17,13 +17,181 @@
 		<link rel="stylesheet" href="css/my_css.css" />
 
 	</head>
+	<style>
+			.pink {
+				background: #337ab7;
+			}
+			.weui-navbar{
+				background: white;
+				color: #337ab7;
+			}
+			a.weui-navbar__item{
+				color: #337ab7;
+			}
+			.weui-navbar__item.weui-bar__item--on{
+				background: #337ab7;
+				color: white;
+			}	
+			.weui-media-box{
+				padding: 5px;
+			}
+			.weui-media-box__hd{
+				padding: 20px;
+			}
+			.weui-media-box__thumb{
+				width: 100px;height: 100px;
+			}
+			.span_dongtai01,.span_dongtai02,.span_dongtai03,.span_dongtai04,.span_dongtai05,.span_dongtai06{
+				display: block;width: 16px;height: 16px;position:absolute; background: url(images/parent/icon_dongtai01.png);margin: 16px 5px;
+			}	
+			.span_dongtai02{
+				background: url(images/parent/icon_dongtai02.png);
+			}
+			.span_dongtai03{
+				background: url(images/parent/icon_dongtai03.png);
+			}
+			.span_dongtai04{
+				background: url(images/parent/icon_dongtai04.png);
+			}
+			.span_dongtai05{
+				background: url(images/parent/icon_dongtai05.png);
+			}
+			.span_dongtai06{
+				background: url(images/parent/icon_dongtai06.png);
+			}
+			.weui-panel__hd{
+				margin-left: 8PX;
+			}		
+	</style>
 
 	<body>
+		
 				<div class="j_page_inner">	
 					<h1 class="j_page_title">
-						<p>最新动态</p>			
+						<p>动态墙</p>			
 					</h1>
 				</div>	
+				<div class="weui-panel weui-panel_access">
+				  <span class="span_dongtai01"></span>
+				  <div class="weui-panel__hd">通知动态<span style="float: right;font-size: 12px;">2018-07-01</span></div>
+				  				  
+				  <div class="weui-panel__bd">
+				    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+				      <div class="weui-media-box__hd">
+				      	<span class="weui-badge" style="position: absolute;left: 65px;background-color: green;">✔</span>
+				        <img class="weui-media-box__thumb" src="images/parent/parent_lingdang.png">
+				      </div>
+				      <div class="weui-media-box__bd">
+				        <h4 class="weui-media-box__title">端午节放假啦~</h4>
+				        <p class="weui-media-box__desc">您好,各位家长~</p>
+				      </div>
+				    </a>
+				  </div>
+				</div>
+				
+				<div class="weui-panel weui-panel_access">
+				<span class="span_dongtai02"></span>	
+				  <div class="weui-panel__hd">照片动态<span style="float: right;font-size: 12px;">2018-07-06</span></div>
+				  <div class="weui-panel__bd">
+				      <div class="weui-media-box__hd">
+				        <img class="weui-media-box__thumb" src="images/1.jpg">
+				        <img class="weui-media-box__thumb" src="images/2.jpg">
+				        <img class="weui-media-box__thumb" src="images/3.jpg">
+				        <img class="weui-media-box__thumb" src="images/4.jpg">
+				        <img class="weui-media-box__thumb" src="images/5.jpg">
+				        <img class="weui-media-box__thumb" src="images/5.jpg">
+				      </div>
+				  </div>
+				</div>	
+				
+				<div class="weui-panel weui-panel_access">
+				  <span class="span_dongtai01"></span>
+				  <div class="weui-panel__hd">通知动态<span style="float: right;font-size: 12px;">2018-07-08</span></div>
+				  <div class="weui-panel__bd">
+				    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+				      <div class="weui-media-box__hd">
+      					<span class="weui-badge" style="position: absolute;left: 65px;">!</span>							      	
+				        <img class="weui-media-box__thumb" src="images/parent/parent_lingdang.png">
+				      </div>
+				      <div class="weui-media-box__bd">
+				        <h4 class="weui-media-box__title">暑期班补课通知</h4>
+				        <p class="weui-media-box__desc">2018年暑期集中训练时间为:7月20日-8月20日.......</p>
+				      </div>
+				    </a>
+				  </div>
+				</div>
+				
+				<div class="weui-panel weui-panel_access">
+				  <span class="span_dongtai03"></span>
+				  <div class="weui-panel__hd">评价动态<span style="float: right;font-size: 12px;">2018-06-28</span></div>
+				  <div class="weui-panel__bd">
+				    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+				      <div class="weui-media-box__hd">							      	
+				        <img class="weui-media-box__thumb" src="images/parent/parent_dianping.png">
+				      </div>
+				      <div class="weui-media-box__bd">
+				        <h4 class="weui-media-box__title">敲鼓机</h4>
+						<tr>
+							<td><span  style="color: #999;font-size: 13px;"> 课堂专业性：</span></td>
+							<td><img src="images/parent/star_02.png" /><img src="images/parent/star_02.png" /><img src="images/parent/star_02.png" /><img src="images/parent/star_02.png" /><img src="images/parent/star_01.png" /></td>							
+						</tr>
+						<tr>...</tr>
+				        <p class="weui-media-box__desc">小朋友课堂表现很不错.......</p>				        
+				      </div>
+				    </a>
+				  </div>
+				</div>
+				
+				<div class="weui-panel weui-panel_access">
+				  <span class="span_dongtai04"></span>
+				  <div class="weui-panel__hd">课时动态<span style="float: right;font-size: 12px;">2018-06-28</span></div>
+				  <div class="weui-panel__bd">
+				    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+				      <div class="weui-media-box__hd">							      	
+				        <img class="weui-media-box__thumb" src="images/parent/parent_huake.png">
+				      </div>
+				      <div class="weui-media-box__bd">
+				        <h4 class="weui-media-box__title">幼儿课程</h4>
+				        <p class="weui-media-box__desc">减少[1]次课</p>	
+				        <p class="weui-media-box__desc">剩余<span style="color: red;">[30]</span>次课</p>				        
+				      </div>
+				    </a>
+				  </div>
+				</div>
+				
+				<div class="weui-panel weui-panel_access">
+				  <span class="span_dongtai05"></span>
+				  <div class="weui-panel__hd">沟通动态<span style="float: right;font-size: 12px;">2018-06-28</span></div>
+				  <div class="weui-panel__bd">
+				    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+				      <div class="weui-media-box__hd">							      	
+				        <img class="weui-media-box__thumb" src="images/parent/parent_goutong.png">
+				      </div>
+				      <div class="weui-media-box__bd">
+				        <h4 class="weui-media-box__title">敲鼓机</h4>
+				        <p class="weui-media-box__desc">您好,帅帅妈妈,假期快乐~</p>			        
+				      </div>
+				    </a>
+				  </div>
+				</div>
+				
+				<div class="weui-panel weui-panel_access">
+				  <span class="span_dongtai06"></span>
+				  <div class="weui-panel__hd">请假动态<span style="float: right;font-size: 12px;">2018-06-21</span></div>
+				  <div class="weui-panel__bd">
+				    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+				      <div class="weui-media-box__hd">							      	
+				        <img class="weui-media-box__thumb" src="images/parent/parrnt_qingjia.png">
+				      </div>
+				      <div class="weui-media-box__bd">
+				        <h4 class="weui-media-box__title">桥梁</h4>
+				        <p class="weui-media-box__desc">考勤情况:<span style="color: red;">[旷课]</span></p>			        		        
+				      </div>
+				    </a>
+				  </div>
+				</div>
+
+				
 				<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 				<script src="http://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
 				<script src="wechat/assets/js/jatomwx.js"></script>

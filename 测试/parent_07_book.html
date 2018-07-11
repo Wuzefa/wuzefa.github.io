@@ -47,54 +47,100 @@
 			.weui-cell{
 				padding: 5px 10px 5px 20px;
 			}
+			
+			.pink {
+				background: #337ab7;
+			}
+			.weui-navbar{
+				background: white;
+				color: #337ab7;
+			}
+			a.weui-navbar__item{
+				color: #337ab7;
+			}
+			.weui-navbar__item.weui-bar__item--on{
+				background: #337ab7;
+				color: white;
+			}			
 		</style>
 
 	</head>
 
 	<body data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-793" data-genuitec-path="/EOMS/WebRoot/wechat/qyh/class/home.jsp">
-		<div class="j_page" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-793" data-genuitec-path="/EOMS/WebRoot/wechat/qyh/class/home.jsp">
+		<div class="j_page" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-793" data-genuitec-path="/EOMS/WebRoot/wechat/qyh/class/home.jsp">			
 			<div class="j_page_inner">
 				<h1 class="j_page_title">
 				<p>借阅记录</p>			
 			</h1>
 
+				<div class="weui-tab">
+					<div class="weui-navbar">
+						<a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+							全部
+						</a>
+						<a class="weui-navbar__item" href="#tab2">
+							未归还
+						</a>
+					</div>			
+					<div class="weui-tab__bd">
+						<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+							<div class="weui-cells" style="font-size: 14px;">
+							  <a class="weui-cell weui-cell_access" href="javascript:;">	
+							    <div class="weui-cell__bd">
+							    	<h2 style="margin-bottom: 15px;">《小猪佩奇-踢足球》</h2>
+									<span class="span_word01"></span>
+									<p>编&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号:<span class="span_word01_list">001</span> </p> 
+									<span class="span_word02"></span>
+									<p>借阅时间:<span class="span_word01_list">2018-07-01</span> </p> 
+									<span class="span_word03"></span>
+									<p>应还时间:<span class="span_word01_list">2018-07-31</span> </p>
+									<span class="span_word04"></span>
+									<p>归还时间:<span class="span_word01_list">2018-07-28</span> </p>
+									<span class="span_word05"></span>
+									<p>状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态:<span class="span_word01_list" style="color: #1aad19">已归还</span> </p>
+							    </div>
+							  </a>			  
+							</div>
+							<div class="weui-cells" style="font-size: 14px;">
+							  <a class="weui-cell weui-cell_access" href="javascript:;">	
+							    <div class="weui-cell__bd">
+							    	<h2 style="margin-bottom: 15px;">《小猪佩奇-去游泳》</h2>
+									<span class="span_word01"></span>
+									<p>编&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号:<span class="span_word01_list">002</span> </p> 
+									<span class="span_word02"></span>
+									<p>借阅时间:<span class="span_word01_list">2018-07-01</span> </p> 
+									<span class="span_word03"></span>
+									<p>应还时间:<span class="span_word01_list">2018-07-31</span> </p>
+									<span class="span_word04"></span>
+									<p>归还时间:<span class="span_word01_list"></span> </p>
+									<span class="span_word05"></span>
+									<p>状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态:<span class="span_word01_list" style="color: red">未归还</span> </p>
+							    </div>
+							 </a>			  
+							</div>				
+						</div>
+						<div id="tab2" class="weui-tab__bd-item">
+							<div class="weui-cells" style="font-size: 14px;">
+							  <a class="weui-cell weui-cell_access" href="javascript:;">	
+							    <div class="weui-cell__bd">
+							    	<h2 style="margin-bottom: 15px;">《小猪佩奇-去游泳》</h2>
+									<span class="span_word01"></span>
+									<p>编&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号:<span class="span_word01_list">002</span> </p> 
+									<span class="span_word02"></span>
+									<p>借阅时间:<span class="span_word01_list">2018-07-01</span> </p> 
+									<span class="span_word03"></span>
+									<p>应还时间:<span class="span_word01_list">2018-07-31</span> </p>
+									<span class="span_word04"></span>
+									<p>归还时间:<span class="span_word01_list"></span> </p>
+									<span class="span_word05"></span>
+									<p>状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态:<span class="span_word01_list" style="color: red">未归还</span> </p>
+							    </div>
+							 </a>			  
+							</div>
+						</div>
+					</div>
+				</div>
 
-				<div class="weui-cells" style="font-size: 14px;">
-				  <a class="weui-cell weui-cell_access" href="javascript:;">	
-				    <div class="weui-cell__bd">
-				    	<h2 style="margin-bottom: 15px;">《小猪佩奇-踢足球》</h2>
-						<span class="span_word01"></span>
-						<p>编&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号:<span class="span_word01_list">001</span> </p> 
-						<span class="span_word02"></span>
-						<p>借阅时间:<span class="span_word01_list">2018-07-01</span> </p> 
-						<span class="span_word03"></span>
-						<p>应还时间:<span class="span_word01_list">2018-07-31</span> </p>
-						<span class="span_word04"></span>
-						<p>归还时间:<span class="span_word01_list">2018-07-28</span> </p>
-						<span class="span_word05"></span>
-						<p>状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态:<span class="span_word01_list" style="color: #1aad19">已归还</span> </p>
-				    </div>
-				    </div>
-				 </a>			  
-				</div>
-				<div class="weui-cells" style="font-size: 14px;">
-				  <a class="weui-cell weui-cell_access" href="javascript:;">	
-				    <div class="weui-cell__bd">
-				    	<h2 style="margin-bottom: 15px;">《小猪佩奇-去游泳》</h2>
-						<span class="span_word01"></span>
-						<p>编&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号:<span class="span_word01_list">002</span> </p> 
-						<span class="span_word02"></span>
-						<p>借阅时间:<span class="span_word01_list">2018-07-01</span> </p> 
-						<span class="span_word03"></span>
-						<p>应还时间:<span class="span_word01_list">2018-07-31</span> </p>
-						<span class="span_word04"></span>
-						<p>归还时间:<span class="span_word01_list"></span> </p>
-						<span class="span_word05"></span>
-						<p>状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态:<span class="span_word01_list" style="color: red">未归还</span> </p>
-				    </div>
-				    </div>
-				 </a>			  
-				</div>
 
 				<div class="j_page_inner">
 					<!-- 核心内容——start -->
@@ -107,7 +153,6 @@
 						</div>
 						<!-- 核心内容——end -->
 					</div>
-
 					<!-- 核心内容——end -->
 				</div>
 			</div>
