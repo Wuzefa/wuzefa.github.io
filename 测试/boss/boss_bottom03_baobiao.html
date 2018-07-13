@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数据报表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />			
+		<link href="http://assets.xiaoguanceo.net/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<!--<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">-->
+		<link rel="stylesheet" href="css/my_css.css" />
+		<link rel="stylesheet" href="css/calendar.css" />	
+    	<script src="js/echarts.common.min.js"></script>		
+	</head>
+	<style>
+		body{
+			margin-bottom: 30px;
+		}
+		* {
+	    font-size: 0.26rem;
+		}	
+		#school{
+			margin-top: 0px;
+			font-size: 15px;
+    		color: white;
+   			font-family: 微软雅黑;
+    		background: rgb(30, 65, 134);			
+		}	
+		.weui-cell__ft01{
+			color: white;
+		}
+		.boss_baobiao01,.boss_baobiao02{
+			display: block;width: 45px;height: 45px;background:url(images/icon_baobiao01.png) no-repeat 5px 10px;position: absolute;
+		}
+		.boss_baobiao02{
+			background:url(images/icon_baobiao03.png) no-repeat 5px 10px;
+		}
+	</style>
+	<body>
+		<div class="weui-cells" id="school" onclick="showselect()">
+		  <div class="weui-cell">
+		    <div class="weui-cell__bd">
+		      <p style="display: block;float: left;">校区</p>
+		      <span style="display: block;float: left;text-align: center;margin-left: 33%;">2018年第30周</span>
+		    </div>
+		    <div class="weui-cell__ft weui-cell__ft01" id="schoolname">全部校区</div>
+		  </div>
+		</div>
+		<!--报名金额标题-->
+		<div class="weui-flex">
+		
+		  <div class="weui-flex__item"  style="padding: 5px;">	  	
+		  	<span class="boss_baobiao01"></span>
+		  	<h1>本周报名金额合计：40900元</h1>
+		  	<span style="color: #707070;font-size: 13px;">当月截至目前已完成金额：<span style="color: red;">78000</span>元</span>
+		  </div>
+		</div>
+		<!--报名金额-->
+	    <div id="main1" style="width: 380px;height:300px; display: block;margin: auto;margin-top:20px ;"></div>	
+		<!--划课金额标题-->
+		<div class="weui-flex">
+		  <div class="weui-flex__item"  style="padding: 5px;">
+		  	<span class="boss_baobiao02"></span>
+		  	<h1>本周划课金额合计：20900元</h1>
+		  	<span style="color: #707070;font-size: 13px;">当月截至目前已完成金额: <span style="color: red;">68000</span>元</span>
+		  </div>
+		</div>	    
+		<!--划课金额-->
+	    <div id="main2" style="width: 380px;height:300px; display: block;margin: auto;"></div>
+
+		  <div class="weui-tabbar bottom_list">
+		    <a href="boss_bottom01_home.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="images/icon_new01.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">首页</p>
+		    </a>
+		    <a href="boss_bottom02_tongxinlu.html" class="weui-tabbar__item">
+		      <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>		    	
+		      <div class="weui-tabbar__icon">
+		        <img src="images/icon_new02.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">及时通</p>
+		    </a>
+		    <a href="boss_bottom03_baobiao.html" class="weui-tabbar__item weui-bar__item--on">
+		      <div class="weui-tabbar__icon">
+		        <img src="images/icon_new03.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">报表</p>
+		    </a>
+		    <a href="#" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="images/icon_new04.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">我的</p>
+		    </a>
+		  </div>
+		</div>
+
+		
+
+
+		<script src="js/jquery.js"></script>
+		<!--基础组件-->
+		<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+		<!--拓展组件-->
+		<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>	
+		<!--引入我的JS-->
+		<script src="js/my_js.js"></script>			
+		<script>
+			$("#school").select({
+			  title: "选择校区",
+			  items: ["全部校区", "北京望京国际部", "长春力旺康城", "北京燕郊国际部"],
+			  onChange:function(data){
+			  	$("#schoolname").html(data.titles);
+			  }
+			});	
+			function showselect(){
+				$("#school").select("open");
+			}
+		</script>
+		<!--报名金额-->
+	    <script type="text/javascript">
+	        // 基于准备好的dom，初始化echarts实例
+	        var myChart = echarts.init(document.getElementById('main1'));
+	
+	        // 指定图表的配置项和数据
+	        var option = {
+	            title: {
+	                text: '周报名金额'
+	            },
+	            tooltip: {},
+	            legend: {
+	                data:['金额']
+	            },
+	            xAxis: {
+	                data: ["周一","周二","周三","周四","周五","周六","周日"]
+	            },
+	            yAxis: {},
+	            series: [{
+	                name: '金额',
+	                type: 'bar',
+	                data: [11700, 0, 14500, 3000, 0, 11700,0]
+	            }]
+	        };
+	
+	        // 使用刚指定的配置项和数据显示图表。
+	        myChart.setOption(option);
+	    </script>	
+	    <!--划课金额-->
+	    <script type="text/javascript">
+	        // 基于准备好的dom，初始化echarts实例
+	        var myChart = echarts.init(document.getElementById('main2'));
+	
+	        // 指定图表的配置项和数据
+			option = {
+	            title: {
+	                text: '周划课时金额'
+	            },				
+			    xAxis: {
+			        type: 'category',
+			        data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+			    },
+			    yAxis: {
+			        type: 'value'
+			    },
+			    series: [{
+			        data: [800, 3000, 4200, 4200, 5000, 13300, 8920],
+			        type: 'line'
+			    }]
+			};	
+			
+	        // 使用刚指定的配置项和数据显示图表。
+	        myChart.setOption(option);
+	    </script>	    
+		<script src="js/base.js"></script>
+	</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />			
+		<link href="http://assets.xiaoguanceo.net/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<!--<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">-->
+		<link rel="stylesheet" href="css/my_css.css" />
+		<link rel="stylesheet" href="css/calendar.css" />	
+    	<script src="js/echarts.common.min.js"></script>		
+	</head>
+	<style>
+		body{
+			margin-bottom: 30px;
+		}
+		* {
+	    font-size: 0.26rem;
+		}
+		.weui-flex__item{
+			padding: 0px;		
+		}
+		.weui-grid{
+			width: 25%;
+			background: white;
+		}		
+		#school{
+			margin-top: 0px;
+			font-size: 15px;
+    		color: white;
+   			font-family: 微软雅黑;
+    		background: rgb(30, 65, 134);			
+		}	
+		.weui-cell__ft01{
+			color: white;
+		}
+		/*课程表*/			
+		#calendar nav>span {
+			width: 1.5rem;
+		}
+		.date_word {
+			color: white;
+			vertical-align: super;
+		}
+		
+		.date_word {
+			line-height: 1px;
+		}
+		
+		.calendar_text p {
+			font-size: 13px;
+		}
+		
+		#calendar .c_row .lesson {
+			background-image: url(images/fankui_icon.png);
+		}
+		
+		#calendar .c_row>div.active:before {
+			background: rgba(104, 146, 199, 0.19);
+		}	
+	</style>
+	<body>
+		<div class="weui-cells" id="school" onclick="showselect()">
+		  <div class="weui-cell">
+		    <div class="weui-cell__bd">
+		      <p>校区</p>
+		    </div>
+		    <div class="weui-cell__ft weui-cell__ft01" id="schoolname">全部校区</div>
+		  </div>
+		</div>
+		<!--排课表start-->
+		<div id="calendar">
+			<nav>
+				<span id="prev" class="prev"><i class="fa fa-caret-left"></i>
+					<span class="date_word">前一天</span>
+				</span>
+				<div class="month">当天</div>
+				<span id="next" class="next">
+					<span class="date_word">后一天 </span><i class="fa fa-caret-right"></i>
+				</span>
+			</nav>
+			<div class="c_head flex">
+				<div>周一</div>
+				<div>周二</div>
+				<div>周三</div>
+				<div>周四</div>
+				<div>周五</div>
+				<div>周六</div>
+				<div>周日</div>
+			</div>
+			<div class="c_body">
+				<div class="c_row">
+					<div><span class="day">8</span><span></span></div>
+					<div><span class="day">9</span></div>
+					<div><span class="day">10</span></div>
+					<div class="active"><span class="day">11</span><span class="lesson"></span></div>
+					<div><span class="day">12</span></div>
+					<div><span class="day">13</span></div>
+					<div><span class="day">14</span></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="weui-cells" style="margin-top: 10px;">
+			<a class="weui-cell weui-cell_access" href="">
+				<div class="weui-cell__bd">
+					<i class="icon_001"></i>
+					<p class="j_text_primary" style="margin-top: 3px;">今日采单录入量</p>
+				</div>
+				<span style="color: red;margin-right: 10px;">5</span>
+				<span style="margin-right: 10px;">人</span>
+				<div class="weui-cell__ft">
+				</div>
+			</a>
+			<a class="weui-cell weui-cell_access" href="">
+				<div class="weui-cell__bd">
+					<i class="icon_002"></i>
+					<p class="j_text_primary" style="margin-top: 3px;">今日排课试听人数</p>
+				</div>
+				<span style="color: red;margin-right: 10px;">3</span>
+				<span style="margin-right: 10px;">人</span>				
+				<div class="weui-cell__ft">
+				</div>
+			</a>
+			<a class="weui-cell weui-cell_access" href="">
+				<div class="weui-cell__bd">
+					<i class="icon_003"></i>
+					<p class="j_text_primary" style="margin-top: 3px;">今日报名订单</p>
+				</div>
+				<span style="color: red;margin-right: 10px;">1</span>
+				<span style="margin-right: 10px;">人</span>				
+				<div class="weui-cell__ft">
+				</div>
+			</a>
+		</div>
+
+
+		  <div class="weui-tabbar bottom_list">
+		    <a href="boss_bottom01_home.html" class="weui-tabbar__item weui-bar__item--on">
+		      <div class="weui-tabbar__icon">
+		        <img src="images/icon_new01.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">首页</p>
+		    </a>
+		    <a href="boss_bottom02_tongxinlu.html" class="weui-tabbar__item">
+		      <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>		    	
+		      <div class="weui-tabbar__icon">
+		        <img src="images/icon_new02.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">及时通</p>
+		    </a>
+		    <a href="boss_bottom03_baobiao.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="images/icon_new03.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">报表</p>
+		    </a>
+		    <a href="#" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="images/icon_new04.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">我的</p>
+		    </a>
+		  </div>
+		</div>
+
+		
+
+
+		<script src="js/jquery.js"></script>
+		<!--基础组件-->
+		<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+		<!--拓展组件-->
+		<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>	
+		<!--引入我的JS-->
+		<script src="js/my_js.js"></script>		
+	
+		<script>
+			$("#school").select({
+			  title: "选择校区",
+			  items: ["全部校区", "北京望京国际部", "长春力旺康城", "北京燕郊国际部"],
+			  onChange:function(data){
+			  	$("#schoolname").html(data.titles);
+			  }
+			});	
+			function showselect(){
+				$("#school").select("open");
+			}
+		</script>
+		<script src="js/base.js"></script>
+	</body>
+</html>

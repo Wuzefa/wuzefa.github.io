@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<!--    <base href="http://www.yurongtianxia.com:80/">-->
+		<meta charset="utf-8" />
+		<title>班级列表</title>
+		<meta http-equiv="pragma" content="no-cache" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-696" data-genuitec-path="/EOMS/WebRoot/wechat/common/header.html">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<link href="admin/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+		<link rel="stylesheet" href="wechat/assets/css/jatomwx.css">
+		<link rel="stylesheet" href="css/new_file.css" />
+		<link rel="stylesheet" href="css/my_css.css" />
+		<style>
+			#wxmsgs {
+				padding: 10px 30px;
+			}
+			
+			.wxmsg.me {
+				text-align: right;
+			}
+			
+			.wxmsg {
+				margin-bottom: 20px;
+				display: block;
+			}
+			
+			.wxmsg.me .msgcontent {
+				background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));
+				background-repeat: repeat-x;
+				border-color: #3e8f3e;
+				color: #FFF;
+			}
+			
+			.msgcontent {
+				display: inline-block;
+				max-width: 75%;
+				min-height: 35px;
+				background: #FFF;
+				border-radius: 5px;
+				text-align: left;
+				padding: 5px 15px;
+				color: black;
+				font-family: "微软雅黑";
+				font-size: 12px;
+			}
+			
+			.weui-media-box__thumb {
+				width: 30px;
+				height: 30px;
+				border-radius: 100%;
+				overflow: hidden;
+				float: right;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			.weui-media-box__thumb_right {
+				width: 30px;
+				height: 30px;
+				border-radius: 100%;
+				overflow: hidden;
+				float: left;
+				margin-top: 10px;
+				margin-right: 10px;
+			}
+		</style>
+		<div class="j_page_inner">
+			<!-- 核心内容——start -->
+			<h1 class="j_page_title">
+				<p>沟通记录</p>
+			</h1>
+			<div class="weui-cell__bd">		
+				<div class="j_box j_box_primary">
+					<div class="j_box_title j_text_primary j_tcenter">
+						<h2>吴泽发</h2>
+						<h3 style="font-weight: 600;"><span>乐高望京国际部</span></h3>
+					</div>
+					<div class="j_box_content" style="background: rgb(235,235,235);">
+						<div id="wxmsgs">
+							<div class="wxmsg me" logid="">
+								<div class="msgcontent">我：<span class="content">帅帅进步很大</span><br><span class="msgtime">2018-06-26 15:38:14</span></div>
+								<img class="weui-media-box__thumb" src="images/3.jpg">						
+							</div>
+							<div class="wxmsg" logid="">
+								<img class="weui-media-box__thumb_right" src="images/1.jpg">								
+								<div class="msgcontent">帅帅爸爸：<span class="content">谢谢老师!</span><br><span class="msgtime">2018-06-26 16:04:07</span></div>
+							</div>
+						</div>
+					</div>
+				</div>								
+			</div>
+			<div class="weui-cells weui-cells_form">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						 <textarea id="content" maxlength="200" class="weui-textarea" placeholder="请输入互动内容" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<a href="javascript:;" class="weui-btn weui-btn_primary" onclick="submit()">发送消息</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+		<script src="wechat/assets/js/jatomwx.js"></script>
+		<script>
+			var tm = new Date().getTime();
+			document.getElementById("backwxhome").href = "wxhome?t=" + tm;
+		</script>
+		</body>
+
+</html>
