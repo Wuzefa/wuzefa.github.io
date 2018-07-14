@@ -51,17 +51,16 @@
 		  <div class="weui-cell">
 		    <div class="weui-cell__bd">
 		      <p style="display: block;float: left;">校区</p>
-		      <!--<span style="display: block;float: left;text-align: center;margin-left: 33%;">2018年第30周</span>-->
 		    </div>
-		    <div class="weui-cell__ft weui-cell__ft01" id="schoolname">乐高望京国际部</div>
-		    <span style="display: inline-block;width: 16px;height: 20px;background: url(images/boss_xiala.png) no-repeat 0px 2px;float: right;margin-left: 3px;"></span>			    
+		    <div class="weui-cell__ft weui-cell__ft01" id="schoolname">全部校区</div>
+		    <span style="display: inline-block;width: 16px;height: 20px;background: url(images/boss_xiala.png) no-repeat 0px 2px;float: right;margin-left: 3px;"></span>		
 		  </div>
 		</div>
 		<!--筛选快-->
 		<div class="weui-panel">
         <div class="weui-panel__hd j_text_danger"> 2018/07/09~2018/07/14 
         <button data-target="#conditionsPanelPopup" class="open-popup j_text_primary j_fright">
-           <i class="fa fa-flag"></i><a href="boss_baobiao2.html">筛选</a> 
+           <i class="fa fa-flag"></i>筛选
          </button>
         </div>
             </div>		
@@ -70,8 +69,8 @@
 		
 		  <div class="weui-flex__item"  style="padding: 5px;">	  	
 		  	
-		  	<h1 style="font-size: 16px;"><span class="boss_baobiao01"></span>本周报名金额合计：40900元</h1>
-		  	<span style="color: #707070;font-size: 13px;">当月截至目前已完成金额：<span style="color: red;">78000</span>元</span>
+		  	<h1 style="font-size: 16px;"><span class="boss_baobiao01"></span>本月累计报名金额合计：40900元</h1>
+		  	<span style="color: #707070;font-size: 13px;">当周截至目前已累计完成金额：<span style="color: red;">78000</span>元</span>
 		  </div>
 		</div>
 		<!--报名金额-->
@@ -153,26 +152,69 @@
 	    <script type="text/javascript">
 	        // 基于准备好的dom，初始化echarts实例
 	        var myChart = echarts.init(document.getElementById('main1'));
-	
-	        // 指定图表的配置项和数据
-	        var option = {
-	            title: {
-	                text: '周报名金额'
-	            },
-	            tooltip: {},
-	            legend: {
-	                data:['金额']
-	            },
-	            xAxis: {
-	                data: ["周一","周二","周三","周四","周五","周六","周日"]
-	            },
-	            yAxis: {},
-	            series: [{
-	                name: '金额',
-	                type: 'bar',
-	                data: [11700, 0, 14500, 3000, 0, 11700,0]
-	            }]
-	        };
+
+		option = {
+		    tooltip : {
+		        trigger: 'axis',
+		        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+		            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+		        }
+		    },
+		    legend: {
+		        data: ['北京望京', '长春力旺','北京燕郊']
+		    },
+		    grid: {
+		        left: '3%',
+		        right: '4%',
+		        bottom: '3%',
+		        containLabel: true
+		    },
+		    xAxis:  {
+		        type: 'value'
+		    },
+		    yAxis: {
+		        type: 'category',
+		        data: ['第五周', '第四周', '第三周', '第二周', '第一周']
+		    },
+		    series: [
+		        {
+		            name: '北京望京',
+		            type: 'bar',
+		            stack: '总量',
+		            label: {
+		                normal: {
+		                    show: true,
+		                    position: 'insideRight'
+		                }
+		            },
+		            data: [0, 30200, 30100,10000,20000]
+		        },
+		        {
+		            name: '长春力旺',
+		            type: 'bar',
+		            stack: '总量',
+		            label: {
+		                normal: {
+		                    show: true,
+		                    position: 'insideRight'
+		                }
+		            },
+		            data: [0, 13200, 10100,0,22220]
+		        },
+		        {
+		            name: '北京燕郊',
+		            type: 'bar',
+		            stack: '总量',
+		            label: {
+		                normal: {
+		                    show: true,
+		                    position: 'insideRight'
+		                }
+		            },
+		            data: [0, 11700, 20000, 0, 10000]
+		        }
+		    ]
+		};
 	
 	        // 使用刚指定的配置项和数据显示图表。
 	        myChart.setOption(option);
