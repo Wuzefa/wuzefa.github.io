@@ -35,12 +35,15 @@
 		.weui-cell__ft01{
 			color: white;
 		}
-		.boss_baobiao01,.boss_baobiao02{
+		.boss_baobiao01,.boss_baobiao02,.boss_baobiao03{
 			display:inline-block;width: 32px;height: 32px;background:url(images/icon_baobiao01.png) no-repeat 0px 0px;vertical-align: middle;
 			
 		}
 		.boss_baobiao02{
 			background:url(images/icon_baobiao03.png) no-repeat 0px 0px;
+		}
+		.boss_baobiao03{
+			background:url(images/icon_baobiao02.png) no-repeat 0px 0px;
 		}
 	</style>
 	<body>
@@ -66,7 +69,7 @@
 		
 		  <div class="weui-flex__item"  style="padding: 5px;">	  	
 		  	
-		  	<h1 style="font-size: 14px;"><span class="boss_baobiao01"></span>本周报名金额合计：40900元</h1>
+		  	<h1 style="font-size: 16px;"><span class="boss_baobiao01"></span>本周报名金额合计：40900元</h1>
 		  	<span style="color: #707070;font-size: 13px;">当月截至目前已完成金额：<span style="color: red;">78000</span>元</span>
 		  </div>
 		</div>
@@ -75,12 +78,21 @@
 		<!--划课金额标题-->
 		<div class="weui-flex">
 		  <div class="weui-flex__item"  style="padding: 5px;">
-		  	<h1 style="font-size: 14px;"><span class="boss_baobiao02"></span>本周划课金额合计：20900元</h1>
+		  	<h1 style="font-size: 16px;"><span class="boss_baobiao02"></span>本周划课金额合计：20900元</h1>
 		  	<span style="color: #707070;font-size: 13px;">当月截至目前已完成金额: <span style="color: red;">68000</span>元</span>
 		  </div>
 		</div>	    
 		<!--划课金额-->
 	    <div id="main2" style="width: 380px;height:300px; display: block;margin-left: 5px;"></div>
+		<!--店面支出标题-->
+		<div class="weui-flex">
+		  <div class="weui-flex__item"  style="padding: 5px;">
+		  	<h1 style="font-size: 16px;"><span class="boss_baobiao03"></span>本周店面支出合计：1900元</h1>
+		  	<span style="color: #707070;font-size: 13px;">当月截至目前已支出金额: <span style="color: red;">8000</span>元</span>
+		  </div>
+		</div>	    
+		<!--店面支出-->
+	    <div id="main3" style="width: 380px;height:300px; display: block;margin-left: 5px;"></div>
 	    
 
 		  <div class="weui-tabbar bottom_list">
@@ -186,6 +198,54 @@
 			        type: 'line'
 			    }]
 			};	
+			
+	        // 使用刚指定的配置项和数据显示图表。
+	        myChart.setOption(option);
+	  </script>
+	    <!--店面支出-->
+	    <script type="text/javascript">
+	        // 基于准备好的dom，初始化echarts实例
+	        var myChart = echarts.init(document.getElementById('main3'));
+	
+	        // 指定图表的配置项和数据
+			option = {
+			    title : {
+			        text: '乐高望京国际部',
+			        subtext: '校区财务',
+			        x:'center'
+			    },
+			    tooltip : {
+			        trigger: 'item',
+			        formatter: "{a} <br/>{b} : {c} ({d}%)"
+			    },
+			    legend: {
+			        orient: 'vertical',
+			        left: 'left',
+			        data: ['校区成本','运营物料','招待','水电费','其他']
+			    },
+			    series : [
+			        {
+			            name: '访问来源',
+			            type: 'pie',
+			            radius : '55%',
+			            center: ['50%', '60%'],
+			            data:[
+			                {value:335, name:'校区成本'},
+			                {value:310, name:'运营物料'},
+			                {value:234, name:'招待'},
+			                {value:135, name:'水电费'},
+			                {value:1548, name:'其他'}
+			            ],
+			            itemStyle: {
+			                emphasis: {
+			                    shadowBlur: 10,
+			                    shadowOffsetX: 0,
+			                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+			                }
+			            }
+			        }
+			    ]
+			};
 			
 	        // 使用刚指定的配置项和数据显示图表。
 	        myChart.setOption(option);
