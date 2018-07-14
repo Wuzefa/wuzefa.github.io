@@ -16,7 +16,7 @@
 			margin-bottom: 30px;
 		}
 		* {
-	    font-size: 0.26rem;
+	    font-size: 0.28rem;
 		}	
 		#school{
 			margin-top: 0px;
@@ -29,10 +29,11 @@
 			color: white;
 		}
 		.boss_baobiao01,.boss_baobiao02{
-			display: block;width: 45px;height: 45px;background:url(images/icon_baobiao01.png) no-repeat 5px 10px;position: absolute;
+			display:inline-block;width: 32px;height: 32px;background:url(images/icon_baobiao01.png) no-repeat 0px 0px;vertical-align: middle;
+			
 		}
 		.boss_baobiao02{
-			background:url(images/icon_baobiao03.png) no-repeat 5px 10px;
+			background:url(images/icon_baobiao03.png) no-repeat 0px 0px;
 		}
 	</style>
 	<body>
@@ -49,23 +50,23 @@
 		<div class="weui-flex">
 		
 		  <div class="weui-flex__item"  style="padding: 5px;">	  	
-		  	<span class="boss_baobiao01"></span>
-		  	<h1>本周报名金额合计：40900元</h1>
+		  	
+		  	<h1 style="font-size: 14px;"><span class="boss_baobiao01"></span>本周报名金额合计：40900元</h1>
 		  	<span style="color: #707070;font-size: 13px;">当月截至目前已完成金额：<span style="color: red;">78000</span>元</span>
 		  </div>
 		</div>
 		<!--报名金额-->
-	    <div id="main1" style="width: 380px;height:300px; display: block;margin: auto;margin-top:20px ;"></div>	
+	    <div id="main1" style="width: 375px;height:300px; display: block;margin-top:20px;margin:auto"></div>	
 		<!--划课金额标题-->
 		<div class="weui-flex">
 		  <div class="weui-flex__item"  style="padding: 5px;">
-		  	<span class="boss_baobiao02"></span>
-		  	<h1>本周划课金额合计：20900元</h1>
+		  	<h1 style="font-size: 14px;"><span class="boss_baobiao02"></span>本周划课金额合计：20900元</h1>
 		  	<span style="color: #707070;font-size: 13px;">当月截至目前已完成金额: <span style="color: red;">68000</span>元</span>
 		  </div>
 		</div>	    
 		<!--划课金额-->
-	    <div id="main2" style="width: 380px;height:300px; display: block;margin: auto;"></div>
+	    <div id="main2" style="width: 375px;height:300px; display: block;margin-left: auto;"></div>
+	    
 
 		  <div class="weui-tabbar bottom_list">
 		    <a href="boss_bottom01_home.html" class="weui-tabbar__item">
@@ -75,7 +76,7 @@
 		      <p class="weui-tabbar__label">首页</p>
 		    </a>
 		    <a href="boss_bottom02_tongxinlu.html" class="weui-tabbar__item">
-		      <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>		    	
+		      <!--<span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>-->		    	
 		      <div class="weui-tabbar__icon">
 		        <img src="images/icon_new02.png" alt="">
 		      </div>
@@ -87,7 +88,7 @@
 		      </div>
 		      <p class="weui-tabbar__label">报表</p>
 		    </a>
-		    <a href="#" class="weui-tabbar__item">
+		    <a href="boss_bottom04_my.html" class="weui-tabbar__item">
 		      <div class="weui-tabbar__icon">
 		        <img src="images/icon_new04.png" alt="">
 		      </div>
@@ -173,7 +174,7 @@
 			
 	        // 使用刚指定的配置项和数据显示图表。
 	        myChart.setOption(option);
-	    </script>	    
+	  </script>
 		<script src="js/base.js"></script>
 	</body>
 </html>

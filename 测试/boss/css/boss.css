@@ -1,0 +1,104 @@
+		/*home*/
+		.weui-flex__item{
+			padding: 0px;		
+		}
+		.weui-grid{
+			width: 25%;
+			background: white;
+		}		
+		#school{
+			margin-top: 0px;
+			font-size: 15px;
+    		color: white;
+   			font-family: 微软雅黑;
+    		background: rgb(30, 65, 134);			
+		}	
+		.weui-cell__ft01{
+			color: white;
+		}
+		/*课程表*/			
+		#calendar nav>span {
+			width: 1.5rem;
+		}
+		.date_word {
+			color: white;
+			vertical-align: super;
+		}
+		
+		.date_word {
+			line-height: 1px;
+		}
+		
+		.calendar_text p {
+			font-size: 13px;
+		}
+		
+		#calendar .c_row .lesson {
+			background-image: url(../images/fankui_icon.png);
+		}
+		
+		#calendar .c_row>div.active:before {
+			background: rgba(104, 146, 199, 0.19);
+		}				
+		
+		.progress-title{
+		    font-size: 18px;
+		    font-weight: 700;
+		    color: #1c2647;
+		    margin: 0 0 10px;
+		}
+		.progress{
+		    height: 16px;
+		    background: #fff;
+		    border-top: 5px solid #1c2647;
+		    border-bottom: 5px solid #1c2647;
+		    border-radius: 0;
+		    margin-bottom: 25px;
+		    overflow: visible;
+		    position: relative;
+		}
+		.progress:before,
+		.progress:after{
+		    content: "";
+		    width: 5px;
+		    background: #1c2647;
+		    position: absolute;
+		    top: 0;
+		    left: -5px;
+		    bottom: 0;
+		}
+		.progress:after{
+		    left: auto;
+		    right: -5px;
+		}
+		.progress .progress-bar{
+		    border: none;
+		    box-shadow: none;
+		    -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+		    animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+		}
+		@-webkit-keyframes animate-positive{
+		    0%{ width: 0; }
+		}
+		@keyframes animate-positive{
+		    0%{ width: 0; }
+		}       
+		.progress {
+		    height: 19px;
+		    background: #fff;
+		    border-top: 5px solid #1c2647;
+		    border-bottom: 5px solid #1c2647;
+		    border-radius: 0;
+		    margin-bottom: 25px;
+		    overflow: visible;
+		    position: relative;
+		}
+		.progress-bar {
+		    float: left;
+		    width: 0;
+		    height: 100%;
+		    font-size: 12px;
+		    line-height: 20px;
+		    color: #fff;
+		    text-align: center;
+		}

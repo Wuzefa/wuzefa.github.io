@@ -9,56 +9,40 @@
 		<!--<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">-->
 		<link rel="stylesheet" href="css/my_css.css" />
 		<link rel="stylesheet" href="css/calendar.css" />	
-    	<script src="js/echarts.common.min.js"></script>		
+		<link rel="stylesheet" href="css/boss.css" />
+    	<script src="js/echarts.common.min.js"></script>	
 	</head>
 	<style>
 		body{
-			margin-bottom: 30px;
+			margin-bottom: 50px;
 		}
 		* {
-	    font-size: 0.26rem;
+	    font-size: 0.28rem;
 		}
-		.weui-flex__item{
-			padding: 0px;		
+		.progress-bar{
+			color: #212121;
 		}
-		.weui-grid{
-			width: 25%;
-			background: white;
-		}		
-		#school{
-			margin-top: 0px;
-			font-size: 15px;
-    		color: white;
-   			font-family: 微软雅黑;
-    		background: rgb(30, 65, 134);			
-		}	
-		.weui-cell__ft01{
-			color: white;
-		}
-		/*课程表*/			
-		#calendar nav>span {
-			width: 1.5rem;
-		}
-		.date_word {
-			color: white;
-			vertical-align: super;
-		}
-		
-		.date_word {
-			line-height: 1px;
-		}
-		
-		.calendar_text p {
-			font-size: 13px;
-		}
-		
-		#calendar .c_row .lesson {
-			background-image: url(images/fankui_icon.png);
-		}
-		
-		#calendar .c_row>div.active:before {
-			background: rgba(104, 146, 199, 0.19);
-		}	
+			/*内容介绍*/
+			.span_word01,.span_word02,.span_word03,.span_word04,.span_word05{
+				display: inline-block;width: 16px;height: 16px;background: url(images/icon_word01.png);margin: 2px 5px;
+				vertical-align: middle;
+			}
+			.span_word01_list{
+				display:inline-block;color: brown;float: right;
+			}
+			.span_word02{
+				background: url(images/icon_word02.png);
+			}
+			.span_word03{
+				background: url(images/icon_word03.png);
+			}
+			.span_word04{
+				background: url(images/icon_word04.png);
+			}
+			.span_word05{
+				background: url(images/icon_word05.png);
+			}
+			
 	</style>
 	<body>
 		<div class="weui-cells" id="school" onclick="showselect()">
@@ -69,6 +53,28 @@
 		    <div class="weui-cell__ft weui-cell__ft01" id="schoolname">全部校区</div>
 		  </div>
 		</div>
+		
+			<div class="weui-cells" style="font-size: 14px;">
+			  <a class="weui-cell weui-cell_access" href="teacher_fuwu1.html" style="margin-top: -15px;">	
+			    <div class="weui-cell__bd info">
+			    	<h1 style="text-align: center;color: #337ab7;font-size: 20px;">校区运营实况</h1>
+			    	<h3 style="text-align: center;color: red;margin-bottom: 5px;">截至至今<span>(2018/7/11)</span> </h3>
+					
+					<p><span class="span_word01"></span>课时未消纳总额:<span class="span_word01_list">1115009.23¥</span> </p> 
+					
+					<p><span class="span_word02"></span>课时已消纳总额:<span class="span_word01_list">1356004.56¥</span> </p>
+					
+					<p><span class="span_word03"></span>本月已消纳总额:<span class="span_word01_list">62555.33¥</span> </p>  
+					
+					<p><span class="span_word04"></span>年度营业总额度:<span class="span_word01_list">560000¥</span> </p>  
+					
+					<p><span class="span_word05"></span>本月营业总额度:<span class="span_word01_list">115000¥</span> </p>  
+			    </div>
+			    <!--<div class="weui-cell__ft">-->
+			    </div>
+			  </a>
+			</div>		
+		
 		<!--排课表start-->
 		<div id="calendar">
 			<nav>
@@ -101,8 +107,11 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="weui-cells" style="margin-top: 10px;">
+
+
+
+
+		<div class="weui-cells" style="margin-top: 0px;">
 			<a class="weui-cell weui-cell_access" href="">
 				<div class="weui-cell__bd">
 					<i class="icon_001"></i>
@@ -135,6 +144,53 @@
 			</a>
 		</div>
 
+		  <span class="span_dongtai01"></span>
+		  <div class="weui-panel__hd">周期进度<span style="float: right;font-size: 12px;">2018年/7月份/第二周</span></div>
+		  				  
+		  <div class="weui-panel__bd">
+		    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+		      <div class="weui-media-box__hd">
+		        <img class="weui-media-box__thumb" src="images/boss_home01.png">
+		      </div>				      
+		      <div class="weui-media-box__bd">
+		        <h4 class="weui-media-box__title">本周采单数:30</h4>
+		        <p class="weui-media-box__desc">实际完成数:5</p>
+		      </div>
+		  	<div class="progress" style="width: 70px;margin: auto;float: right;margin-right: 20px;">
+                <div class="progress-bar" style="width:16.6%; background:#ef2d56;">
+                    <div class="progress-value">5/30</div>
+                </div>
+            </div>					      
+		    </a>
+		    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+		      <div class="weui-media-box__hd">
+		        <img class="weui-media-box__thumb" src="images/boss_home02.png">
+		      </div>				      
+		      <div class="weui-media-box__bd">
+		        <h4 class="weui-media-box__title">本周试听数:10</h4>
+		        <p class="weui-media-box__desc">实际完成数:4</p>
+		      </div>
+		  	<div class="progress" style="width: 70px;margin: auto;float: right;margin-right: 20px;">
+                <div class="progress-bar" style="width:16.6%; background:greenyellow;">
+                    <div class="progress-value">4/10</div>
+                </div>
+            </div>					      
+		    </a>
+		    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+		      <div class="weui-media-box__hd">
+		        <img class="weui-media-box__thumb" src="images/boss_home03.png">
+		      </div>				      
+		      <div class="weui-media-box__bd">
+		        <h4 class="weui-media-box__title">本周订单数:6</h4>
+		        <p class="weui-media-box__desc">实际完成数:4</p>
+		      </div>
+		  	<div class="progress" style="width: 70px;margin: auto;float: right;margin-right: 20px;">
+                <div class="progress-bar" style="width:66.6%; background:deepskyblue;">
+                    <div class="progress-value">4/6</div>
+                </div>
+            </div>					      
+		    </a>
+		  </div>
 
 		  <div class="weui-tabbar bottom_list">
 		    <a href="boss_bottom01_home.html" class="weui-tabbar__item weui-bar__item--on">
@@ -144,7 +200,7 @@
 		      <p class="weui-tabbar__label">首页</p>
 		    </a>
 		    <a href="boss_bottom02_tongxinlu.html" class="weui-tabbar__item">
-		      <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>		    	
+		      <!--<span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>-->		    	
 		      <div class="weui-tabbar__icon">
 		        <img src="images/icon_new02.png" alt="">
 		      </div>
@@ -156,14 +212,13 @@
 		      </div>
 		      <p class="weui-tabbar__label">报表</p>
 		    </a>
-		    <a href="#" class="weui-tabbar__item">
+		    <a href="boss_bottom04_my.html" class="weui-tabbar__item">
 		      <div class="weui-tabbar__icon">
 		        <img src="images/icon_new04.png" alt="">
 		      </div>
 		      <p class="weui-tabbar__label">我的</p>
 		    </a>
 		  </div>
-		</div>
 
 		
 
