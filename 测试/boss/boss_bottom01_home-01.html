@@ -23,12 +23,12 @@
 			color: #212121;
 		}
 			/*内容介绍*/
-			.span_word01,.span_word02,.span_word03,.span_word04,.span_word05{
+			.span_word01,.span_word02,.span_word03,.span_word04,.span_word05,.span_word06,.span_word07,.span_word08,.span_word09,.span_word10{
 				display: inline-block;width: 16px;height: 16px;background: url(images/icon_word01.png);margin: 2px 5px;
-				vertical-align: middle;
+				vertical-align: middle;margin-bottom: 3px;
 			}
 			.span_word01_list{
-				display:inline-block;color: brown;float: right;
+				display:inline-block;color: brown;float: right;margin-right: 10px;
 			}
 			.span_word02{
 				background: url(images/icon_word02.png);
@@ -42,7 +42,27 @@
 			.span_word05{
 				background: url(images/icon_word05.png);
 			}
-			
+			.span_word06{
+				background: url(images/icon_word06.png);
+			}
+			.span_word07{
+				background: url(images/icon_word07.png);
+			}
+			.span_word08{
+				background: url(images/icon_word08.png);
+			}
+			.span_word09{
+				background: url(images/icon_word09.png);
+			}
+			.span_word010{
+				background: url(images/icon_word10.png);
+			}
+			.weui-cells{
+				margin-top: 0px;
+			}
+			.weui-cell{
+				padding: 5px;
+			}
 	</style>
 	<body>
 		<div class="weui-cells" id="school" onclick="showselect()">
@@ -53,28 +73,7 @@
 		    <div class="weui-cell__ft weui-cell__ft01" id="schoolname">全部校区</div>
 		  </div>
 		</div>
-		
-			<div class="weui-cells" style="font-size: 14px;">
-			  <a class="weui-cell weui-cell_access" href="teacher_fuwu1.html">	
-			    <div class="weui-cell__bd info">
-			    	<h1 style="text-align: center;color: #337ab7;font-size: 20px;">校区运营实况</h1>
-			    	<h3 style="text-align: center;color: red;margin-bottom: 5px;">截至至今<span>(2018/7/11)</span> </h3>
-					
-					<p><span class="span_word01"></span>课时未消纳总额:<span class="span_word01_list">1115009.23¥</span> </p> 
-					
-					<p><span class="span_word02"></span>课时已消纳总额:<span class="span_word01_list">1356004.56¥</span> </p>
-					
-					<p><span class="span_word03"></span>本月已消纳总额:<span class="span_word01_list">62555.33¥</span> </p>  
-					
-					<p><span class="span_word04"></span>年度营业总额度:<span class="span_word01_list">560000.00¥</span> </p>  
-					
-					<p><span class="span_word05"></span>本月营业总额度:<span class="span_word01_list">115000.00¥</span> </p>  
-			    </div>
-			    <!--<div class="weui-cell__ft">-->
-			    </div>
-			  </a>
-			</div>		
-		
+
 		<!--排课表start-->
 		<div id="calendar">
 			<nav>
@@ -109,40 +108,47 @@
 		</div>
 
 
-
-
-		<div class="weui-cells" style="margin-top: 0px;">
-			<a class="weui-cell weui-cell_access" href="">
-				<div class="weui-cell__bd">
-					<i class="icon_001"></i>
-					<p class="j_text_primary" style="margin-top: 3px;">今日采单录入量</p>
-				</div>
-				<span style="color: red;margin-right: 10px;">5</span>
-				<span style="margin-right: 10px;">人</span>
-				<div class="weui-cell__ft">
-				</div>
-			</a>
-			<a class="weui-cell weui-cell_access" href="">
-				<div class="weui-cell__bd">
-					<i class="icon_002"></i>
-					<p class="j_text_primary" style="margin-top: 3px;">今日排课试听人数</p>
-				</div>
-				<span style="color: red;margin-right: 10px;">3</span>
-				<span style="margin-right: 10px;">人</span>				
-				<div class="weui-cell__ft">
-				</div>
-			</a>
-			<a class="weui-cell weui-cell_access" href="">
-				<div class="weui-cell__bd">
-					<i class="icon_003"></i>
-					<p class="j_text_primary" style="margin-top: 3px;">今日报名订单</p>
-				</div>
-				<span style="color: red;margin-right: 10px;">1</span>
-				<span style="margin-right: 10px;">人</span>				
-				<div class="weui-cell__ft">
-				</div>
-			</a>
-		</div>
+		<div class="weui-cells" style="font-size: 14px;">
+		  <a class="weui-cell weui-cell_access" href="teacher_fuwu1.html">	
+		    <div class="weui-cell__bd info">
+		    	<h1 style="text-align: center;color: #337ab7;font-size: 20px;">校区运营实况</h1>
+		    	<h3 style="text-align: center;color: red;margin-bottom: 5px;">截至至今<span>(2018/7/11)</span> </h3>
+				
+				<p><span class="span_word01"></span>课时未消纳总额:<span class="span_word01_list">1115009.23¥</span> </p> 
+				
+				<p><span class="span_word02"></span>课时已消纳总额:<span class="span_word01_list">1356004.56¥</span> </p>
+				
+				<p><span class="span_word03"></span>本月已消纳总额:<span class="span_word01_list">62555.33¥</span> </p>  
+				
+				<p><span class="span_word04"></span>年度营业总额度:<span class="span_word01_list">560000.00¥</span> </p>  
+				
+				<p><span class="span_word05"></span>本月营业总额度:<span class="span_word01_list">115000.00¥</span> </p>  
+		    </div>
+		    <!--<div class="weui-cell__ft">-->
+		    </div>
+		  </a>
+		</div>		
+		
+		<div class="weui-cells" style="font-size: 14px;">
+		  <a class="weui-cell weui-cell_access" href="teacher_fuwu1.html">	
+		    <div class="weui-cell__bd info">
+		    	<h1 style="text-align: center;color: #337ab7;font-size: 20px;">今日实时情况</h1>
+		    	<h3 style="text-align: center;color: red;margin-bottom: 5px;"><span>2018/7/11</span> </h3>
+				
+				<p><span class="span_word06"></span>今日划课收入:<span class="span_word01_list">5009.23¥</span> </p> 
+				
+				<p><span class="span_word07"></span>今日报名收入:<span class="span_word01_list">15600.00¥</span> </p>
+				
+				<p><span class="span_word08"></span>今日采单录入:<span class="span_word01_list">2人</span> </p>  
+				
+				<p><span class="span_word09"></span>今日试听人数:<span class="span_word01_list">3人</span> </p>  
+				
+				<p><span class="span_word10"></span>今日报名订单:<span class="span_word01_list">5单</span> </p>  
+		    </div>
+		    <!--<div class="weui-cell__ft">-->
+		    </div>
+		  </a>
+		</div>		
 
 		  <span class="span_dongtai01"></span>
 		  <div class="weui-panel__hd">周期进度<span style="float: right;font-size: 12px;">2018年/7月份/第二周</span></div>
