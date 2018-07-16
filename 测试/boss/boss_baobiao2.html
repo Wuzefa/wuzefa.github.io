@@ -84,15 +84,6 @@
 		</div>	    
 		<!--划课金额-->
 	    <div id="main2" style="width: 380px;height:300px; display: block;margin-left: 5px;"></div>
-		<!--店面支出标题-->
-		<div class="weui-flex">
-		  <div class="weui-flex__item"  style="padding: 5px;">
-		  	<h1 style="font-size: 16px;"><span class="boss_baobiao03"></span>本周店面支出合计：1900元</h1>
-		  	<span style="color: #707070;font-size: 13px;">当月截至目前已支出金额: <span style="color: red;">8000</span>元</span>
-		  </div>
-		</div>	    
-		<!--店面支出-->
-	    <div id="main3" style="width: 380px;height:300px; display: block;margin-left: 5px;"></div>
 	    
 
 		  <div class="weui-tabbar bottom_list">
@@ -226,69 +217,55 @@
 	
 	        // 指定图表的配置项和数据
 			option = {
-	            title: {
-	                text: '周划课时金额'
-	            },				
+			    title: {
+			        text: ''
+			    },
+			    tooltip: {
+			        trigger: 'axis'
+			    },
+			    legend: {
+			        data:['北京望京', '长春力旺','北京燕郊']
+			    },
+			    grid: {
+			        left: '3%',
+			        right: '4%',
+			        bottom: '3%',
+			        containLabel: true
+			    },
+			    toolbox: {
+			        feature: {
+			            saveAsImage: {}
+			        }
+			    },
 			    xAxis: {
 			        type: 'category',
-			        data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+			        boundaryGap: false,
+			        data: ['第一周','第二周','第三周','第四周','第五周']
 			    },
 			    yAxis: {
 			        type: 'value'
 			    },
-			    series: [{
-			        data: [800, 3000, 4200, 4200, 5000, 13300, 8920],
-			        type: 'line'
-			    }]
-			};	
-			
-	        // 使用刚指定的配置项和数据显示图表。
-	        myChart.setOption(option);
-	  </script>
-	    <!--店面支出-->
-	    <script type="text/javascript">
-	        // 基于准备好的dom，初始化echarts实例
-	        var myChart = echarts.init(document.getElementById('main3'));
-	
-	        // 指定图表的配置项和数据
-			option = {
-			    title : {
-			        text: '乐高望京国际部',
-			        subtext: '校区财务',
-			        x:'center'
-			    },
-			    tooltip : {
-			        trigger: 'item',
-			        formatter: "{a} <br/>{b} : {c} ({d}%)"
-			    },
-			    legend: {
-			        orient: 'vertical',
-			        left: 'left',
-			        data: ['校区成本','运营物料','招待','水电费','其他']
-			    },
-			    series : [
+			    series: [
 			        {
-			            name: '访问来源',
-			            type: 'pie',
-			            radius : '55%',
-			            center: ['50%', '60%'],
-			            data:[
-			                {value:335, name:'校区成本'},
-			                {value:310, name:'运营物料'},
-			                {value:234, name:'招待'},
-			                {value:135, name:'水电费'},
-			                {value:1548, name:'其他'}
-			            ],
-			            itemStyle: {
-			                emphasis: {
-			                    shadowBlur: 10,
-			                    shadowOffsetX: 0,
-			                    shadowColor: 'rgba(0, 0, 0, 0.5)'
-			                }
-			            }
+			            name:'北京望京',
+			            type:'line',
+			            stack: '总量',
+			            data:[10000, 23200, 10100, 13400, 19000]
+			        },
+			        {
+			            name:'长春力旺',
+			            type:'line',
+			            stack: '总量',
+			            data:[10000, 18200, 19100, 23400, 29000]
+			        },
+			        {
+			            name:'北京燕郊',
+			            type:'line',
+			            stack: '总量',
+			            data:[0, 23200, 20100, 15400, 19000]
 			        }
 			    ]
-			};
+			};	
 			
 	        // 使用刚指定的配置项和数据显示图表。
 	        myChart.setOption(option);
