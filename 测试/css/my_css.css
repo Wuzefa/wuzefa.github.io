@@ -44,40 +44,7 @@
 		.more2{
 			font-size: 16px;color: orangered;display: block;margin-right: 16px;text-decoration: none;
 		}    
-   
-		/*.icon_01{
-			height: 90px;border-top: 1px solid #cccccc ;border-bottom: 1px solid #CCCCCC;
-		}
-		.icon_01 ul li{
-			list-style: none;display: block;float: left;width: 20%;text-align: center;
-		}
-		.icon_01 ul li a{
-			text-decoration: none;display: block;color: #696969;font-size: 16px;height: 85px;line-height: 130px;
-		}
-		.icon_01 ul li:nth-child(1) a{
-			background: url(../images/parent/icon_bottom_01.png)no-repeat center 20px;
-		}
-		.icon_01 ul li:nth-child(2) a{
-			background: url(../images/parent/icon_bottom_02.png)no-repeat center 20px;
-		}
-		.icon_01 ul li:nth-child(3) a{
-			background: url(../images/parent/icon_bottom_03.png)no-repeat center 20px;
-		}
-		.icon_01 ul li:nth-child(4) a{
-			background: url(../images/parent/icon_bottom_04.png)no-repeat center 20px;
-		}
-		.icon_01 ul li:nth-child(5) a{
-			background: url(../images/parent/icon_bottom_05.png)no-repeat center 20px;
-		}
-		.icon_01 ul li a:hover{
-			color: #e13e41;background: url(images/家长端主界面/10-相机.png)no-repeat center 10px;
-		}
-		.icon_01 ul li::before{
-			height: 35px;width: 1px;background: #cccccc;content: "";display: block;float: right;margin-top: 50px;
-		}
-		.icon_01 ul .li-none::before{
-			display: none;
-		}    	*/
+
 		.picture .picture_01 ul li{
 			display: block;float: left;width: 50%;margin-top: 2px;text-align: center;
 		}
@@ -196,4 +163,3 @@
 				background:url(../images/parent/parent_back.png) center no-repeat;width: 30px;height: 30px;display: block;margin-left: 15px;margin-top: 3px;
 				position: absolute;
 			}
-			

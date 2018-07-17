@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
 		<link rel="stylesheet" href="css/my_css.css" />
 		<link rel="stylesheet" href="css/calendar.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />
 
 	</head>
 	<style>
@@ -26,38 +27,8 @@
 	.calendar_text p {
 	    font-size: 13px;
 	}	
-	.span_word01,.span_word02,.span_word03,.span_word04,.span_word05,.span_word06,.span_word07{
-		display: block;width: 16px;height: 16px;float: left; background: url(images/teacher/icon_kebiao01.png);margin: 2px 5px;
-	}
 	.span_word01_list{
 		display:inline-block;margin-right: 50px;color: #000000;float: right;font-size: 15px;
-	}
-	.span_word02{
-		background: url(images/teacher/icon_kebiao02.png);
-	}
-	.span_word03{
-		background: url(images/teacher/icon_kebiao03.png);
-	}
-	.span_word04{
-		background: url(images/teacher/icon_kebiao04.png);
-	}
-	.span_word05{
-		background: url(images/teacher/icon_kebiao05.png);
-	}
-	.span_word06{
-		background: url(images/teacher/icon_kebiao06.png);
-	}
-	.span_word07{
-		background: url(images/teacher/icon_kebiao07.png);
-	}
-	.weui-cell__bd p{
-		color:  #707070;
-	}	
-	.weui-flex__item01{
-		width: 68px;padding: 0px;position: absolute;right: 30px;
-	}	
-	.weui-btn01{
-		font-size:10px;
 	}	
 	</style>
 	<body class="f_page">
@@ -100,49 +71,44 @@
 		</div>
 		<!--排课表end-->
 		<div class="calendar_text">
-			<span class="span_word01"></span><p>班级：周一17：30蔡蔡</p>
-			<span class="span_word02"></span><p>教室：学龄教室A</p>
-			<span class="span_word03"></span><p>日期：2018年06月25日【星期一】</p>						
-			<span class="span_word04"></span><p>时段：17:30~19:00</p>			
-			<span class="span_word05"></span><p>体系：建设世界4+</p>
-			<span class="span_word06"></span><p>课程：凉亭</p>
-			<div class="weui-flex__item weui-flex__item01">
-				<span class="weui-badge" style="position: absolute;top: -1.4em;right: -1em;">5</span>
-				<a href="parent_01_Registration-information.html" class="weui-btn weui-btn_primary weui-btn01">课程沟通</a>
-			</div>				
-			<span class="span_word07"></span><p>状态：未上课</p>
+			<span class="span_class"></span><p>班级：周一17：30蔡蔡</p>
+			<span class="span_Classroom"></span><p>教室：学龄教室A</p>
+			<span class="span_date"></span><p>日期：2018年06月25日【星期一】</p>
+			<a href="teacher_bottom02_tongxinlu.html" class="icon_goutong"></a>
+			<span class="span_time"></span><p>时段：17:30~19:00</p>
+			<span class="span_system"></span><p>体系：建设世界4+</p>
+			<span class="span_curriculum"></span><p>课程：凉亭</p>			
+			<span class="span_state"></span><p>状态：未上课</p>
 		</div>
 		<div class="weui-flex">
 			<div class="weui-flex__item" style="padding: 15px 45px;">
-				<a href="teacher_kaoqin.html" class="weui-btn weui-btn_primary" style="font-size: 13px;">考勤划课</a>
+				<a href="teacher_kaoqin.html" class="weui-btn weui-btn_primary" style="font-size: 12px;">考勤划课</a>
 			</div>
 			<div class="weui-flex__item" style="padding: 15px 45px;">
-				<a href="teacher_Teacher-evaluation.html" class="weui-btn weui-btn_primary" style="font-size: 13px;">课程评价</a>
+				<a href="teacher_Teacher-evaluation.html" class="weui-btn weui-btn_primary" style="font-size: 12px;">课程评价</a>
+			</div>
+		</div>		
+		<!--排课表end-->
+		<div class="calendar_text">
+			<span class="span_class"></span><p>班级：周一17：30蔡蔡</p>
+			<span class="span_Classroom"></span><p>教室：学龄教室A</p>
+			<span class="span_date"></span><p>日期：2018年06月25日【星期一】</p>
+			<a href="teacher_bottom02_tongxinlu.html" class="icon_goutong"></a>			
+			<span class="span_time"></span><p>时段：17:30~19:00</p>			
+			<span class="span_system"></span><p>体系：建设世界4+</p>
+			<span class="span_curriculum"></span><p>课程：凉亭</p>			
+			<span class="span_state"></span><p>状态：未上课</p>
+		</div>
+		<div class="weui-flex" style="margin-bottom: 50px;">
+			<div class="weui-flex__item" style="padding: 15px 45px;">
+				<a href="teacher_kaoqin.html" class="weui-btn weui-btn_primary" style="font-size: 12px;">考勤划课</a>
+			</div>
+			<div class="weui-flex__item" style="padding: 15px 45px;">
+				<a href="teacher_Teacher-evaluation.html" class="weui-btn weui-btn_primary" style="font-size: 12px;">课程评价</a>
 			</div>
 		</div>			
 
-		<!--排课表end-->
-		<div class="calendar_text">
-			<span class="span_word01"></span><p>班级：周一17：30蔡蔡</p>
-			<span class="span_word02"></span><p>教室：学龄教室A</p>
-			<span class="span_word03"></span><p>日期：2018年06月25日【星期一】</p>						
-			<span class="span_word04"></span><p>时段：17:30~19:00</p>			
-			<span class="span_word05"></span><p>体系：建设世界4+</p>
-			<span class="span_word06"></span><p>课程：凉亭</p>
-			<div class="weui-flex__item weui-flex__item01">
-				<span class="weui-badge" style="position: absolute;top: -1.4em;right: -1em;">3</span>
-				<a href="parent_01_Registration-information.html" class="weui-btn weui-btn_primary weui-btn01">课程沟通</a>
-			</div>				
-			<span class="span_word07"></span><p>状态：未上课</p>
-		</div>
-		<div class="weui-flex"  style="margin-bottom: 50px;">
-			<div class="weui-flex__item" style="padding: 15px 45px;">
-				<a href="teacher_kaoqin.html" class="weui-btn weui-btn_primary" style="font-size: 13px;">考勤划课</a>
-			</div>
-			<div class="weui-flex__item" style="padding: 15px 45px;">
-				<a href="teacher_Teacher-evaluation.html" class="weui-btn weui-btn_primary" style="font-size: 13px;">课程评价</a>
-			</div>
-		</div>			
+
 
 
 		  <div class="weui-tabbar bottom_list">

@@ -212,4 +212,41 @@
 				background:url(../images/parent/parent_back.png) center no-repeat;width: 30px;height: 30px;display: block;margin-left: 15px;margin-top: 3px;
 				position: absolute;
 			}
-					
+ /*图标*/
+			.span_class,.span_Classroom,.span_date,.span_time,.span_system,.span_curriculum,.span_state,
+			.span_people,.span_parent,.span_attendance,.span_type{
+				display: block;width: 16px;height: 16px;float: left;background: url(../images/teacher/word_icon/icon_class.png);margin: 2px 5px;			
+			}
+			.span_Classroom{
+				background: url(../images/teacher/word_icon/icon_classroom.png);
+			}
+			.span_date{
+				background: url(../images/teacher/word_icon/icon_date.png);
+			}
+			.span_time{
+				background: url(../images/teacher/word_icon/icon_time.png);
+			}
+			.span_system{
+				background: url(../images/teacher/word_icon/icon_system.png);
+			}
+			.span_curriculum{
+				background: url(../images/teacher/word_icon/icon_curriculum.png);
+			}
+			.span_state{
+				background: url(../images/teacher/word_icon/icon_state.png);
+			}
+			.span_people{
+				background: url(../images/teacher/word_icon/icon_people.png);
+			}
+			.span_parent{
+				background: url(../images/teacher/word_icon/icon_parent.png);
+			}
+			.span_attendance{
+				background: url(../images/teacher/word_icon/icon_attendance.png);
+			}
+			.span_type{
+				background: url(../images/teacher/word_icon/icon_type.png);
+			}
+			.icon_goutong{
+				display: block;width: 32px;height: 32px;background: url(../images/teacher/icon_big-weixin.png);float: right;
+			}					
