@@ -134,6 +134,12 @@
 			.icon_003{
 				background: url(../images/icon_small/icon_03.png) no-repeat 0px 5px;;
 			}
+			.icon_004{
+				background: url(../images/icon_small/icon_04.png) no-repeat 0px 5px;;
+			}
+			.icon_005{
+				background: url(../images/icon_small/icon_05.png) no-repeat 0px 5px;;
+			}
 			
 /*parent_01_Registration-information*/
 			.weui-cell__bd i{
@@ -163,3 +169,7 @@
 				background:url(../images/parent/parent_back.png) center no-repeat;width: 30px;height: 30px;display: block;margin-left: 15px;margin-top: 3px;
 				position: absolute;
 			}
+		/*移到此处显示蓝色*/
+			/*.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{
+				color: #5e96f0;
+			}*/
