@@ -36,26 +36,29 @@
 				color: #337ab7;
 			}
 			a.weui-navbar__item{
-			  top: 1px;
-			  position: relative;
-			  display: block;
-			  float: left;
-			  border-radius: 10px 10px 0 0;
-			  background: #eee;
-			  line-height: 2em;
-			  padding: 0 1em;
-			  text-decoration: none;
-			  color: grey;
-			  margin-top: .5em;
-			  margin-right: 1px;
-			  transition: background .2s ease, line-height .2s ease, margin .2s ease;
+				color: #337ab7;
+				padding: 10px 20px;
+			    margin: 0 10px -1px 0;
+			    font-size: 17px;
+			    font-weight: 600;
+			    color: #293241;
+			    border: 2px solid #e6e5e1;
+			    border-bottom: none;
+			    border-radius: 5px 5px 0 0;
+			    z-index: 1;
+			    position: relative;
+			    transition: all 0.3s ease 0s;
 			}
 			.weui-navbar__item.weui-bar__item--on{
-			  background: #337ab7;
-			  color: white;
-			  line-height: 2.5em;
-			  margin-top: 0;			
-			}		
+				background: #337ab7;
+				color: white;
+			}	
+			.weui-navbar a:hover{
+			    background: #fff;
+			    color: #079fc9;
+			    border: 2px solid #079fc9;
+			    border-bottom-color: transparent;				
+			}	
 		</style>
 	</head>
 
@@ -66,32 +69,6 @@
 				<p>申请管理</p>	
 			</h1>
 
-				<!--<div class="j_box">
-					<div class="j_box_content j_pd10">
-						<div class="weui-flex j_flex_grid">
-							<div class="weui-flex__item">
-								<a href="wechat/fwh/student/list">
-									<i class="j_text_red">0</i>
-									<p class="weui-grid__label">本月签到</p>
-								</a>
-							</div>
-
-							<div class="weui-flex__item">
-								<a href="parent_points.html">
-									<i class="j_text_red">0.0</i>
-									<p class="weui-grid__label">请假天数</p>
-								</a>
-							</div>
-							<div class="weui-flex__item">
-								<a href="wechat/fwh/order">
-									<i class="j_text_red">1</i>
-									<p class="weui-grid__label">当前可调休天数</p>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>-->
-				<!-- 容器 -->
 				<div class="weui-tab">
 					<div class="weui-navbar">
 						<a class="weui-navbar__item weui-bar__item--on" href="#tab1">
