@@ -56,7 +56,15 @@
 			  color: white;
 			  line-height: 2.5em;
 			  margin-top: 0;			
-			}		
+			}	
+			td{border:solid #add9c0; border-width:0px 1px 1px 0px;}
+			table{border:solid #add9c0; border-width:1px 0px 0px 1px;}
+			td{
+				padding: 15px 8px;
+			}
+			.tr_double{
+				background-color: #f9f9f9;
+			}				
 		</style>
 	</head>
 
@@ -206,7 +214,40 @@
 							<h1>页面三</h1>
 						</div>
 						<div id="tab4" class="weui-tab__bd-item">
-							<h1>页面四</h1>
+						<table style="width: 96%;margin: auto;">
+						    <thead>
+						      <tr>
+						        <td>名称</td>
+						        <td>规格</td>
+						        <td>数量</td>
+						        <td>单价</td>
+						        <td>总价</td>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr class="tr_double">
+						        <td>洗手液洗手液洗手液洗手液洗手液</td>
+						        <td>件</td>
+						        <td>5</td>
+						        <td>10</td>
+						        <td>50</td>
+						      </tr>
+						      <tr>
+						        <td>纸杯</td>
+						        <td>件</td>
+						        <td>5</td>
+						        <td>10</td>
+						        <td>50</td>
+						      </tr>
+						      <tr class="tr_double">
+						        <td>地推小礼物</td>
+						        <td>件</td>
+						        <td>5</td>
+						        <td>10</td>
+						        <td>50</td>
+						      </tr>
+						    </tbody>
+						</table>	
 						</div>
 					</div>
 				</div>
