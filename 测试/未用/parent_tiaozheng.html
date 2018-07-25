@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+		<link rel="stylesheet" href="css/new_file.css" />
+		<link rel="stylesheet" href="css/my_css.css" />
+		<link rel="stylesheet" href="css/style-index.css" />
+	</head>
+	<style>
+		.weui-navbar__item.weui-bar__item--on {
+			border-bottom: 2px solid #337ab7;
+		}
+		
+		.weui-navbar__item.weui-bar__item--on {
+			background: #337ab7;
+    		color: white;
+		}
+		
+		.points_top {
+			background: #4583b9;
+			color: white;
+			font-size: 20px;
+		}
+	</style>
+
+	<body>
+
+		<h1 class="j_page_title">
+				<p>剩余课次：15</p>			
+			</h1>
+		<div class="weui-tab">
+			<div class="weui-navbar">
+				<a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+					全部
+				</a>
+				<a class="weui-navbar__item" href="#tab2">
+					增加
+				</a>
+				<a class="weui-navbar__item" href="#tab3">
+					减少
+				</a>
+			</div>
+			<div class="weui-tab__bd">
+				<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+					<div class="weui-panel__bd">
+						<div class="weui-media-box weui-media-box_small-appmsg">
+							<div class="weui-cells" id="list">
+								<div class="weui-cell" href="javascript:;">
+									<div class="weui-cell__hd">
+										<span class="j_text_primary">2018.04.28&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									</div>
+									<div class="weui-cell__bd">
+										<span class="j_text_default">夏令营</span>
+									</div>
+									<div class="weui-cell__ft" style="font-weight:bold;width: 60px;text-align: center;">
+										<span class="j_text_danger">-12</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="weui-media-box weui-media-box_small-appmsg">
+							<div class="weui-cells" id="list">
+								<div class="weui-cell" href="javascript:;">
+									<div class="weui-cell__hd">
+										<span class="j_text_primary">2018.04.27&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									</div>
+									<div class="weui-cell__bd">
+										<span class="j_text_default">老带新</span>
+									</div>
+									<div class="weui-cell__ft" style="font-weight:bold;width: 60px;text-align: center;">
+										<span class="j_text_success">+1</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="weui-media-box weui-media-box_small-appmsg">
+							<div class="weui-cells" id="list">
+								<div class="weui-cell" href="javascript:;">
+									<div class="weui-cell__hd">
+										<span class="j_text_primary">2018.04.26&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									</div>
+									<div class="weui-cell__bd">
+										<span class="j_text_default">从学员：陈奕嘉 (4.7岁)的课程：学龄课程获得</span>
+									</div>
+									<div class="weui-cell__ft" style="font-weight:bold;width: 60px;text-align: center;">
+										<span class="j_text_success">+18</span>
+									</div>
+								</div>
+							</div>
+						</div>						
+						<div class="weui-media-box weui-media-box_small-appmsg">
+							<div class="weui-cells" id="list">
+								<div class="weui-cell" href="javascript:;">
+									<div class="weui-cell__hd">
+										<span class="j_text_primary">2018.04.26&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									</div>
+									<div class="weui-cell__bd">
+										<span class="j_text_default">课程《跷跷板》划课</span>
+									</div>
+									<div class="weui-cell__ft" style="font-weight:bold;width: 60px;text-align: center;">
+										<span class="j_text_danger">-1</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="tab2" class="weui-tab__bd-item">
+					<div class="weui-media-box weui-media-box_small-appmsg">
+						<div class="weui-cells" id="list">
+							<div class="weui-cell" href="javascript:;">
+								<div class="weui-cell__hd">
+									<span class="j_text_primary">2018.04.25&nbsp;&nbsp;&nbsp;&nbsp;</span>
+								</div>
+								<div class="weui-cell__bd">
+									<span class="j_text_default">老带新</span>
+								</div>
+								<div class="weui-cell__ft" style="font-weight:bold;width: 60px;text-align: center;">
+									<span class="j_text_success">+1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="tab3" class="weui-tab__bd-item">
+					<div class="weui-media-box weui-media-box_small-appmsg">
+						<div class="weui-cells" id="list">
+							<div class="weui-cell" href="javascript:;">
+								<div class="weui-cell__hd">
+									<span class="j_text_primary">2018.04.28&nbsp;&nbsp;&nbsp;&nbsp;</span>
+								</div>
+								<div class="weui-cell__bd">
+									<span class="j_text_default">夏令营</span>
+								</div>
+								<div class="weui-cell__ft" style="font-weight:bold;width: 60px;text-align: center;">
+									<span class="j_text_danger">-12</span>
+								</div>
+							</div>
+						</div>
+					</div>					
+					<div class="weui-media-box weui-media-box_small-appmsg">
+						<div class="weui-cells" id="list">
+							<div class="weui-cell" href="javascript:;">
+								<div class="weui-cell__hd">
+									<span class="j_text_primary">2018.04.25&nbsp;&nbsp;&nbsp;&nbsp;</span>
+								</div>
+								<div class="weui-cell__bd">
+									<span class="j_text_default">课程《跷跷板》划课</span>
+								</div>
+								<div class="weui-cell__ft" style="font-weight:bold;width: 60px;text-align: center;">
+									<span class="j_text_danger">-1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<!--基础组件-->
+		<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+		<!--为了使用幻灯片，你必须引用如下的JS文件-->
+		<!--<script src="js/idangerous.swiper.min.js"></script>
+		<script src="js/idangerous.swiper.scrollbar.js"></script>		-->
+		<!--拓展组件-->
+		<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>
+		<!--引入我的JS-->
+		<script src="js/my_js.js"></script>
+	</body>
+
+</html>
