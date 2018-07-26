@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<!--    <base href="http://www.yurongtianxia.com:80/">-->
+		<meta charset="utf-8" />
+		<title>信息录入</title>
+		<meta http-equiv="pragma" content="no-cache" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-696" data-genuitec-path="/EOMS/WebRoot/wechat/common/header.html">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<link href="admin/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+		<link rel="stylesheet" href="wechat/assets/css/jatomwx.css">
+		<link rel="stylesheet" href="css/new_file.css" />
+		<link rel="stylesheet" href="css/my_css.css" />
+		<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<style>
+		/*对话框*/	
+			.weui-select{
+				height: 20px;line-height: 20px;				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="j_page_inner">
+			<h1 class="j_page_title">				
+			<p>信息录入</p>	
+			</h1>
+		</div>
+		
+		<div class="weui-cells weui-cells_form" style="margin-top: 0px;">
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">学员姓名</label></div>
+		    <div class="weui-cell__bd">
+		      <input class="weui-input" type="text" pattern="[0-9]*" placeholder="请输入客户姓名">
+		    </div>
+		  </div>
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">学生性别</label></div>
+		    <div class="weui-cell__bd">
+				<div class="radio" style="float: left;">
+					<input id="radio1" type="radio" value="1">
+					<label for="radio1">男</label>
+				</div>
+				<div class="radio" style="float: left;margin-left: 10px;">
+					<input id="radio2" type="radio" value="2">
+					<label for="radio2">女</label>
+				</div>
+		    </div>
+		  </div>  
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">生日|年龄</label></div>
+		    <div class="weui-cell__bd">
+		      <input class="weui-input" type="number" pattern="[0-9]*" placeholder="生日2016-01-01 或 年龄 6.5">
+		    </div>
+		  </div>
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">联系人称呼</label></div>
+		    <div class="weui-cell__bd">
+		      <input class="weui-input" type="text" pattern="[0-9]*" placeholder="请输入客户姓名">
+		    </div>
+		  </div>	
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">联系人性别</label></div>
+		    <div class="weui-cell__bd">
+				<div class="radio" style="float: left;">
+					<input id="radio1" type="radio" value="1">
+					<label for="radio1">男</label>
+				</div>
+				<div class="radio" style="float: left;margin-left: 10px;">
+					<input id="radio2" type="radio" value="2">
+					<label for="radio2">女</label>
+				</div>
+		    </div>
+		  </div> 		  
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">联系人电话</label></div>
+		    <div class="weui-cell__bd">
+		      <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入客户联系方式">
+		    </div>
+		  </div>	
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label for="" class="weui-label">采集时间</label></div>
+		    <div class="weui-cell__bd">
+		      <input class="weui-input" type="date" value="">
+		    </div>
+		  </div>		  
+		  <div class="weui-cell">
+				<div class="weui-cell__hd">
+					<label class="weui-label">采集人</label>
+				</div>
+				<div class="weui-cell__bd">
+					<select id="lessonId"  class="weui-select" name="audition.state" data-select="3">
+                        
+                        <option value="2" >管理员</option>
+                        
+                        <option value="5" >吴泽发</option>
+                        
+                        <option value="5" >曾茝倩</option>
+                        
+                        <option value="5" >王志国</option>
+                        
+                   </select>                    
+				</div>
+		  </div>
+		  <div class="weui-cell">
+				<div class="weui-cell__hd">
+					<label class="weui-label">推广渠道</label>
+				</div>
+				<div class="weui-cell__bd">
+					<select id="lessonId"  class="weui-select" name="audition.state" data-select="3">
+                        
+                        <option value="2" >店面咨询</option>
+                        
+                        <option value="5" >地推采单</option>
+                        
+                        <option value="5" >老会员介绍</option>
+                        
+                   </select>                    
+				</div>
+		  </div>		  
+		</div>		
+		<div class="weui-cells" style="margin-top: 0px;">
+		  <div class="weui-cell">
+		    <div class="weui-cell__bd">
+		      <input class="weui-input" type="text" placeholder="请输入备注">
+		    </div>
+		  </div>
+		</div>		
+				<div class="weui-btn-area">
+					<button class="weui-btn weui-btn_primary" >保存</button>
+				</div>
+			</div>
+		
+		
+
+		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+		<script src="wechat/assets/js/jatomwx.js"></script>
+		<script>
+			$('.btn-triger').click(function() {
+				$(this).closest('.float-btn-group').toggleClass('open');
+			});
+		</script>
+	</body>
+
+</html>
