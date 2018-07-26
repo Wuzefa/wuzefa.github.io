@@ -173,3 +173,18 @@
 			/*.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{
 				color: #5e96f0;
 			}*/
+/*沟通暂无内容*/
+			.goutong_img{
+				display: block;margin: auto;text-align: center;margin-top: 50px;margin-bottom: 5px;
+			}	
+			.goutong_no{
+				padding-left: 50px;
+				padding-right: 50px;
+				color: #707070;
+				font-size: 18px;
+				letter-spacing:2px;
+				text-indent: 45px;
+			}
+			.goutong_title{
+				text-align: center;
+			}

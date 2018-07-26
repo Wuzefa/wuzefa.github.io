@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<!--    <base href="http://www.yurongtianxia.com:80/">-->
+		<meta charset="utf-8" />
+		<title>咨询录</title>
+		<meta http-equiv="pragma" content="no-cache" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-696" data-genuitec-path="/EOMS/WebRoot/wechat/common/header.html">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<link href="admin/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+		<link rel="stylesheet" href="wechat/assets/css/jatomwx.css">
+		<link rel="stylesheet" href="css/new_file.css" />
+		<link rel="stylesheet" href="css/my_css.css" />
+		<style>
+		.weui-cell{
+			height: 60px;
+		}
+		.my_top {
+			height: 60px;
+			background: white;
+		}		
+		.weui-media-box__thumb,.weui-media-box__thumb1,.weui-media-box__thumb2 {
+			width: 50px;
+			height: 50px;
+			border-radius: 100%;
+			overflow: hidden;
+			background: bisque;
+			text-align: center;
+			line-height: 50px;
+		}
+		.my_top .weui-cell__bd p {
+			color: #000000;
+			font-size: 13px;
+		}
+		
+		.weui-cell__bd_name {
+			margin-left: 10px;
+		}	
+		.span_red{
+			color: red;
+		}	
+		.weui-media-box__thumb1{
+			background: greenyellow;
+		}
+		.weui-media-box__thumb2{
+			background: rosybrown;
+		}	
+		.span_list{
+			font-size: 11px;
+			color: #707070;
+		}
+		.weui-select{
+			width: 48%;
+		}
+		</style>
+	</head>
+
+<body>
+	<div class="j_page">
+		<div class="j_page_inner">
+			<!-- 核心内容——start -->
+			<!-- 参数详情 start -->
+			<div class="j_box j_box_primary">
+			<div class="j_box_title j_text_primary j_tcenter"><i class="fa fa-user"></i> 学员信息</div>
+			<div class="j_box_content">
+			<div class="j_obj_info j_has_lg">
+				<div class="j_obj_item">
+					<span class="j_obj_item_label">学员编号：</span> <span
+						class="j_obj_item_text">3000016</span>
+				</div>
+				<div class="j_obj_item">
+					<span class="j_obj_item_label">学员姓名：</span> <span
+						class="j_obj_item_text">张2 (0.6岁)</span>
+				</div>
+				<div class="j_obj_item">
+					<span class="j_obj_item_label">性别：</span> <span
+						class="j_obj_item_text">男</span>
+				</div>
+				
+				</div>
+				</div>
+				</div>
+				
+				<div class="j_box j_box_primary">
+			<div class="j_box_title j_text_primary j_tcenter"><i class="fa fa-list"></i> 排课信息</div>
+			<div class="j_box_content">
+				<div class="j_obj_info j_has_lg">
+				<div class="j_obj_item">
+					<span class="j_obj_item_label">课程体系：</span> <span
+						class="j_obj_item_text">幼儿搭建</span>
+				</div>
+				<div class="j_obj_item">
+					<span class="j_obj_item_label">上课内容：</span> <span
+						class="j_obj_item_text">计算机原理</span>
+				</div>
+				<div class="j_obj_item">
+					<span class="j_obj_item_label">上课时间：</span> <span
+						class="j_obj_item_text">2017年11月13日</span>
+				</div>
+				<div class="j_obj_item">
+					<span class="j_obj_item_label">上课时段：</span> <span
+						class="j_obj_item_text">08:00~09:00</span>
+				</div>
+			</div>
+			</div>
+			</div>
+			<!-- 参数详情 end -->
+			<!-- 介绍 start -->
+			<div class="j_box j_box_primary">
+				<div class="j_box_title j_text_primary j_tcenter">
+					<i class="fa fa-pencil-square-o"></i> 反馈
+				</div>
+				<div class="j_box_content" >
+				<form id="form" onsubmit="return submitThisForm();" method="post" action="wechat/qyh/receptionFeedback/save">
+					<input type="hidden" name="audition.id" value="4" />
+					<div class="weui-cells weui-cells_form" style="margin-top: 0px;">
+					<div class="weui-cell">
+						<div class="weui-cell__hd">
+							<label class="weui-label">试听结果</label>
+						</div>
+						<div class="weui-cell__bd">
+							<select id="lessonId"  class="weui-select" name="audition.state" data-select="3">
+		                        
+		                        <option value="2" >完成试听</option>
+		                        
+		                        <option value="5" >转为无意向</option>
+		                        
+		                   </select>                    
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__hd">
+							<label class="weui-label">评价等级</label>
+						</div>
+						<div class="weui-cell__bd">
+							<input type="hidden" name="feedbacks[0].dimensionId" value="-1" />
+							<input type="hidden" name="feedbacks[0].id" value="" />
+							<select id="lessonId" data-select=""  class="weui-select" name=feedbacks[0].level>
+		                        <option value="0">=请选择=</option>
+		                        
+		                        <option value="282" >A</option>
+		                        
+		                        <option value="283" >B</option>
+		                        
+		                        <option value="284" >C</option>
+		                        
+		                   </select>
+						</div>
+					</div>
+					
+						<input type="hidden" name="feedbacks[1].dimensionId" value="286" />
+						<input type="hidden" name="feedbacks[1].id" value="" />
+						<div class="weui-cell">
+							<div class="weui-cell__hd">
+								<label class="weui-label">离家距离</label>
+							</div>
+							<select id="lessonId" data-select=""  class="weui-select" name=feedbacks[0].level>
+		                        <option value="0">=请选择=</option>
+		                        
+		                        <option value="282" >A</option>
+		                        
+		                        <option value="283" >B</option>
+		                        
+		                        <option value="284" >C</option>
+		                        
+		                    </select>							
+							<div class="weui-cell__bd">
+							<input type="text" required  name="feedbacks[1].result"
+							  		value="" class="weui-input" />
+							</div>
+						</div>
+						
+						<input type="hidden" name="feedbacks[2].dimensionId" value="287" />
+						<input type="hidden" name="feedbacks[2].id" value="" />
+						<div class="weui-cell">
+							<div class="weui-cell__hd">
+								<label class="weui-label">购买意向</label>
+							</div>
+							<select id="lessonId" data-select=""  class="weui-select" name=feedbacks[0].level>
+		                        <option value="0">=请选择=</option>
+		                        
+		                        <option value="282" >A</option>
+		                        
+		                        <option value="283" >B</option>
+		                        
+		                        <option value="284" >C</option>
+		                        
+		                    </select>							
+							<div class="weui-cell__bd">
+							<input type="text" required  name="feedbacks[2].result"
+							  		value="" class="weui-input" />
+							</div>
+						</div>
+						
+						<input type="hidden" name="feedbacks[2].dimensionId" value="287" />
+						<input type="hidden" name="feedbacks[2].id" value="" />
+						<div class="weui-cell">
+							<div class="weui-cell__hd">
+								<label class="weui-label">有时间</label>
+							</div>
+							<select id="lessonId" data-select=""  class="weui-select" name=feedbacks[0].level>
+		                        <option value="0">=请选择=</option>
+		                        
+		                        <option value="282" >A</option>
+		                        
+		                        <option value="283" >B</option>
+		                        
+		                        <option value="284" >C</option>
+		                        
+		                    </select>							
+							<div class="weui-cell__bd">
+							<input type="text" required  name="feedbacks[2].result"
+							  		value="" class="weui-input" />
+							</div>
+						</div>
+						<textarea name="txt" clos=",50" rows="5" warp="virtual" placeholder="请输入备注" style="width:90%;height:50px;border-style:none;display: block;margin: auto;border: 1px solid #707070;"></textarea>
+						<div class="weui-btn-area">
+							<button class="weui-btn weui-btn_primary" >保存</button>
+						</div>
+					</div>
+					</form>
+				</div>
+			</div>
+			<!-- 介绍 end -->
+
+
+
+
+			<!-- 核心内容——end -->
+		</div>
+	</div>
+	<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<script src="wechat/assets/js/jatomwx.js"></script>
+</body>
+
+

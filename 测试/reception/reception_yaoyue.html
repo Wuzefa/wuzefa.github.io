@@ -13,13 +13,12 @@
 
 	</head>
 	<style>
-		#calendar .c_row .lesson {
-			background-image: url(images/teacher/fankui_icon.png);
-		}		
-		#calendar .c_row>div.active:before {
-			background: rgba(104, 146, 199, 0.19);
-		}
-		
+			#calendar .c_row .lesson {
+				background-image: url(images/teacher/fankui_icon.png);
+			}		
+			#calendar .c_row>div.active:before {
+				background: rgba(104, 146, 199, 0.19);
+			}
 		
 			.weui-cell__bd h2,h4{
 				text-align: center;color: #337ab7;
@@ -28,7 +27,7 @@
 				display: block;width: 16px;height: 16px;float: left;background: url(images/teacher/icon_001.png);margin: 2px 5px;
 			}
 			.span_word01_list{
-				display:inline-block;color: #000000;float: right;font-size: 15px;
+				display:inline-block;color: #000000;float: right;font-size: 15px;margin-right: 50px;
 			}
 			.span_word02{
 				background: url(images/teacher/icon_002.png);
@@ -51,6 +50,12 @@
 			.calendar_text_new{
 				padding: 5px;margin: 2px 15px;				
 			}
+			.weui-flex__item1{
+				width: 50px;padding: 0px;position: absolute;right: 0px;bottom: 45px;
+			}	
+			.weui-btn{
+				font-size:10px;
+			}			
 	</style>
 	<body class="f_page">
 
@@ -122,20 +127,23 @@
 				<span class="span_people"></span>
 				<p>学员姓名:<span class="span_word01_list">阔阔 (4.0岁)</span> </p> 
 				<span class="span_date"></span>
-				<p>试听日期:<span class="span_word01_list">06月11日</span> </p>							
+				<p>试听日期:<span class="span_word01_list">06月11日</span> </p>		
+				<div class="weui-flex__item weui-flex__item1">
+					<a href="reception_genjin1.html" class="weui-btn weui-btn_primary">跟进</a>
+				</div>						
 				<span class="span_state"></span>
 				<p>邀约状态:<span class="span_word01_list" style="color: green;">已试听</span> </p>
 				<span class="span_time"></span>
-				<p>最后跟进时间:<span class="span_word01_list">06月11日</span> </p>						
+				<p>最后跟进时间:<span class="span_word01_list">06月11日</span> </p>			
 		    </div>
 		  </div>
 		</div>
 		<div class="weui-flex" style="background: #f8f8f8;">
-			<div class="weui-flex__item" style="padding: 15px 30px;">
-				<a href="#" class="weui-btn weui-btn_primary" style="font-size: 12px;">试听反馈</a>
+			<div class="weui-flex__item" style="padding: 15px 35px;">
+				<a href="reception_fankui.html" class="weui-btn weui-btn_primary" style="font-size: 12px;background: green;">已反馈</a>
 			</div>
-			<div class="weui-flex__item" style="padding: 15px 30px;">
-				<a href="reception_goutong.html" class="weui-btn weui-btn_primary" style="font-size: 12px;">客户跟进</a>
+			<div class="weui-flex__item" style="padding: 15px 35px;">
+				<a href="#" class="weui-btn weui-btn_primary" style="font-size: 12px;">邀约取消</a>
 			</div>
 		</div>			
 		<!--邀约-->	
@@ -145,7 +153,36 @@
 				<span class="span_people"></span>
 				<p>学员姓名:<span class="span_word01_list">开心 (5.3岁)</span> </p> 
 				<span class="span_date"></span>
-				<p>试听日期:<span class="span_word01_list">06月11日</span> </p>							
+				<p>试听日期:<span class="span_word01_list">06月11日</span> </p>		
+				<div class="weui-flex__item weui-flex__item1">
+					<a href="javascript:;" class="weui-btn weui-btn_primary">跟进</a>
+				</div>					
+				<span class="span_state"></span>
+				<p>邀约状态:<span class="span_word01_list" style="color: red;">邀约未试听</span> </p>
+				<span class="span_time"></span>
+				<p>最后跟进时间:<span class="span_word01_list">06月11日</span> </p>	
+		    </div>
+		  </div>
+		</div>
+		<div class="weui-flex" style="background: #f8f8f8;">
+			<div class="weui-flex__item" style="padding: 15px 35px;">
+				<a href="#" class="weui-btn weui-btn_primary" style="font-size: 12px;">试听反馈</a>
+			</div>
+			<div class="weui-flex__item" style="padding: 15px 35px;">
+				<a href="#" class="weui-btn weui-btn_primary" style="font-size: 12px;">邀约取消</a>
+			</div>
+		</div>
+		<!--邀约-->	
+		<div class="calendar_text calendar_text_new">
+		  <div class="weui-cell weui-cell_access" href="javascript:;">	
+		    <div class="weui-cell__bd">
+				<span class="span_people"></span>
+				<p>学员姓名:<span class="span_word01_list">悦悦 (6.8岁)</span> </p> 
+				<span class="span_date"></span>
+				<p>试听日期:<span class="span_word01_list">06月11日</span> </p>	
+				<div class="weui-flex__item weui-flex__item1">
+					<a href="javascript:;" class="weui-btn weui-btn_primary">跟进</a>
+				</div>					
 				<span class="span_state"></span>
 				<p>邀约状态:<span class="span_word01_list" style="color: red;">邀约取消</span> </p>
 				<span class="span_time"></span>
@@ -154,11 +191,11 @@
 		  </div>
 		</div>
 		<div class="weui-flex" style="background: #f8f8f8;">
-			<div class="weui-flex__item" style="padding: 15px 30px;">
+			<div class="weui-flex__item" style="padding: 15px 35px;">
 				<a href="#" class="weui-btn weui-btn_primary" style="font-size: 12px;">试听反馈</a>
 			</div>
-			<div class="weui-flex__item" style="padding: 15px 30px;">
-				<a href="#" class="weui-btn weui-btn_primary" style="font-size: 12px;">客户跟进</a>
+			<div class="weui-flex__item" style="padding: 15px 35px;">
+				<a href="#" class="weui-btn weui-btn_warn" style="font-size: 12px;">已取消</a>
 			</div>
 		</div>
 	</body>

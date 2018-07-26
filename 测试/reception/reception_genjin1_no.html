@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<!--    <base href="http://www.yurongtianxia.com:80/">-->
+		<meta charset="utf-8" />
+		<title>班级列表</title>
+		<meta http-equiv="pragma" content="no-cache" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-696" data-genuitec-path="/EOMS/WebRoot/wechat/common/header.html">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<link href="admin/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+		<link rel="stylesheet" href="wechat/assets/css/jatomwx.css">
+		<link rel="stylesheet" href="css/new_file.css" />
+		<link rel="stylesheet" href="css/my_css.css" />
+		<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<style>
+		/*对话框*/
+			#wxmsgs {
+				padding: 10px 30px;
+			}
+			
+			.wxmsg.me {
+				text-align: center;
+			}
+			
+			.wxmsg {
+				display: block;
+			}
+			
+			.wxmsg.me .msgcontent {
+				background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));
+				background-repeat: repeat-x;
+				border-color: #3e8f3e;
+				color: #FFF;
+			}
+			
+			.msgcontent {
+				display: inline-block;
+				max-width: 100%;
+				min-height: 35px;
+    			background: #FFF;
+				border-radius: 5px;
+				text-align: left;
+				padding: 5px 15px;
+				color: black;
+				font-family: "微软雅黑";
+				font-size: 12px;
+			}
+			/*选显卡*/
+			a.weui-navbar__item{
+			  font-size: 14px;
+			  top: 1px;
+			  position: relative;
+			  display: block;
+			  float: left;
+			  border-radius: 10px 10px 0 0;
+			  background: #eee;
+			  line-height: 2em;
+			  padding: 0 1em;
+			  text-decoration: none;
+			  color: grey;
+			  margin-top: .5em;
+			  margin-right: 1px;
+			  transition: background .2s ease, line-height .2s ease, margin .2s ease;
+			}
+			.weui-navbar__item.weui-bar__item--on{
+			  background: #337ab7;
+			  color: white;
+			  line-height: 2.5em;
+			  margin-top: 0;			
+			}	
+			
+			/*页面调整*/
+			body{
+				margin-bottom: 50px;
+			}
+			td{border:solid #add9c0; border-width:0px 1px 1px 0px;}
+			table{border:solid #add9c0; border-width:1px 0px 0px 1px;}
+			td{
+				padding: 15px 8px;
+			}
+			.tr_double{
+				background-color: #f9f9f9;
+			}
+			.weui-cell__bd h2{
+				text-align: center;color: #00609C;
+			}	
+			/*表格*/
+			td{border:solid #9cc6ea; border-width:0px 1px 1px 0px;}
+			table{border:solid #9cc6ea; border-width:1px 0px 0px 1px;}
+			td{
+				padding: 15px 8px;
+			}
+			.tr_double{
+				background-color: #f9f9f9;
+			}	
+			.weui-form-preview__bd1{
+				text-align: left;
+			}	
+			thead {
+				font-weight: 600;text-align: center;color: #5a5353;
+			}	
+			td:first-child{
+				font-weight: 600;color: #5a5353;text-align: center;width: 80px;
+			}
+			td:nth-child(2){
+				text-align: center;
+			}		
+		</style>
+	</head>
+
+	<body data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-793" data-genuitec-path="/EOMS/WebRoot/wechat/qyh/class/home.jsp">
+		<div class="j_page" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-793" data-genuitec-path="/EOMS/WebRoot/wechat/qyh/class/home.jsp">
+			<div class="j_page_inner">
+				<h1 class="j_page_title">				
+				<p>咨询详情</p>	
+			</h1>
+
+				<div class="weui-tab">
+					<div class="weui-navbar">
+						<a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+							基本信息
+						</a>
+						<a class="weui-navbar__item" href="#tab2">
+							跟进记录
+						</a>
+					</div>
+					<div class="weui-tab__bd" style="padding-top: 35px;">
+						<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+
+							<div id="list">
+
+								<div class="weui-form-preview">
+									<div class="weui-form-preview__bd">
+										<div class="weui-form-preview__item">
+											<span class="span_people" style="margin: 5.5px 5px;"></span>
+											<label class="weui-form-preview__label">姓名</label> <span class="weui-form-preview__value">张思思</span>
+										</div>
+										<div class="weui-form-preview__item">
+											<span class="span_time" style="margin: 5.5px 5px;"></span>
+											<label class="weui-form-preview__label">电话</label> <span class="weui-form-preview__value">15555555555</span>
+										</div>
+										<div class="weui-form-preview__item">
+											<span class="span_time" style="margin: 5.5px 5px;"></span>
+											<label class="weui-form-preview__label">性别</label> <span class="weui-form-preview__value">男</span>
+										</div>
+
+										<div class="weui-form-preview__item">
+											<span class="span_Classroom" style="margin: 5.5px 5px;"></span>
+											<label class="weui-form-preview__label">出生日期</label> <span class="weui-form-preview__value">2018-03-13</span>
+										</div>
+
+										<div class="weui-form-preview__item">
+											<span class="span_state" style="margin: 5.5px 5px;"></span>
+											<label class="weui-form-preview__label">状态</label> <span class="weui-form-preview__value j_text_danger">试听未报名</span>
+										</div>
+									</div>
+								</div>
+								<div class="weui-form-preview">
+									<div class="weui-form-preview__bd weui-form-preview__bd1">
+									    <div class="weui-cell__bd">
+									    	<h2>前台反馈</h2>
+									    </div>	
+										<div class="goutong_title" style="text-align: center;">
+											<div class="goutong_img" style="text-align: center;">
+												<img src="images/liaotian.png" />
+											</div>
+											<h2 class="goutong_no">暂无反馈记录~~~</h2>
+										</div>									    
+									</div>
+								</div>
+								<div class="weui-form-preview">
+									<div class="weui-form-preview__bd weui-form-preview__bd1">
+									    <div class="weui-cell__bd">
+									    	<h2>教师反馈</h2>
+									    </div>	
+										<div class="goutong_title" style="text-align: center;">
+											<div class="goutong_img" style="text-align: center;">
+												<img src="images/liaotian.png" />
+											</div>
+											<h2 class="goutong_no">暂无反馈记录~~~</h2>
+										</div>								    
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div id="tab2" class="weui-tab__bd-item">
+							<div class="weui-form-preview">
+								<div class="weui-form-preview__bd weui-form-preview__bd1">
+								    <div class="weui-cell__bd">
+								    	<h2>历史反馈记录</h2>
+								    </div>	
+									<div class="goutong_title" style="text-align: center;">
+										<div class="goutong_img" style="text-align: center;">
+											<img src="images/liaotian.png" />
+										</div>
+										<h2 class="goutong_no">暂无反馈记录~~~</h2>
+									</div>								    
+								</div>
+							</div>
+						</div>
+				<!-- 核心内容——end -->
+			</div>
+		</div>
+		
+		  <div class="weui-tabbar bottom_list">
+		    <a href="boss_bottom01_home-01.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="images/reception/reception_photo.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">拨打电话</p>
+		    </a>
+
+		    <a href="boss_bottom04_my.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="images/reception/reception_genjin.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">继续跟进</p>
+		    </a>
+		  </div>			
+
+		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+		<script src="wechat/assets/js/jatomwx.js"></script>
+		<script>
+			$('.btn-triger').click(function() {
+				$(this).closest('.float-btn-group').toggleClass('open');
+			});
+		</script>
+	</body>
+
+</html>

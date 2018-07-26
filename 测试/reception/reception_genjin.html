@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<!--    <base href="http://www.yurongtianxia.com:80/">-->
+		<meta charset="utf-8" />
+		<title>咨询录</title>
+		<meta http-equiv="pragma" content="no-cache" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-696" data-genuitec-path="/EOMS/WebRoot/wechat/common/header.html">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<link href="admin/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+		<link rel="stylesheet" href="wechat/assets/css/jatomwx.css">
+		<link rel="stylesheet" href="css/new_file.css" />
+		<link rel="stylesheet" href="css/my_css.css" />
+		<style>
+		.weui-cell{
+			height: 60px;
+		}
+		.my_top {
+			height: 60px;
+			background: white;
+		}		
+		.weui-media-box__thumb,.weui-media-box__thumb1,.weui-media-box__thumb2 {
+			width: 50px;
+			height: 50px;
+			border-radius: 100%;
+			overflow: hidden;
+			background: bisque;
+			text-align: center;
+			line-height: 50px;
+		}
+		.my_top .weui-cell__bd p {
+			color: #000000;
+			font-size: 13px;
+		}
+		
+		.weui-cell__bd_name {
+			margin-left: 10px;
+		}	
+		.span_red{
+			color: red;
+		}	
+		.weui-media-box__thumb1{
+			background: greenyellow;
+		}
+		.weui-media-box__thumb2{
+			background: rosybrown;
+		}	
+		.span_list{
+			font-size: 11px;
+			color: #707070;
+		}
+		</style>
+	</head>
+
+	<body data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-793" data-genuitec-path="/EOMS/WebRoot/wechat/qyh/class/home.jsp">
+		<div class="j_page" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-793" data-genuitec-path="/EOMS/WebRoot/wechat/qyh/class/home.jsp">
+			<div class="j_page_inner">
+				<!-- 核心内容——start -->
+				<div class="box_01"></div>
+				<h1 class="j_page_title">
+				<p>咨询录</p>			
+			</h1>			
+			<div class="weui-search-bar" id="searchBar">
+			  <form class="weui-search-bar__form">
+			    <div class="weui-search-bar__box">
+			      <i class="weui-icon-search"></i>
+			      <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="学员姓名、电话" required="">
+			      <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+			    </div>
+			    <label class="weui-search-bar__label" id="searchText">
+			      <i class="weui-icon-search"></i>
+			      <span>学员姓名、电话</span>
+			    </label>
+			  </form>
+			  <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+			</div>	
+			<div class="weui-panel" style="margin-top: 0px;">
+		        <div class="weui-panel__hd j_text_danger"> 2018/07/01~2018/07/12 
+		        <button data-target="#conditionsPanelPopup" class="open-popup j_text_primary j_fright">
+		           <i class="fa fa-flag"></i>筛选
+		         </button>
+		        </div>
+	        </div>				
+			<a class="weui-cell weui-cell_access my_top" href="reception_genjin1.html">
+				<div class="weui-media-box__hd">
+		      		<span class="weui-badge" style="float: right;">2</span>						
+					<div class="weui-media-box__thumb">张</div>
+				</div>
+				<div class="weui-cell__bd weui-cell__bd_name">					
+					<p class="j_text_primary">张思思<span class="span_red">[试听未报名]</span></p>
+					<span class="span_list">最近跟进记录：宝贝很喜欢，同意报名的。</span>
+				</div>
+				<div class="weui-cell__ft">
+					<span style="font-size: 12px;">2018-06-26</span>
+				</div>
+			</a>
+			<a class="weui-cell weui-cell_access my_top" href="reception_genjin1_no.html">
+				<div class="weui-media-box__hd">
+		      		<span class="weui-badge" style="float: right;">2</span>						
+					<div class="weui-media-box__thumb1">大</div>
+				</div>
+				<div class="weui-cell__bd weui-cell__bd_name">
+					<p class="j_text_primary">大宝<span class="span_red">[邀约未试听]</span></p>
+					<span class="span_list">最近跟进记录：宝贝很喜欢，同意报名的。</span>
+				</div>
+				<div class="weui-cell__ft">
+					<span style="font-size: 12px;">2018-06-26</span>					
+				</div>
+			</a>
+			<a class="weui-cell weui-cell_access my_top" href="">
+				<div class="weui-media-box__hd">
+		      		<span class="weui-badge" style="float: right;">3</span>						
+					<div class="weui-media-box__thumb2">小</div>
+				</div>
+				<div class="weui-cell__bd weui-cell__bd_name">
+					<p class="j_text_primary">小美<span class="span_red">[未邀约]</span></p>
+					<span class="span_list">最近跟进记录：宝贝很喜欢，同意报名的。</span>
+				</div>
+				<div class="weui-cell__ft">
+					<span style="font-size: 12px;">2018-06-26</span>					
+				</div>
+			</a>
+
+				<!-- 核心内容——end -->
+			</div>		
+		</div>
+		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+		<script src="wechat/assets/js/jatomwx.js"></script>
+		<script>
+			var tm = new Date().getTime();
+			document.getElementById("backwxhome").href = "wxhome?t=" + tm;
+		</script>
+	</body>
+
+</html>
